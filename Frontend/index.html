@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Paradise Lost Resort</title>
+  
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Tan+Mon+Cheri&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
+
+
+  <!-- External CSS -->
+  <link rel="stylesheet" href="index.css" />
+</head>
+<body>
+
+<!-- Loading Screen -->
+<div id="loading-screen">
+  <div id="loading-counter">Loading 0%</div>
+  <div id="loading-line"></div>
+
+
+  <div class="parallax-container">
+    <img src="images/waterf (12).jpg" class="parallax-img" alt="image1"/>
+    <img src="images/DSC_8057.jpg" class="parallax-img"  alt="image1"/>
+    <img src="images/hp1.jpg" class="parallax-img" alt="image1"/>
+    <img src="images/naturemain.jpg" class="parallax-img"  alt="image1"/>
+    <img src="images/picnic.jpg" class="parallax-img" alt="image1"/>
+  </div>
+</div>
+
+<!-- Transition overlay -->
+<div id="page-transition">
+<div class="logo-wrapper">
+    <img src="images/Paradise.png" alt="Logo">
+  </div></a>
+</div>
+
+<main>
+
+    <!-- Fullscreen Navigation Menu -->
+<div class="fullscreen-menu" id="fullscreenMenu">
+  <div class="menu-header">
+    <img src="images/Paradise.png" alt="Logo" class="menu-logo" />
+    <span class="close-btn" onclick="toggleMenu()">✕</span>
+  </div>
+
+  <div class="menu-content">
+    <div class="menu-columns">
+      <!-- Main Pages -->
+      <div class="menu-section">
+        <h4>Main Pages</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+      </div>
+
+      <!-- Activities -->
+      <div class="menu-section">
+        <h4>Activities</h4>
+        <ul>
+          <li><a href="horse.html">Horse & Camel Riding</a></li>
+          <li><a href="ziplining.html">Ziplining</a></li>
+          <li><a href="camping.html">Camping</a></li>
+          <li><a href="boat.html">Boat Riding</a></li>
+          <li><a href="archery.html">Archery</a></li>
+          <li><a href="bike.html">Bike Riding</a></li>
+          <li><a href="picnic.html">Picnic</a></li>
+          <li><a href="kids.html">Kids Corner</a></li>
+          <li><a href="fish.html">Fishing</a></li>
+        </ul>
+      </div>
+
+      <!-- Divider Line -->
+<div class="menu-divider"></div>
+
+      <!-- Contact & Social -->
+      <div class="menu-section contact-social">
+        <h4>Get in Touch</h4>
+        <p>📞 +254 700 000 000</p>
+        <p>✉️ info@paradiselost.co.ke</p>
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-whatsapp"></i></a>
+        </div>
+      </div>
+
+      <!-- Bottom Brand Text -->
+<div class="menu-branding">
+  <h1>Paradise Lost</h1>
+</div>
+
+    </div>
+  </div>
+</div>
+
+
+<header class="hero" id="hero">
+
+  <!-- ✅ NAVBAR -->
+<nav class="hero-navbar">
+  <!-- Left: Logo -->
+  <div class="navbar-left">
+    <img src="images/Paradise.png" alt="Logo" class="logo-left" />
+  </div>
+
+  <!-- Center: Navigation Links -->
+  <ul class="navbar-center">
+    <li><a href="about.html">About</a></li>
+    <li><a href="activities.html">Activities</a></li>
+    <li><a href="gallery.html">Gallery</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    <li><a href="picnic.html">Picnics and Events</a></li>
+  </ul>
+
+  <!-- Right: User Icon & Toggle -->
+  <div class="navbar-right">
+    <!-- Mobile Toggle -->
+    <div class="menu-toggle" onclick="toggleMenu()">
+      <div></div><div></div><div></div>
+    </div>
+
+    <!-- Desktop: User Icon -->
+    <a href="signup.html" class="user-icon" title="Sign Up">
+      <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2">
+        <circle cx="12" cy="7" r="4"></circle>
+        <path d="M5.5 21a7.5 7.5 0 0 1 13 0"></path>
+      </svg>
+    </a>
+  </div>
+</nav>
+
+  <!-- ✅ OVERLAY for dim effect -->
+  <div class="overlay"></div>
+
+
+
+  <!-- ✅ HERO CONTENT -->
+  <div class="hero-content">
+    <h1>Paradise Lost</h1>
+    <p>Welcome To a Lost Paradise</p>
+    <button class="btn"><< Tap To Explore >></button>
+  </div>
+
+</header>
+
+<section class="infinite-scroll-section">
+  <div class="infinite-scroll-track">
+    <span>
+      Bike Rides · Cozy Bonfires · Zip Lining · Camping Under the Stars · Dirt Bike Adventures · Peaceful Boat Rides · Horse Riding · Camel Rides · Forest Picnics · Rent a Grill · Hidden Waterfalls · Delicious Restaurant Meals ·
+    </span>
+  </div>
+</section>
+
+
+
+
+<section class="about-teaser" id="about">
+  <div class="about-content">
+    <h2 class="section-heading" data-aos="fade-up" data-aos-delay="200">
+      Discover Paradise Lost
+    </h2>
+    <p class="about-text" data-aos="fade-up" data-aos-delay="500">
+      Nestled deep within lush forests and hidden waterfalls lies a forgotten escape — a sanctuary of thrill, peace, and natural beauty.
+      From horse riding to zip-lining, caves to serene picnics — Paradise Lost is where adventure meets tranquility.
+    </p>
+<a href="about.html" class="cta-about">
+  Learn More <i class="fas fa-arrow-right"></i>
+</a>
+
+  </div>
+</section>
+
+
+
+<section class="adventure-section">
+  <div class="adventure-header">
+    <h2>Adventure Highlights</h2>
+    <p>Unforgettable experiences waiting for you at Paradise Lost</p>
+  </div>
+
+  <div class="adventure-grid">
+
+    <!-- Card 1 -->
+    <div class="adventure-card" data-aos="zoom-in">
+      <img src="images/camp (7).jpg" alt="Camping">
+      <div class="card-overlay">
+        <h3>Camping</h3>
+        <p>Unplug under the stars and reconnect with nature in the heart of Paradise Lost.</p>
+      </div>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="adventure-card" data-aos="zoom-in">
+      <img src="images/bike (6).jpg" alt="Bicycle Riding">
+      <div class="card-overlay">
+        <h3>Bicycle Riding</h3>
+        <p>Pedal through winding paths and open landscapes in an energizing nature-filled experience.</p>
+      </div>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="adventure-card" data-aos="zoom-in">
+      <img src="images/food (2).jpg" alt="Grill Rental">
+      <div class="card-overlay">
+        <h3>Grill Rental</h3>
+        <p>Elevate your outdoor experience with our top-tier cooking grills, perfect for group feasts and family barbecues.</p>
+      </div>
+    </div>
+
+    <!-- Card 4 -->
+    <div class="adventure-card" data-aos="zoom-in">
+      <img src="images/DSC_8031.jpg" alt="Bonfires">
+      <div class="card-overlay">
+        <h3>Bonfires</h3>
+        <p>Warm up under the stars with friends and family around a cozy bonfire setting.</p>
+      </div>
+    </div>
+
+  </div>
+
+  
+  <!-- ✅ CTA Button -->
+  <div class="adventure-cta" style="text-align: center; margin-top: 2.5rem;">
+    <a href="activities.html" class="activities-btn">See All Activities →</a>
+  </div>
+</section>
+
+
+
+
+
+<!-- Gallery Promo Section -->
+<section id="neat-promo">
+  <div class="promo-bg"></div>
+  <div class="promo-overlay"></div>
+  <div class="promo-content">
+    <h1 data-aos="fade-down" data-aos-delay="800">Explore Timeless Moments</h1>
+    <p data-aos="fade-down" data-aos-delay="600">
+      Step into a visual journey of nature, adventure, and serenity — beautifully captured at Paradise Lost.
+    </p>
+    <a href="gallery.html" class="shop-btn" data-aos="fade-down" data-aos-delay="400">View the Gallery →</a>
+  </div>
+</section>
+
+
+
+<section class="infinite-scroll-section">
+  <div class="infinite-scroll-track">
+    <span>
+      Horseback Escapades · Serene Waterfalls · Zip-line Thrills · Hidden Caves · Forest Picnics · Nature’s Embrace · Fireside Evenings · Breathtaking Trails · Adventure Awaits · Wilderness Unplugged ·
+    </span>
+    <span>
+      Horseback Escapades · Serene Waterfalls · Zip-line Thrills · Hidden Caves · Forest Picnics · Nature’s Embrace · Fireside Evenings · Breathtaking Trails · Adventure Awaits · Wilderness Unplugged ·
+    </span>
+  </div>
+</section>
+
+
+
+
+<section class="fullscreen-cta" id="cta-section">
+  <div class="cta-content" data-aos="fade-up" data-aos-delay="500">
+    <h2>Need Help or Have Questions?</h2>
+    <p>Explore our FAQ section for everything you need to know before visiting Paradise Lost.</p>
+    <a href="contact.html" class="main-cta-btn">Contact Us</a>
+  </div>
+
+  <div class="faq-cta">
+    <a href="contact.html#faq" class="faq-btn">Go to FAQ Page</a>
+  </div>
+</section>
+
+
+<!-- Professional Footer -->
+<footer class="pro-footer">
+  <div class="pro-footer-inner">
+
+    <!-- Logo & Tagline -->
+    <div class="pro-footer-brand" data-aos="fade-up">
+      <img src="images/Paradise.png" alt="Paradise Lost Logo" class="footer-logo" />
+      <p class="tagline">Unleashing Nature’s Wonders</p>
+    </div>
+
+    <!-- Footer Grid -->
+    <div class="pro-footer-grid">
+
+      <!-- Contact Info -->
+      <div class="footer-box" data-aos="fade-up" data-aos-delay="100">
+        <h4>Contact Us</h4>
+        <ul>
+          <li style="color: black;"><i class="fas fa-phone-alt"></i> +254 700 123456</li>
+          <li style="color: black;"><i class="fas fa-envelope"></i> info@paradiselost.ke</li>
+          <li style="color: black;"><i class="fas fa-map-marker-alt"></i> Kiambu</li>
+        </ul>
+      </div>
+
+      <!-- Links -->
+      <div class="footer-box" data-aos="fade-up" data-aos-delay="200">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="activities.html">Activities</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Newsletter -->
+      <div class="footer-box" data-aos="fade-up" data-aos-delay="300">
+        <h4>Stay Updated</h4>
+        <form class="newsletter-form">
+          <input type="email" placeholder="Your email" required />
+          <button type="submit"><i class="fas fa-paper-plane"></i></button>
+        </form>
+      </div>
+
+      <!-- Region Select & Social -->
+      <div class="footer-box" data-aos="fade-up" data-aos-delay="400">
+<h4>Region</h4>
+<div class="region-flag">
+  <img src="images/Untitled design (88).png" alt="Kenya Flag">
+  <span>Kenya</span>
+</div>
+
+
+        <div class="footer-socials">
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Bottom -->
+    <div class="pro-footer-bottom">
+      <p>&copy; 2025 <span>Paradise Lost</span>. All rights reserved.</p>
+    </div>
+
+  </div>
+</footer>
+
+
+
+
+
+
+
+
+
+<!--Circle Mouse-->>
+<div class="cursor-circle"></div>
+
+</main>
+
+
+
+  <!-- External JS -->
+  <script src="index.js"></script>
+
+  <!-- Other HTML elements -->
+
+<!-- Include Lenis (CDN or npm) -->
+<script src="https://unpkg.com/@studio-freight/lenis@1.0.35/dist/lenis.min.js"></script>
+ <script>
+const isTouch = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
+
+const lenis = new Lenis({
+  duration: isTouch ? 2.8 : 1.6, // smoother on phones, faster on desktop
+  easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+  smooth: true,
+  smoothTouch: true
+});
+
+
+    function raf(time) {
+      lenis.raf(time);
+      requestAnimationFrame(raf);
+    }
+
+    requestAnimationFrame(raf);
+  </script>
+
+  
+<script>
+window.onload = () => {
+  const counterText = document.getElementById('loading-counter');
+  const loadingScreen = document.getElementById('loading-screen');
+  const heroSection = document.querySelector('.hero');
+  const parallaxImgs = document.querySelectorAll('.parallax-img');
+
+  // ✅ Skip loader if already visited this session
+  if (sessionStorage.getItem('visited')) {
+    loadingScreen.style.display = 'none';
+    heroSection.classList.add('visible', 'zoom-out');
+
+    const lastImg = parallaxImgs[parallaxImgs.length - 1];
+    lastImg.style.transform = 'scaleX(1)';
+    lastImg.style.opacity = 1;
+    lastImg.style.zIndex = 200;
+    return;
+  }
+
+  // ✅ Loader animation
+  let count = 0;
+  const interval = setInterval(() => {
+    count++;
+    counterText.textContent = `Loading ${count}%`;
+
+    if (count >= 100) {
+      clearInterval(interval);
+      startParallaxSequence();
+    }
+  }, 25);
+
+  function startParallaxSequence() {
+    counterText.style.transform = 'translateX(-150vw)';
+
+    setTimeout(() => {
+      parallaxImgs.forEach((img, index) => {
+        setTimeout(() => {
+          img.style.zIndex = 100 + index;
+          img.style.opacity = 1;
+          img.style.transition = 'transform 0.5s ease, opacity 0.3s ease';
+          img.style.transformOrigin = 'right';
+          img.style.transform = 'scaleX(1)';
+        }, index * 350);
+      });
+
+      const totalDelay = parallaxImgs.length * 350 + 600;
+
+      setTimeout(() => {
+        // ✅ Step 1: Show hero
+        heroSection.classList.add('visible');
+
+        // ✅ Step 2: Zoom out the background after 500ms
+        setTimeout(() => {
+          heroSection.classList.add('zoom-out');
+        }, 500);
+
+        // ✅ Step 3: Hide loader after 1s
+        setTimeout(() => {
+          loadingScreen.classList.add('loading-hidden');
+          sessionStorage.setItem('visited', 'true');
+        }, 1000);
+      }, totalDelay);
+    }, 600);
+  }
+};
+
+</script>
+
+
+
+
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init({
+    once: false, // 👈 allow repeat on scroll
+    duration: 1200,
+    easing: 'ease-in-out'
+  });
+</script>
+
+
+<script>
+  const cursor = document.querySelector(".cursor-circle");
+
+  document.addEventListener("mousemove", (e) => {
+    cursor.style.top = `${e.clientY}px`;
+    cursor.style.left = `${e.clientX}px`;
+  });
+</script>
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const links = document.querySelectorAll("a");
+    const transition = document.getElementById("page-transition");
+
+    // Function to disable transition when user uses back/forward
+    window.addEventListener("pageshow", (event) => {
+      const comingFromHistory =
+        event.persisted ||
+        window.performance.getEntriesByType("navigation")[0]?.type === "back_forward";
+
+      if (comingFromHistory) {
+        transition.classList.remove("active"); // No transition on back/forward
+        sessionStorage.removeItem("transitioning");
+      } else {
+        // Normal link-based navigation
+        if (sessionStorage.getItem("transitioning") === "true") {
+          sessionStorage.setItem("transitioning", "false");
+          transition.classList.remove("active"); // Fade in after animation
+        } else {
+          transition.classList.remove("active"); // Initial page load
+        }
+      }
+    });
+
+    links.forEach(link => {
+      const href = link.getAttribute("href");
+      if (href && !href.startsWith("#") && !href.startsWith("http")) {
+        link.addEventListener("click", e => {
+          e.preventDefault();
+          sessionStorage.setItem("transitioning", "true");
+          transition.classList.add("active");
+
+          setTimeout(() => {
+            window.location.href = href;
+          }, 1500); // Match your CSS animation duration
+        });
+      }
+    });
+  });
+</script>
+
+
+
+
+<script>
+  const observers = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('animate-line');
+      } else {
+        entry.target.classList.remove('animate-line'); // Allows replay on scroll
+      }
+    });
+  }, {
+    threshold: 0.9
+  });
+
+  document.querySelectorAll('.section-heading').forEach(h => observers.observe(h));
+</script>
+
+<script>
+  function setupObserver(sectionId, bgClass) {
+    const bgElement = document.querySelector(bgClass);
+    const section = document.querySelector(sectionId);
+
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting && entry.intersectionRatio >= 0.6) {
+          bgElement.classList.add('in-view');
+        } else {
+          bgElement.classList.remove('in-view');
+        }
+      });
+    }, {
+      threshold: [0.6]
+    });
+
+    observer.observe(section);
+  }
+
+  setupObserver('#neat-promo', '.promo-bg');
+</script>
+
+<script>
+    function toggleMenu() {
+    const menu = document.getElementById("fullscreenMenu");
+    menu.classList.toggle("active");
+  }
+</script>
+
+</body>
+</html>
+
+
+

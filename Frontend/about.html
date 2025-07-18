@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Paradise Lost - About Us</title>
+  <link rel="stylesheet" href="about.css" />
+  <!-- AOS CSS -->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Tan+Mon+Cheri&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+    
+<!-- Transition overlay -->
+<div id="page-transition">
+<div class="logo-wrapper">
+    <img src="images/Paradise.png" alt="Logo">
+  </div></a>
+</div>
+
+<!-- Navbar -->
+<header class="navbar">
+  <div class="navbar-content">
+    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+
+    <div class="logo">
+      <img src="images/Paradise.png" alt="Paradise Lost Logo" />
+    </div>
+
+<a href="signup.html" class="user-icon" title="Sign Up">
+  <svg class="user-svg" xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+    <circle cx="12" cy="7" r="4"></circle>
+    <path d="M5.5 21a7.5 7.5 0 0 1 13 0"></path>
+  </svg>
+</a>
+
+  </div>
+</header>
+
+
+  <!-- Hero Section -->
+  <section class="hero-section">
+    <div class="text-container">
+      <span class="hero-word" id="word1">Adventure</span>
+      <span class="hero-word" id="word2">Nature</span>
+      <span class="hero-word" id="word3"></span>
+    </div>
+  </section>
+
+<!-- Our Story Section -->
+<section class="our-story" id="our-story">
+  <div class="story-wrapper">
+    <div class="story-text" data-aos="fade-right">
+      <h2 class="story-title">Our Journey</h2>
+      <p class="story-para">
+        Nestled in the heart of breathtaking natural landscapes, Paradise Lost began as a hidden gem — a sanctuary where adventure meets serenity.
+      </p>
+      <p class="story-para">
+        From zip-lining across canopies to bonfire nights under the stars, Paradise Lost is more than a place — it’s a feeling, a memory, a story waiting to be written by you.
+      </p>
+    </div>
+    <div class="story-image" data-aos="fade-left">
+      <img src="images/waterf (16).jpg" alt="Our Story Image" />
+    </div>
+  </div>
+</section>
+
+
+<!-- Mission & Vision Slider Section -->
+<section class="mv-slider">
+  <div class="mv-controls">
+    <span class="mv-arrow left">◀</span>
+    <div class="mv-actions">
+      <button class="pause-btn">⏸</button>
+      <button class="play-btn" style="display: none;">▶</button>
+    </div>
+    <span class="mv-arrow right">▶</span>
+  </div>
+
+  <div class="mv-border top-border"></div>
+
+  <div class="mv-slides">
+    <div class="mv-slide mission active">
+      <div class="mv-title">Our Mission</div>
+      <div class="mv-content">
+        <div class="mv-item">
+          <img src="images/arch2.jpg" alt="Mission Image 1" />
+          <p>Connect people with nature through immersive experiences.</p>
+        </div>
+        <div class="mv-item">
+          <img src="images/arch2.jpg" alt="Mission Image 2" />
+          <p>Encourage environmental conservation and learning.</p>
+        </div>
+        <div class="mv-item">
+          <img src="images/boatr (9).jpg" alt="Mission Image 3" />
+          <p>Create unforgettable memories rooted in adventure.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="mv-slide vision">
+      <div class="mv-title">Our Vision</div>
+      <div class="mv-content">
+        <div class="mv-item">
+          <img src="images/zpl.jpg" alt="Vision Image 1" />
+          <p>Be Africa’s most beloved nature sanctuary.</p>
+        </div>
+        <div class="mv-item">
+          <img src="images/WU4A2257.jpg" alt="Vision Image 2" />
+          <p>Transform lives through nature and peace.</p>
+        </div>
+        <div class="mv-item">
+          <img src="images/waterf (2).jpg" alt="Vision Image 3" />
+          <p>Shape a future where nature is valued by all.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="mv-border bottom-border"></div>
+</section>
+
+
+
+<section class="activities-section" id="activities">
+  <div class="activities-header" data-aos="fade-down" data-aos-delay="200">
+    <h2>Adventures Await</h2>
+    <p>Discover exciting activities at Paradise Lost — perfect for families, adventurers, and nature lovers alike.</p>
+  </div>
+
+  <div class="activities-grid">
+
+    <!-- Activity 1 -->
+    <div class="activity-item" data-aos="fade-up">
+      <div class="activity-img-wrapper">
+        <img src="images/zlp.jpg" alt="Ziplining" />
+      </div>
+      <div class="activity-overlay">
+        <h3>Ziplining</h3>
+        <p>Glide across tree canopies and feel the adrenaline.</p>
+      </div>
+    </div>
+
+    <!-- Activity 2 -->
+    <div class="activity-item" data-aos="fade-up">
+      <div class="activity-img-wrapper">
+        <img src="images/arch9.jpg" alt="Archery" />
+      </div>
+      <div class="activity-overlay">
+        <h3>Archery</h3>
+        <p>Test your aim in a thrilling outdoor archery range.</p>
+      </div>
+    </div>
+
+    <!-- Activity 3 -->
+    <div class="activity-item" data-aos="fade-up">
+      <div class="activity-img-wrapper">
+        <img src="images/boahtr.jpg" alt="Boat Riding" />
+      </div>
+      <div class="activity-overlay">
+        <h3>Boat Riding</h3>
+        <p>Peaceful cruises across our scenic water paths.</p>
+      </div>
+    </div>
+
+    <!-- Activity 4 -->
+    <div class="activity-item" data-aos="fade-up">
+      <div class="activity-img-wrapper">
+        <img src="images/waterf (12).jpg" alt="Caves & Waterfalls" />
+      </div>
+      <div class="activity-overlay">
+        <h3>Caves & Waterfalls</h3>
+        <p>Explore hidden caves and stand in awe of majestic waterfalls.</p>
+      </div>
+    </div>
+
+  </div>
+
+  <p class="activities-note" data-aos="fade-up">
+    ...And that’s just the beginning of what Paradise Lost has to offer.
+  </p>
+
+  <div class="activities-cta">
+    <a href="/activities.html" class="activities-btn">View All Activities → </a>
+  </div>
+</section>
+
+
+
+
+
+<!-- Professional Footer -->
+<footer class="pro-footer">
+  <div class="pro-footer-inner">
+
+    <!-- Logo & Tagline -->
+    <div class="pro-footer-brand" data-aos="fade-up">
+      <img src="images/Paradise.png" alt="Paradise Lost Logo" class="footer-logo" />
+      <p class="tagline">Unleashing Nature’s Wonders</p>
+    </div>
+
+    <!-- Footer Grid -->
+    <div class="pro-footer-grid">
+
+      <!-- Contact Info -->
+      <div class="footer-box" data-aos="fade-up" data-aos-delay="100">
+        <h4>Contact Us</h4>
+        <ul>
+          <li style="color: black;"><i class="fas fa-phone-alt"></i> +254 700 123456</li>
+          <li style="color: black;"><i class="fas fa-envelope"></i> info@paradiselost.ke</li>
+          <li style="color: black;"><i class="fas fa-map-marker-alt"></i> Kiambu</li>
+        </ul>
+      </div>
+
+      <!-- Links -->
+      <div class="footer-box" data-aos="fade-up" data-aos-delay="200">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="activities.html">Activities</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Newsletter -->
+      <div class="footer-box" data-aos="fade-up" data-aos-delay="300">
+        <h4>Stay Updated</h4>
+        <form class="newsletter-form">
+          <input type="email" placeholder="Your email" required />
+          <button type="submit"><i class="fas fa-paper-plane"></i></button>
+        </form>
+      </div>
+
+      <!-- Region Select & Social -->
+      <div class="footer-box" data-aos="fade-up" data-aos-delay="400">
+<h4>Region</h4>
+<div class="region-flag">
+  <img src="images/Untitled design (88).png" alt="Kenya Flag">
+  <span>Kenya</span>
+</div>
+
+
+        <div class="footer-socials">
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Bottom -->
+    <div class="pro-footer-bottom">
+      <p>&copy; 2025 <span>Paradise Lost</span>. All rights reserved.</p>
+    </div>
+
+  </div>
+</footer>
+
+  <!-- Fullscreen Navigation Menu -->
+<div class="fullscreen-menu" id="fullscreenMenu">
+  <div class="menu-header">
+    <img src="images/Paradise.png" alt="Logo" class="menu-logo" />
+    <span class="close-btn" onclick="toggleMenu()">✕</span>
+  </div>
+
+  <div class="menu-content">
+    <div class="menu-columns">
+      <!-- Main Pages -->
+      <div class="menu-section">
+        <h4>Main Pages</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+      </div>
+
+<div class="menu-section">
+  <h4>Activities</h4>
+  <div class="activities-grids">
+    <ul>
+      <li><a href="horse.html">Horse & Camel Riding</a></li>
+      <li><a href="ziplining.html">Ziplining</a></li>
+      <li><a href="camping.html">Camping</a></li>
+      <li><a href="boat.html">Boat Riding</a></li>
+      <li><a href="archery.html">Archery</a></li>
+    </ul>
+  </div>
+    <div class="menu-cta">
+    <a href="activities.html">Explore All Activities →</a>
+  </div>
+</div>
+
+
+      <!-- Divider Line -->
+<div class="menu-divider"></div>
+
+      <!-- Contact & Social -->
+      <div class="menu-section contact-social">
+        <h4>Get in Touch</h4>
+        <p>📞 +254 700 000 000</p>
+        <p>✉️ info@paradiselost.co.ke</p>
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-whatsapp"></i></a>
+        </div>
+      </div>
+
+      <!-- Bottom Brand Text -->
+<div class="menu-branding">
+  <h1>Paradise Lost</h1>
+</div>
+
+    </div>
+  </div>
+</div>
+
+
+
+
+  <!--Circle Mouse-->>
+<div class="cursor-circle"></div>
+
+
+  <script src="about.js"></script>
+
+<script>
+// Navbar scroll effect
+window.addEventListener("scroll", () => {
+  const navbar = document.querySelector(".navbar");
+  navbar.classList.toggle("scrolled", window.scrollY > 10);
+});
+
+// Word animation
+window.addEventListener("DOMContentLoaded", () => {
+  const word1 = document.getElementById("word1");
+  const word2 = document.getElementById("word2");
+  const word3 = document.getElementById("word3");
+
+  setTimeout(() => word1.classList.add("show"), 400);
+  setTimeout(() => word2.classList.add("show"), 1200);
+
+  const wrongAttempts = ["Wndr", "Woder"];
+  const correctWord = "Wonder";
+  let currentAttempt = 0;
+
+  function fixMistake(wrongWord, correctWord, charIndex = 0, step = 0) {
+    const correctPartLen = commonPrefixLength(wrongWord, correctWord);
+
+    // Step 0: type wrong word
+    if (step === 0) {
+      if (charIndex < wrongWord.length) {
+        word3.classList.add("show");
+        word3.textContent = wrongWord.substring(0, charIndex + 1);
+        setTimeout(() => fixMistake(wrongWord, correctWord, charIndex + 1, 0), 120);
+      } else {
+        setTimeout(() => fixMistake(wrongWord, correctWord, wrongWord.length, 1), 600);
+      }
+    }
+
+    // Step 1: delete only wrong characters
+    else if (step === 1) {
+      if (charIndex > correctPartLen) {
+        word3.textContent = word3.textContent.slice(0, -1);
+        setTimeout(() => fixMistake(wrongWord, correctWord, charIndex - 1, 1), 80);
+      } else {
+        setTimeout(() => {
+          currentAttempt++;
+          if (currentAttempt < wrongAttempts.length) {
+            fixMistake(wrongAttempts[currentAttempt], correctWord, 0, 0);
+          } else {
+            fixMistake(correctWord, correctWord, correctPartLen, 2);
+          }
+        }, 400);
+      }
+    }
+
+    // Step 2: type remaining correct letters
+    else if (step === 2) {
+      if (charIndex < correctWord.length) {
+        word3.textContent += correctWord[charIndex];
+        setTimeout(() => fixMistake(correctWord, correctWord, charIndex + 1, 2), 120);
+      }
+    }
+  }
+
+  function commonPrefixLength(a, b) {
+    let len = 0;
+    while (len < a.length && len < b.length && a[len] === b[len]) {
+      len++;
+    }
+    return len;
+  }
+
+  // Start animation
+  setTimeout(() => {
+    fixMistake(wrongAttempts[0], correctWord);
+  }, 2200);
+});
+</script>
+
+
+  
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const links = document.querySelectorAll("a");
+    const transition = document.getElementById("page-transition");
+
+    // Function to disable transition when user uses back/forward
+    window.addEventListener("pageshow", (event) => {
+      const comingFromHistory =
+        event.persisted ||
+        window.performance.getEntriesByType("navigation")[0]?.type === "back_forward";
+
+      if (comingFromHistory) {
+        transition.classList.remove("active"); // No transition on back/forward
+        sessionStorage.removeItem("transitioning");
+      } else {
+        // Normal link-based navigation
+        if (sessionStorage.getItem("transitioning") === "true") {
+          sessionStorage.setItem("transitioning", "false");
+          transition.classList.remove("active"); // Fade in after animation
+        } else {
+          transition.classList.remove("active"); // Initial page load
+        }
+      }
+    });
+
+    links.forEach
+    (link => {
+      const href = link.getAttribute("href");
+      if (href && !href.startsWith("#") && !href.startsWith("http")) {
+        link.addEventListener("click", e => {
+          e.preventDefault();
+          sessionStorage.setItem("transitioning", "true");
+          transition.classList.add("active");
+
+          setTimeout(() => {
+            window.location.href = href;
+          }, 1500); // Match your CSS animation duration
+        });
+      }
+    });
+  });
+</script>
+
+<script>
+  const cursor = document.querySelector(".cursor-circle");
+
+  document.addEventListener("mousemove", (e) => {
+    cursor.style.top = `${e.clientY}px`;
+    cursor.style.left = `${e.clientX}px`;
+  });
+</script>
+
+
+
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init({
+    once: false, // 👈 allow repeat on scroll
+    duration: 1200,
+    easing: 'ease-in-out'
+  });
+</script>
+
+<!-- Include Lenis (CDN or npm) -->
+<script src="https://unpkg.com/@studio-freight/lenis@1.0.35/dist/lenis.min.js"></script>
+ <script>
+const isTouch = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
+
+const lenis = new Lenis({
+  duration: isTouch ? 2.8 : 1.6, // smoother on phones, faster on desktop
+  easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+  smooth: true,
+  smoothTouch: true
+});
+
+
+    function raf(time) {
+      lenis.raf(time);
+      requestAnimationFrame(raf);
+    }
+
+    requestAnimationFrame(raf);
+  </script>
+
+<script>
+  const slides = document.querySelectorAll('.mv-slide');
+  const pauseBtn = document.querySelector('.pause-btn');
+  const playBtn = document.querySelector('.play-btn');
+  const leftArrow = document.querySelector('.mv-arrow.left');
+  const rightArrow = document.querySelector('.mv-arrow.right');
+  let current = 0;
+  let interval;
+
+  function showSlide(index) {
+    slides.forEach((slide, i) => {
+      slide.classList.remove('active');
+    });
+    slides[index].classList.add('active');
+  }
+
+  function nextSlide() {
+    current = (current + 1) % slides.length;
+    showSlide(current);
+  }
+
+  function prevSlide() {
+    current = (current - 1 + slides.length) % slides.length;
+    showSlide(current);
+  }
+
+  function startAutoSlide() {
+    interval = setInterval(nextSlide, 3000);
+    playBtn.style.display = 'none';
+    pauseBtn.style.display = 'inline-block';
+  }
+
+  function stopAutoSlide() {
+    clearInterval(interval);
+    pauseBtn.style.display = 'none';
+    playBtn.style.display = 'inline-block';
+  }
+
+  leftArrow.addEventListener('click', prevSlide);
+  rightArrow.addEventListener('click', nextSlide);
+  pauseBtn.addEventListener('click', stopAutoSlide);
+  playBtn.addEventListener('click', startAutoSlide);
+
+  showSlide(current);
+  startAutoSlide();
+</script>
+
+</body>
+</html>
