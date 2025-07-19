@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Activities | Paradise Lost</title>
+  <link rel="stylesheet" href="activities.css" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Tan+Mon+Cheri&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Transition overlay -->
+<div id="page-transition">
+<div class="logo-wrapper">
+    <img src="images/Paradise.png" alt="Logo">
+  </div>
+</div>
+
+  <!-- ✅ NAVBAR -->
+  <header id="navbar">
+    <div class="menu-toggle" onclick="toggleMenu()">&#9776;</div>
+    <div class="logo">
+     <a href="index.html"><img src="images/Paradise.png" alt="Paradise Lost Logo" id="logo-img" /></a> 
+    </div>
+    <div class="user-icon">
+      <a href="signup.html">
+        <svg xmlns="http://www.w3.org/2000/svg" height="26" fill="white" viewBox="0 0 24 24">
+          <path d="M12 12c2.7 0 4.8-2.1 4.8-4.8S14.7 2.4 12 2.4 7.2 4.5 7.2 7.2 9.3 12 12 12zm0 2.4c-3.2 0-9.6 1.6-9.6 4.8v2.4h19.2v-2.4c0-3.2-6.4-4.8-9.6-4.8z"/>
+        </svg>
+      </a>
+    </div>
+  </header>
+
+<!-- HERO SECTION -->
+<section class="hero">
+  <div class="hero-overlay"></div> <!-- Dimming layer -->
+  <div class="hero-text">
+    <h1 id="typed-text" class="with-cursor"></h1>
+  </div>
+</section>
+
+
+
+<section class="section-intro" id="activities-intro">
+  <div class="intro-container">
+    <h2 class="animated-heading">
+      Explore Our Adventures
+      <span class="heading-underline"></span>
+    </h2>
+    <p class="section-description">
+      Discover a variety of activities at Paradise Lost — from thrilling explorations to serene getaways, all nestled in nature’s beauty.
+    </p>
+  </div>
+</section>
+
+
+<section class="activity-cards-section">
+
+
+  <div class="activity-card">
+    <div class="activity-image">
+      <img src="images/waterf (8).jpg" alt="Caves and Waterfalls">
+    </div>
+    <div class="activity-details">
+      <h3>Caves & Waterfalls</h3>
+      <ul>
+        <li>Guided exploration tours</li>
+        <li>Stunning waterfall views</li>
+        <li>Perfect for photography</li>
+        <li>Picnic areas nearby</li>
+        <li>Rich historical background</li>
+        <li>Ideal for families and groups</li>
+      </ul>
+      <a href="caves.html" class="more-btn">More →</a>
+    </div>
+  </div>
+
+  <div class="activity-card">
+  <div class="activity-image">
+    <img src="images/dartbmain.jpg" alt="Bike Riding">
+  </div>
+  <div class="activity-details">
+    <h3>Bike Riding</h3>
+    <ul>
+      <li>Scenic off-road trails</li>
+      <li>Bikes available for rent</li>
+      <li>Beginner & advanced routes</li>
+      <li>Helmets and gear provided</li>
+      <li>Fun group riding experiences</li>
+      <li>Great for fitness & exploration</li>
+    </ul>
+    <a href="bike.html" class="more-btn">More →</a>
+  </div>
+</div>
+
+
+<div class="activity-card">
+  <div class="activity-image">
+    <img src="images/food (2).jpg" alt="Cooking Grill Rental">
+  </div>
+  <div class="activity-details">
+    <h3>Cooking Grill Rental</h3>
+    <ul>
+      <li>Charcoal & gas grills available</li>
+      <li>Ideal for group picnics</li>
+      <li>Spacious cooking zones</li>
+      <li>Tables and setup assistance</li>
+      <li>Clean-up support included</li>
+      <li>Advance booking recommended</li>
+    </ul>
+    <a href="grill.html" class="more-btn">More →</a>
+  </div>
+</div>
+
+<!-- Zip Lining -->
+<div class="activity-card">
+  <div class="activity-image">
+    <img src="images/zpl (19).jpg" alt="Zip Lining">
+  </div>
+  <div class="activity-details">
+    <h3>Zip Lining</h3>
+    <ul>
+      <li>Adrenaline-packed experience</li>
+      <li>Over tree canopies and rivers</li>
+      <li>Certified safety gear included</li>
+      <li>Instructors for all participants</li>
+      <li>Group-friendly setup</li>
+      <li>Perfect for thrill-seekers</li>
+    </ul>
+    <a href="ziplining.html" class="more-btn">More →</a>
+  </div>
+</div>
+
+<!-- Picnics -->
+<div class="activity-card">
+  <div class="activity-image">
+    <img src="images/picnic.jpg" alt="Picnics">
+  </div>
+  <div class="activity-details">
+    <h3>Picnics</h3>
+    <ul>
+      <li>Shaded picnic zones</li>
+      <li>Tables and mats available</li>
+      <li>Grill rental option</li>
+      <li>Close to scenic views</li>
+      <li>Pet-friendly zones</li>
+      <li>Trash disposal provided</li>
+    </ul>
+    <a href="picnic.html" class="more-btn">More →</a>
+  </div>
+</div>
+
+<!-- Camping -->
+<div class="activity-card">
+  <div class="activity-image">
+    <img src="images/camp (2).jpg" alt="Camping">
+  </div>
+  <div class="activity-details">
+    <h3>Camping</h3>
+    <ul>
+      <li>Spacious campsites</li>
+      <li>Night security provided</li>
+      <li>Campfire and bonfire setups</li>
+      <li>Washrooms and showers nearby</li>
+      <li>BBQ pits available</li>
+      <li>Great stargazing spots</li>
+    </ul>
+    <a href="camp.html" class="more-btn">More →</a>
+  </div>
+</div>
+
+
+
+  <div class="activity-card">
+    <div class="activity-image">
+      <img src="images/horse.jpg" alt="Horse Riding">
+    </div>
+    <div class="activity-details">
+      <h3>Horse Riding</h3>
+      <ul>
+        <li>Available for all skill levels</li>
+        <li>Well-trained, friendly horses</li>
+        <li>Scenic nature trails</li>
+        <li>Safety equipment provided</li>
+        <li>Professional instructors on site</li>
+        <li>Great for kids and adults</li>
+      </ul>
+      <a href="horse.html" class="more-btn">More →</a>
+    </div>
+  </div>
+
+  <!-- Boat Riding -->
+<div class="activity-card">
+  <div class="activity-image">
+    <img src="images/boatr'.jpg" alt="Boat Riding">
+  </div>
+  <div class="activity-details">
+    <h3>Boat Riding</h3>
+    <ul>
+      <li>Serene lake environment</li>
+      <li>Paddle and row boats available</li>
+      <li>Ideal for couples & families</li>
+      <li>Life jackets provided</li>
+      <li>Scenic photo opportunities</li>
+      <li>Supervised for safety</li>
+    </ul>
+    <a href="boat.html" class="more-btn">More →</a>
+  </div>
+</div>
+
+
+<!-- Archery -->
+<div class="activity-card">
+  <div class="activity-image">
+    <img src="images/arch7.jpg" alt="Archery">
+  </div>
+  <div class="activity-details">
+    <h3>Archery</h3>
+    <ul>
+      <li>Traditional & modern bows</li>
+      <li>Instructor-guided sessions</li>
+      <li>Targets for all ages</li>
+      <li>Competitive games available</li>
+      <li>Safe and enclosed area</li>
+      <li>Great for improving focus</li>
+    </ul>
+    <a href="archery.html" class="more-btn">More →</a>
+  </div>
+</div>
+
+<!-- Yoga -->
+<div class="activity-card">
+  <div class="activity-image">
+    <img src="images/med (2).jpg" alt="Yoga">
+  </div>
+  <div class="activity-details">
+    <h3>Yoga</h3>
+    <ul>
+      <li>Morning & sunset sessions</li>
+      <li>Tranquil nature setting</li>
+      <li>Guided by certified instructors</li>
+      <li>All skill levels welcome</li>
+      <li>Mats provided onsite</li>
+      <li>Peaceful, mindful practice</li>
+    </ul>
+    <a href="yoga.html" class="more-btn">More →</a>
+  </div>
+</div>
+
+<!-- Kids Corner -->
+<div class="activity-card">
+  <div class="activity-image">
+    <img src="images/kids.jpg" alt="Kids Corner">
+  </div>
+  <div class="activity-details">
+    <h3>Kids Corner</h3>
+    <ul>
+      <li>Supervised play area</li>
+      <li>Fun games and learning tools</li>
+      <li>Safe, enclosed environment</li>
+      <li>Mini adventure setups</li>
+      <li>Trained childminders present</li>
+      <li>Perfect for ages 3–10</li>
+    </ul>
+    <a href="kids-corner.html" class="more-btn">More →</a>
+  </div>
+</div>
+
+
+
+<!-- Nature Walks -->
+<div class="activity-card">
+  <div class="activity-image">
+    <img src="images/waterf (21).jpg" alt="Nature Walks">
+  </div>
+  <div class="activity-details">
+    <h3>Nature Walks</h3>
+    <ul>
+      <li>Guided eco-trails</li>
+      <li>Learn about local plants</li>
+      <li>Birdwatching opportunities</li>
+      <li>Peaceful and immersive</li>
+      <li>Good for all fitness levels</li>
+      <li>Morning & evening slots</li>
+    </ul>
+    <a href="nature.html" class="more-btn">More →</a>
+  </div>
+</div>
+
+</section>
+
+
+
+
+<section class="cta-section">
+  <div class="cta-container">
+    <div class="cta-text">
+      <h2>Still Have Questions?</h2>
+      <p>We’re here to help you plan your adventure. Whether you need directions, want to inquire about an activity, or anything else — we’re just a click away.</p>
+      <a href="contact.html" class="cta-btn">Contact Us →</a>
+    </div>
+    <div class="cta-info">
+      <div class="cta-info-block">
+        <i class="fas fa-map-marker-alt"></i>
+        <span>Paradise Lost, Kiambu, Kenya</span>
+      </div>
+      <div class="cta-info-block">
+        <i class="fas fa-phone-alt"></i>
+        <span>+254 712 345 678</span>
+      </div>
+      <div class="cta-info-block">
+        <i class="fas fa-envelope"></i>
+        <span>info@paradiselost.co.ke</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Professional Footer -->
+<footer class="pro-footer">
+  <div class="pro-footer-inner">
+
+    <!-- Logo & Tagline -->
+    <div class="pro-footer-brand" data-aos="fade-up">
+      <img src="images/Paradise.png" alt="Paradise Lost Logo" class="footer-logo" />
+      <p class="tagline">Unleashing Nature’s Wonders</p>
+    </div>
+
+    <!-- Footer Grid -->
+    <div class="pro-footer-grid">
+
+      <!-- Contact Info -->
+      <div class="footer-box" data-aos="fade-up" data-aos-delay="100">
+        <h4>Contact Us</h4>
+        <ul>
+          <li style="color: black;"><i class="fas fa-phone-alt"></i> +254 700 123456</li>
+          <li style="color: black;"><i class="fas fa-envelope"></i> info@paradiselost.ke</li>
+          <li style="color: black;"><i class="fas fa-map-marker-alt"></i> Kiambu</li>
+        </ul>
+      </div>
+
+      <!-- Links -->
+      <div class="footer-box" data-aos="fade-up" data-aos-delay="200">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="activities.html">Activities</a></li>
+           <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Newsletter -->
+      <div class="footer-box">
+        <h4>Stay Updated</h4>
+        <form class="newsletter-form">
+          <input type="email" placeholder="Your email" required />
+          <button type="submit"><i class="fas fa-paper-plane"></i></button>
+        </form>
+      </div>
+
+      <!-- Region Select & Social -->
+      <div class="footer-box">
+<h4>Region</h4>
+<div class="region-flag">
+  <img src="images/Untitled design (88).png" alt="Kenya Flag">
+  <span>Kenya</span>
+</div>
+
+
+        <div class="footer-socials">
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Bottom -->
+    <div class="pro-footer-bottom">
+      <p>&copy; 2025 <span>Paradise Lost</span>. All rights reserved.</p>
+    </div>
+
+  </div>
+</footer>
+
+
+
+
+
+
+
+    <!-- Fullscreen Navigation Menu -->
+<div class="fullscreen-menu" id="fullscreenMenu">
+  <div class="menu-header">
+    <img src="images/Paradise.png" alt="Logo" class="menu-logo" />
+    <span class="close-btn" onclick="toggleMenu()">✕</span>
+  </div>
+
+  <div class="menu-content">
+    <div class="menu-columns">
+      <!-- Main Pages -->
+      <div class="menu-section">
+        <h4>Main Pages</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+      </div>
+
+<div class="menu-section">
+  <h4>Activities</h4>
+  <div class="activities-grids">
+    <ul>
+      <li><a href="horse.html">Horse & Camel Riding</a></li>
+      <li><a href="ziplining.html">Ziplining</a></li>
+      <li><a href="camping.html">Camping</a></li>
+      <li><a href="boat.html">Boat Riding</a></li>
+      <li><a href="archery.html">Archery</a></li>
+    </ul>
+  </div>
+    <div class="menu-cta">
+    <a href="activities.html">Explore All Activities →</a>
+  </div>
+</div>
+
+
+      <!-- Divider Line -->
+<div class="menu-divider"></div>
+
+      <!-- Contact & Social -->
+      <div class="menu-section contact-social">
+        <h4>Get in Touch</h4>
+        <p>📞 +254 700 000 000</p>
+        <p>✉️ info@paradiselost.co.ke</p>
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-whatsapp"></i></a>
+        </div>
+      </div>
+
+      <!-- Bottom Brand Text -->
+<div class="menu-branding">
+  <h1>Paradise Lost</h1>
+</div>
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+  <!--Circle Mouse-->>
+<div class="cursor-circle"></div>
+
+  <script src="activities.js"></script>
+
+  <script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const links = document.querySelectorAll("a");
+    const transition = document.getElementById("page-transition");
+
+    // Function to disable transition when user uses back/forward
+    window.addEventListener("pageshow", (event) => {
+      const comingFromHistory =
+        event.persisted ||
+        window.performance.getEntriesByType("navigation")[0]?.type === "back_forward";
+
+      if (comingFromHistory) {
+        transition.classList.remove("active"); // No transition on back/forward
+        sessionStorage.removeItem("transitioning");
+      } else {
+        // Normal link-based navigation
+        if (sessionStorage.getItem("transitioning") === "true") {
+          sessionStorage.setItem("transitioning", "false");
+          transition.classList.remove("active"); // Fade in after animation
+        } else {
+          transition.classList.remove("active"); // Initial page load
+        }
+      }
+    });
+
+    links.forEach
+    (link => {
+      const href = link.getAttribute("href");
+      if (href && !href.startsWith("#") && !href.startsWith("http")) {
+        link.addEventListener("click", e => {
+          e.preventDefault();
+          sessionStorage.setItem("transitioning", "true");
+          transition.classList.add("active");
+
+          setTimeout(() => {
+            window.location.href = href;
+          }, 1500); // Match your CSS animation duration
+        });
+      }
+    });
+  });
+</script>
+
+<script>
+  const cursor = document.querySelector(".cursor-circle");
+
+  document.addEventListener("mousemove", (e) => {
+    cursor.style.top = `${e.clientY}px`;
+    cursor.style.left = `${e.clientX}px`;
+  });
+</script>
+
+
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init({
+    once: false, // 👈 allow repeat on scroll
+    duration: 1200,
+    easing: 'ease-in-out'
+  });
+</script>
+
+<!-- Include Lenis (CDN or npm) -->
+<script src="https://unpkg.com/@studio-freight/lenis@1.0.35/dist/lenis.min.js"></script>
+ <script>
+const isTouch = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
+
+const lenis = new Lenis({
+  duration: isTouch ? 2.8 : 1.6, // smoother on phones, faster on desktop
+  easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+  smooth: true,
+  smoothTouch: true
+});
+
+
+    function raf(time) {
+      lenis.raf(time);
+      requestAnimationFrame(raf);
+    }
+
+    requestAnimationFrame(raf);
+  </script>
+</body>
+</html>
