@@ -40,6 +40,11 @@ body, html {
   backdrop-filter: blur(4px);
   mix-blend-mode: difference;
 }
+@media (max-width: 1024px) {
+  .cursor-circle {
+    display: none;
+  }
+}
 
 
 #page-transition {
@@ -235,8 +240,8 @@ body, html {
   display: flex;
   flex-direction: column;
   background: rgba(22, 56, 56, 0.7);
-  backdrop-filter: blur(15px);
   -webkit-backdrop-filter: blur(15px);
+  backdrop-filter: blur(15px);
   padding: 2rem 1.5rem;
   z-index: 999;
   transition: left 0.4s ease;
@@ -412,7 +417,7 @@ body, html {
 .contact-logo {
   width: 120px;
   height: auto;
-  margin-left: 100px;
+  margin-left: 105px;
   border-radius: 50%;
   margin-bottom: 1rem;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);

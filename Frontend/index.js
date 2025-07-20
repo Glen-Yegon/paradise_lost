@@ -7,6 +7,7 @@ window.addEventListener("scroll", () => {
   }
 });
 
+
 // Optional: animate when visible
 window.addEventListener('scroll', () => {
   const aboutSection = document.querySelector('.about-content');
@@ -21,4 +22,5 @@ document.querySelectorAll("a, .cta-btn, button").forEach(el => {
   el.addEventListener("mouseenter", () => cursor.classList.add("expand"));
   el.addEventListener("mouseleave", () => cursor.classList.remove("expand"));
 });
+
 

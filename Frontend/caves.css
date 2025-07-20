@@ -14,11 +14,18 @@
   padding: 0;
   box-sizing: border-box;
 }
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 
 body {
   font-family: 'Source Sans Pro', sans-serif;
   background-color: #fff;
   overflow-x: hidden;
+  width: 100%;
 }
 
 #page-transition {
@@ -86,12 +93,21 @@ body {
   mix-blend-mode: difference;
 }
 
+@media (max-width: 1024px) {
+  .cursor-circle {
+    display: none;
+  }
+}
+
+
 /* Base navbar styling */
 .custom-navbar {
   position: fixed;
+  visibility: hidden;
   top: 0;
   left: 0;
   width: 100%;
+    max-width: 100vw;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -99,6 +115,7 @@ body {
   background-color: rgba(0, 0, 0, 0.5);
   backdrop-filter: blur(8px);
   z-index: 1000;
+  box-sizing: border-box;
   transform: translateY(-100%);
   opacity: 0;
   transition: transform 2s ease-out, opacity 0.6s ease-out;
@@ -107,20 +124,33 @@ body {
 /* Show navbar on load */
 .custom-navbar.loaded {
   transform: translateY(0);
+  visibility: visible;
   opacity: 1;
 }
 
 .navbar-left,
 .navbar-center,
 .navbar-right {
-  display: flex;
+  display: flex !important;
   align-items: center;
+  flex: 1; /* Instead of 0.5 */
+  justify-content: center;
 }
+
+
+.navbar-left {
+  justify-content: flex-start;
+}
+
+.navbar-right {
+  justify-content: flex-end;
+}
+
 
 /* Logo zoom & style */
 .navbar-logo {
   height: 40px;
-  transform: scale(1.8);
+  transform: scale(2.8);
   filter: invert(1);
   transition: transform 0.3s ease, filter 0.3s ease;
 }
@@ -154,47 +184,56 @@ body {
   stroke: #367588;
 }
 
+/* Tablet View (768px and below) */
 @media (max-width: 768px) {
   .custom-navbar {
-    padding: 0.8rem 1.2rem;
+    padding: 0.5rem 5rem;
+  }
+.menu-toggle{
+  margin-left: 0;
+}
+  .navbar-logo {
+    height: 50px;
+    margin: 0;
+    transform: scale(3);
+    transition: transform 0.3s ease
   }
 
-  .navbar-logo {
-    height: 32px;
-    transform: scale(1.5);
+  .home-icon svg {
+    width: 30px;
+    height: 30px;
   }
 
   .menu-toggle span {
-    width: 18px;
-    height: 2px;
+    width: 20px;
+    margin-left: 0px;
+    height: 2.5px;
+  }
+  
+}
+
+/* Phone View (480px and below) */
+@media (max-width: 480px) {
+  .custom-navbar {
+    padding: 0rem 2.2rem;
+  }
+
+  .navbar-logo {
+    height: 40px;
+    transform: scale(2);
   }
 
   .home-icon svg {
     width: 24px;
     height: 24px;
   }
-}
-
-@media (max-width: 480px) {
-  .custom-navbar {
-    padding: 0.6rem 1rem;
-  }
-
-  .navbar-logo {
-    height: 28px;
-    transform: scale(1.3);
-  }
 
   .menu-toggle span {
-    width: 16px;
+    width: 17px;
     height: 2px;
-  }
-
-  .home-icon svg {
-    width: 22px;
-    height: 22px;
-  }
+  } 
 }
+
 
 
 /* === Hero Section === */
@@ -1035,6 +1074,9 @@ background: linear-gradient(135deg, #f9fbfb, #dff1f3);
     font-size: 2rem;
   }
 }
+.carousel-track > * {
+  flex-shrink: 0;
+}
 
 
 /*Footer styling*/
@@ -1045,6 +1087,7 @@ background: linear-gradient(135deg, #f9fbfb, #dff1f3);
   padding: 0rem 2rem 2rem;
   position: relative;
   overflow: hidden;
+  margin-bottom: 0px;
   margin-top: 40px;
 }
 
@@ -1391,13 +1434,9 @@ background: linear-gradient(135deg, #f9fbfb, #dff1f3);
 }
 
 
-
-/*Payment section updates*/
-
-
 /* Section Base */
 .pricing-booking-section {
-  padding: 4rem 2rem;
+  padding: 2rem 0.5rem;
   background: #f8fdfc;
 }
 
@@ -1411,6 +1450,7 @@ background: linear-gradient(135deg, #f9fbfb, #dff1f3);
   font-family: 'Tan Mon Cheri', serif;
   font-size: 2.2rem;
   color: #163838;
+  font-weight: 100;
 }
 
 .pricing-header p {
@@ -1441,45 +1481,62 @@ background: linear-gradient(135deg, #f9fbfb, #dff1f3);
 
 .pricing-info h3 {
   font-size: 1.8rem;
-  color: #367588;
+  color: #367878;
+  margin-bottom: 1.5rem;
+  font-family: 'Tan Mon Cheri', serif;
+}
+
+/* Entry Boxes */
+.entry-box {
+  background: #f7fbfa;
+  border-left: 5px solid #367878;
+  padding: 1rem 1.2rem;
+  border-radius: 10px;
   margin-bottom: 1.5rem;
 }
 
-.resident, .non-resident {
-  margin-bottom: 1.5rem;
-}
-
-.resident h4, .non-resident h4 {
+.entry-box h4 {
   font-size: 1.1rem;
   color: #163838;
   margin-bottom: 0.5rem;
+  font-family: 'Tan Mon Cheri', serif;
 }
 
-.resident ul, .non-resident ul {
+.entry-box ul {
   padding-left: 1rem;
   color: #444;
+  font-family: 'Source Sans Pro', sans-serif;
 }
 
-.resident ul li, .non-resident ul li {
+.entry-box ul li {
   font-size: 1rem;
   line-height: 1.7;
 }
 
-/* Free Entry Highlight */
-.free-entry {
-  background: #e1f8ee;
-  color: #106444;
-  border-left: 5px solid #27ae60;
+/* Activity Pricing Box */
+.activity-pricing {
+  background: #eafaf7;
+  color: #163838;
+  border-left: 5px solid #367878;
   padding: 1rem 1.2rem;
-  border-radius: 8px;
-  margin-top: 1rem;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: 100;
+  font-family: 'Source Sans Pro', sans-serif;
 }
 
-.free-entry span {
-  font-weight: bold;
+.activity-pricing span {
+  font-weight: 100;
   display: block;
   font-size: 1.1rem;
   margin-bottom: 0.3rem;
+  font-family: 'Tan Mon Cheri', serif;
+}
+
+.highlight-free {
+  margin-top: 10px;
+  color: #000000;
+  font-weight: 100;
 }
 
 /* Image */
@@ -1491,11 +1548,62 @@ background: linear-gradient(135deg, #f9fbfb, #dff1f3);
 
 .pricing-image img {
   width: 100%;
-  max-height: 320px;
+  max-height: 520px;
   object-fit: cover;
-  border-radius: 12px;
+  border-radius: 5px;
   box-shadow: 0 8px 20px rgba(0,0,0,0.08);
 }
+
+.image-overlay-container {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  border-radius: 5px;
+  overflow: hidden;
+  max-height: 520px;
+}
+
+.image-overlay-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.6); /* your brand dark green */
+  z-index: 1;
+}
+
+.cta-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #ffffff;
+  z-index: 2;
+  padding: 0rem 0rem;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.cta-text h3 {
+  font-family: 'Tan Mon Cheri', serif;
+  font-size: 1.2rem;
+  font-weight: 100;
+  margin-bottom: 0.5rem;
+}
+
+.cta-text p {
+  font-size: 1rem;
+  font-weight: 100;
+}
+
 
 /* Booking Form */
 .booking-form {
@@ -1514,6 +1622,7 @@ background: linear-gradient(135deg, #f9fbfb, #dff1f3);
   font-family: 'Tan Mon Cheri', serif;
   text-align: center;
   color: #163838;
+  font-weight: 100;
   margin-bottom: 1rem;
 }
 
@@ -1526,20 +1635,26 @@ background: linear-gradient(135deg, #f9fbfb, #dff1f3);
 }
 
 .submit-btn {
-  background-color: #367588;
-  color: white;
-  padding: 0.8rem 1.2rem;
-  font-size: 1rem;
+  background: linear-gradient(135deg, #367878, #163838);
+  color: #fff;
+  padding: 0.9rem 1.8rem;
+  font-size: 1.05rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
   border: none;
-  border-radius: 6px;
+  border-radius: 50px;
   font-family: 'Source Sans Pro', sans-serif;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: all 0.35s ease;
+  box-shadow: 0 8px 18px rgba(54, 120, 120, 0.2);
 }
 
 .submit-btn:hover {
-  background-color: #2b5e6b;
+  background: linear-gradient(135deg, #2b5e6b, #122e2e);
+  box-shadow: 0 12px 24px rgba(22, 56, 56, 0.25);
+  transform: translateY(-2px);
 }
+
 
 /* Responsive */
 @media (max-width: 768px) {
@@ -1549,7 +1664,7 @@ background: linear-gradient(135deg, #f9fbfb, #dff1f3);
   }
 
   .pricing-image img {
-    max-height: 240px;
+    max-height: 300px;
   }
 
   .pricing-header h2 {
