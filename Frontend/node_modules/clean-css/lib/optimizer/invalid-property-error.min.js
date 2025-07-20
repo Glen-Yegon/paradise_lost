@@ -1,0 +1,1 @@
+function InvalidPropertyError(r){this.name="InvalidPropertyError",this.message=r,this.stack=(new Error).stack}InvalidPropertyError.prototype=Object.create(Error.prototype),InvalidPropertyError.prototype.constructor=InvalidPropertyError,module.exports=InvalidPropertyError;

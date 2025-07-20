@@ -1,0 +1,1 @@
+function removeUnused(e){for(var o=e.length-1;o>=0;o--){var n=e[o];n.unused&&n.all.splice(n.position,1)}}module.exports=removeUnused;

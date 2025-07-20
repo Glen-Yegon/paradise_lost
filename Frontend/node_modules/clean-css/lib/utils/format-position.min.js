@@ -1,0 +1,1 @@
+function formatPosition(o){var t=o[0],r=o[1],i=o[2];return i?i+":"+t+":"+r:t+":"+r}module.exports=formatPosition;

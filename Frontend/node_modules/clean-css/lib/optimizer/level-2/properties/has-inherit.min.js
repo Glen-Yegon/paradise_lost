@@ -1,0 +1,1 @@
+function hasInherit(e){for(var r=e.value.length-1;r>=0;r--)if("inherit"==e.value[r][1])return!0;return!1}module.exports=hasInherit;

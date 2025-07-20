@@ -1,0 +1,1 @@
+function tidyAtRule(e){return e.replace(/\s+/g," ").replace(/url\(\s+/g,"url(").replace(/\s+\)/g,")").trim()}module.exports=tidyAtRule;

@@ -58,7 +58,7 @@
   <!-- Image 4 -->
   <picture>
     <source srcset="images/waterf (23).jpg" media="(max-width: 768px)">
-    <img src="images/waterf (12).jpg" class="parallax-img" alt="Natural Scenery">
+    <img src="images/boatr'.jpg" class="parallax-img" alt="Natural Scenery">
   </picture>
 
   <!-- Image 5 -->
@@ -201,6 +201,58 @@
   </div>
 
 </header>
+
+
+
+<!-- ✅ EXPLORE OVERLAY SECTION -->
+<section class="explore-overlay" id="exploreOverlay" data-aos="fade-in" data-aos-duration="1000" data-aos-easing="ease-in-out">
+  <h2 class="overlay-title" data-aos="fade-down" data-aos-delay="200">Paradise Lost</h2>
+  <button class="close-btn" onclick="closeOverlay()">X</button>
+
+  <div class="explore-images">
+    <div class="image-box center" data-aos="zoom-in" data-aos-delay="300">
+      <img src="images/food (5).jpg" alt="Center Activity">
+      <p><a href="grill.html">Grill Rental</a></p>
+    </div>
+
+    <div class="image-box top-left" data-aos="fade-up-left" data-aos-delay="400">
+      <img src="images/WU4A1645.jpg" alt="Activity 1">
+      <p><a href="archery.html">Archery</a></p>
+    </div>
+
+    <div class="image-box top-right" data-aos="fade-up-right" data-aos-delay="500">
+      <img src="images/zpl (23).jpg" alt="Activity 2">
+      <p><a href="ziplining.html">Zip Lining</a></p>
+    </div>
+
+    <div class="image-box bottom-left" data-aos="fade-down-left" data-aos-delay="600">
+      <img src="images/camp (3).jpg" alt="Activity 3">
+      <p><a href="camp.html">Camping</a></p>
+    </div>
+
+    <div class="image-box bottom-right" data-aos="fade-down-right" data-aos-delay="700">
+      <img src="images/waterf (12).jpg" alt="Activity 4">
+      <p><a href="caves.html">Caves & waterfalls</a></p>
+    </div>
+
+    <div class="image-box left" data-aos="fade-left" data-aos-delay="800">
+      <img src="images/bike (15).jpg" alt="Activity 5">
+      <p><a href="bike.html">Bike Riding</a></p>
+    </div>
+
+    <div class="image-box right" data-aos="fade-right" data-aos-delay="900">
+      <img src="images/food (2).jpg" alt="Activity 6">
+      <p><a href="bone.html">Bonefires</a></p>
+    </div>
+  </div>
+
+  <!-- ✅ CTA Button -->
+  <div class="explore-cta" data-aos="fade-up" data-aos-delay="1000">
+    <a href="activities.html" class="cta-button">See All Activities</a>
+  </div>
+</section>
+
+
 
 <section class="infinite-scroll-section">
   <div class="infinite-scroll-track">
@@ -655,6 +707,60 @@ window.addEventListener("scroll", () => {
 });
 
 </script>
+
+
+<script>
+  function toggleMenu() {
+    // your existing mobile toggle logic
+  }
+
+  document.querySelector(".btn").addEventListener("click", () => {
+    const hero = document.querySelector(".hero");
+    const navbar = document.querySelector(".hero-navbar");
+    const heroContent = document.querySelector(".hero-content");
+    const overlay = document.getElementById("exploreOverlay");
+
+    console.log("✅ Button clicked");
+
+    // Animate out navbar and hero content
+    navbar.style.transition = "transform 1s ease";
+    navbar.style.transform = "translateY(-100%)";
+    console.log("🔼 Navbar animating out");
+
+    heroContent.style.transition = "opacity 1s ease";
+    heroContent.style.opacity = "0";
+    console.log("🫥 Hero content fading out");
+
+    // Trigger zoom
+    requestAnimationFrame(() => {
+      hero.classList.add("zoomed");
+      console.log("🔍 Zoomed class added to hero");
+    });
+
+    // Show overlay after delay
+    setTimeout(() => {
+      hero.classList.add("fade-out");
+      overlay.classList.add("show");
+      console.log("🟣 Fade-out class added and overlay shown");
+    }, 1800);
+  });
+
+  function closeOverlay() {
+    const hero = document.querySelector(".hero");
+    const navbar = document.querySelector(".hero-navbar");
+    const heroContent = document.querySelector(".hero-content");
+    const overlay = document.getElementById("exploreOverlay");
+
+    console.log("❌ Closing overlay");
+
+    hero.classList.remove("fade-out", "zoomed");
+    navbar.style.transform = "translateY(0)";
+    heroContent.style.opacity = "1";
+    overlay.classList.remove("show");
+  }
+</script>
+
+
 
 
 </body>
