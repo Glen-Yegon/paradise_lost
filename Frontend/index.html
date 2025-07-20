@@ -14,6 +14,18 @@
 
   <!-- External CSS -->
   <link rel="stylesheet" href="index.css" />
+
+  <script>
+  // ✅ Hide loader instantly before page renders
+  if (sessionStorage.getItem('visited')) {
+    document.addEventListener("DOMContentLoaded", function () {
+      const loadingScreen = document.getElementById('loading-screen');
+      if (loadingScreen) loadingScreen.style.display = 'none';
+    });
+  }
+</script>
+
+
 </head>
 <body>
 
@@ -23,13 +35,40 @@
   <div id="loading-line"></div>
 
 
-  <div class="parallax-container">
-    <img src="images/waterf (12).jpg" class="parallax-img" alt="image1"/>
-    <img src="images/DSC_8057.jpg" class="parallax-img"  alt="image1"/>
-    <img src="images/hp1.jpg" class="parallax-img" alt="image1"/>
-    <img src="images/naturemain.jpg" class="parallax-img"  alt="image1"/>
-    <img src="images/picnic.jpg" class="parallax-img" alt="image1"/>
-  </div>
+<div class="parallax-container">
+  
+  <!-- Image 1 -->
+  <picture>
+    <source srcset="images/main (3).jpg" media="(max-width: 768px)">
+    <img src="images/waterf (12).jpg" class="parallax-img" alt="Waterfall">
+  </picture>
+
+  <!-- Image 2 -->
+  <picture>
+    <source srcset="images/waterf (3).jpg" media="(max-width: 768px)">
+    <img src="images/DSC_8057.jpg" class="parallax-img" alt="Nature Path">
+  </picture>
+
+  <!-- Image 3 -->
+  <picture>
+    <source srcset="images/waterf (11).jpg" media="(max-width: 768px)">
+    <img src="images/hp1.jpg" class="parallax-img" alt="Adventure Highlight">
+  </picture>
+
+  <!-- Image 4 -->
+  <picture>
+    <source srcset="images/waterf (23).jpg" media="(max-width: 768px)">
+    <img src="images/waterf (12).jpg" class="parallax-img" alt="Natural Scenery">
+  </picture>
+
+  <!-- Image 5 -->
+  <picture>
+    <source srcset="images/waterf (7).jpg" media="(max-width: 768px)">
+    <img src="images/waterf (15).jpg" class="parallax-img" alt="Picnic Spot">
+  </picture>
+
+</div>
+
 </div>
 
 <!-- Transition overlay -->
@@ -478,6 +517,7 @@ window.onload = () => {
     }, 600);
   }
 };
+document.documentElement.classList.add('visited');
 
 </script>
 
@@ -593,6 +633,29 @@ window.onload = () => {
     menu.classList.toggle("active");
   }
 </script>
+
+
+<script>
+
+window.addEventListener("scroll", () => {
+  const navbar = document.querySelector(".hero-navbar");
+  const aboutTeaser = document.querySelector(".about-teaser");
+
+  const teaserTop = aboutTeaser.getBoundingClientRect().top;
+
+  if (window.scrollY > 50 && teaserTop > 100) {
+    navbar.classList.add("scrolled");
+    navbar.classList.remove("hide-navbar");
+  } else if (teaserTop <= 100) {
+    navbar.classList.remove("scrolled");
+    navbar.classList.add("hide-navbar");
+  } else {
+    navbar.classList.remove("hide-navbar");
+  }
+});
+
+</script>
+
 
 </body>
 </html>

@@ -13,8 +13,11 @@
   padding: 0;
   box-sizing: border-box;
 }
-
-
+html.visited .loading-screen {
+  display: none !important;
+  visibility: hidden !important;
+  opacity: 0 !important;
+}
 
 body, html {
   height: 100%;
@@ -126,7 +129,9 @@ body, html {
   transform: scaleX(0);
   opacity: 0;
   z-index: 0;
+  filter: brightness(0.6); /* Slightly darken */
 }
+
 
 /* Fade out loader */
 .loading-hidden {
@@ -135,9 +140,8 @@ body, html {
 }
 
 .hero-navbar {
-  position: relative;
+  position: fixed;
   top: 0;
-
   left: 0;
   width: 100%;
   padding: 1.2rem 2rem;
@@ -161,6 +165,14 @@ body, html {
    height: 70px;
    color: #000;
 }
+
+.hide-navbar {
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(-100%);
+  transition: all 0.5s ease-in-out;
+}
+
 
 /* === DARK TEXT WHEN SCROLLED === */
 .hero-navbar.scrolled .navbar-center li a {
