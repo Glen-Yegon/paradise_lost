@@ -5,11 +5,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Caves & Waterfalls | Paradise Lost</title>
   <link rel="stylesheet" href="caves.min.css" />
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Tan+Mon+Cheri&display=swap" rel="stylesheet">
+<!-- ✅ AOS Animation Library -->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+<!-- ✅ Preconnect to Google Fonts for Source Sans Pro (recommended for speed) -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<!-- ✅ Google Fonts: Source Sans Pro -->
+<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600&display=swap" rel="stylesheet">
+<!-- ✅ Preload Local Font: Tan Mon Cheri -->
+<link rel="preload" href="fonts/TanMonCheri.woff2" as="font" type="fonts/woff2" crossorigin="anonymous">
+<!-- ✅ Preload Key Images -->
+<link rel="preload" as="image" href="images/arch2.webp" type="image/webp">
+<link rel="preload" as="image" href="images/arch9.webp" type="image/webp">
+
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-<link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Tan+Mon+Cheri&display=swap" rel="stylesheet">
 
 
 </head>
@@ -18,7 +28,7 @@
     <!-- Transition overlay -->
 <div id="page-transition">
 <div class="logo-wrapper">
-    <img src="images/Paradise.png" alt="Logo">
+    <img src="images/Paradise.webp" alt="Logo">
   </div></a>
 </div>
 
@@ -31,7 +41,7 @@
       </div>
     </div>
     <div class="navbar-center">
-    <a href="index.html"> <img src="images/Paradise.png" alt="Logo" class="navbar-logo" /></a> 
+    <a href="index.html"> <img src="images/Paradise.webp" alt="Logo" class="navbar-logo" /></a> 
     </div>
     <div class="navbar-right">
       <a href="index.html" class="home-icon" title="Back to Home">
@@ -45,7 +55,7 @@
   <!-- Fullscreen Navigation Menu -->
 <div class="fullscreen-menu" id="fullscreenMenu">
   <div class="menu-header">
-    <img src="images/Paradise.png" alt="Logo" class="menu-logo" />
+    <img src="images/Paradise.webp" alt="Logo" class="menu-logo" />
     <span class="close-btn" onclick="toggleMenu()">✕</span>
   </div>
 
@@ -144,7 +154,7 @@
 
   <div class="highlights-grid">
     <!-- Highlight 1 -->
-    <div class="highlight-card" data-aos="fade-up" style="background-image: url('images/arch5.jpg');">
+    <div class="highlight-card" data-aos="fade-up" style="background-image: url('images/arch5.webp');">
       <div class="overlay"></div>
       <div class="highlight-content">
         <h3>Focus & Precision</h3>
@@ -153,7 +163,7 @@
     </div>
 
     <!-- Highlight 2 -->
-    <div class="highlight-card" data-aos="fade-up" data-aos-delay="100" style="background-image: url('images/arch10.jpg');">
+    <div class="highlight-card" data-aos="fade-up" data-aos-delay="100" style="background-image: url('images/arch10.webp');">
       <div class="overlay"></div>
       <div class="highlight-content">
         <h3>Fun for All Levels</h3>
@@ -162,7 +172,7 @@
     </div>
 
     <!-- Highlight 3 -->
-    <div class="highlight-card" data-aos="fade-up" data-aos-delay="200" style="background-image: url('images/arch2.jpg');">
+    <div class="highlight-card" data-aos="fade-up" data-aos-delay="200" style="background-image: url('images/arch2.webp');">
       <div class="overlay"></div>
       <div class="highlight-content">
         <h3>Expert Guidance</h3>
@@ -171,7 +181,7 @@
     </div>
 
     <!-- Highlight 4 -->
-    <div class="highlight-card" data-aos="fade-up" data-aos-delay="300" style="background-image: url('images/arch.jpg');">
+    <div class="highlight-card" data-aos="fade-up" data-aos-delay="300" style="background-image: url('images/arch.webp');">
       <div class="overlay"></div>
       <div class="highlight-content">
         <h3>Scenic Range</h3>
@@ -273,22 +283,22 @@
   <div class="carousel-wrapper">
     <div class="carousel-track" id="carouselTrack">
       <div class="carousel-item">
-        <img src="images/arch (2).jpg" alt="Focused Archer Aiming">
+        <img src="images/arch (2).webp" alt="Focused Archer Aiming">
       </div>
       <div class="carousel-item">
-        <img src="images/arch.jpg" alt="Archery Practice Zone">
+        <img src="images/arch.webp" alt="Archery Practice Zone">
       </div>
       <div class="carousel-item">
-        <img src="images/arch3.jpg" alt="Hitting the Bullseye">
+        <img src="images/arch3.webp" alt="Hitting the Bullseye">
       </div>
       <div class="carousel-item">
-        <img src="images/arch8.jpg" alt="Outdoor Archery Range">
+        <img src="images/arch8.webp" alt="Outdoor Archery Range">
       </div>
       <div class="carousel-item">
-        <img src="images/arch5.jpg" alt="Archery Lessons in Progress">
+        <img src="images/arch5.webp" alt="Archery Lessons in Progress">
       </div>
       <div class="carousel-item">
-        <img src="images/arch9.jpg" alt="Target Setup in Nature">
+        <img src="images/arch9.webp" alt="Target Setup in Nature">
       </div>
     </div>
   </div>
@@ -303,7 +313,7 @@
 
     <!-- Logo & Tagline -->
     <div class="pro-footer-brand" data-aos="fade-up">
-      <img src="images/Paradise.png" alt="Paradise Lost Logo" class="footer-logo" />
+      <img src="images/Paradise.webp" alt="Paradise Lost Logo" class="footer-logo" />
       <p class="tagline">Unleashing Nature’s Wonders</p>
     </div>
 

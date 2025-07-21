@@ -314,7 +314,7 @@ body {
 /* Hero */
 .hero {
   height: 60vh;
-  background-image: url('images/waterf\ \(14\).jpg'); /* Desktop image */
+  background-image: url('images/waterf\ \(14\).webp'); /* Desktop image */
   background-size: cover;
   background-position: center;
   display: flex;
@@ -357,7 +357,7 @@ body {
 }
 @media (max-width: 768px) {
   .hero {
-    background-image: url('images/waterf\ \(12\).jpg'); /* Mobile version */
+    background-image: url('images/waterf\ \(12\).webp'); /* Mobile version */
   }
 }
 @keyframes fadeText {
@@ -551,7 +551,7 @@ body {
 
 
 .cta-section {
-  background: linear-gradient(rgba(22, 56, 56, 0.85), rgba(22, 56, 56, 0.65)), url('images/WU4A1924.jpg');
+  background: linear-gradient(rgba(22, 56, 56, 0.85), rgba(22, 56, 56, 0.65)), url('images/waterf\ \(15\).webp');
   background-size: cover;
   background-position: center;
   color: #fff;

@@ -5,10 +5,26 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Activities | Paradise Lost</title>
   <link rel="stylesheet" href="activities.min.css" />
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+<!-- ✅ AOS Animation Library -->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+<!-- ✅ Preconnect to Google Fonts for Source Sans Pro (recommended for speed) -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<!-- ✅ Google Fonts: Source Sans Pro -->
+<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600&display=swap" rel="stylesheet">
+
+<!-- ✅ Preload Local Font: Tan Mon Cheri -->
+<link rel="preload" href="fonts/TanMonCheri.woff2" as="font" type="fonts/woff2" crossorigin="anonymous">
+
+<!-- ✅ Preload Key Images -->
+<link rel="preload" as="image" href="images/waterf (15).webp" type="image/webp">
+<link rel="preload" as="image" href="images/waterf (14).webp" type="image/webp">
+<link rel="preload" as="image" href="images/waterf (12).webp" type="image/webp">
+
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Tan+Mon+Cheri&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
@@ -16,7 +32,7 @@
     <!-- Transition overlay -->
 <div id="page-transition">
 <div class="logo-wrapper">
-    <img src="images/Paradise.png" alt="Logo">
+    <img src="images/Paradise.webp" alt="Logo">
   </div>
 </div>
 
@@ -24,10 +40,10 @@
   <header id="navbar">
     <div class="menu-toggle" onclick="toggleMenu()">&#9776;</div>
     <div class="logo">
-     <a href="index.html"><img src="images/Paradise.png" alt="Paradise Lost Logo" id="logo-img" /></a> 
+     <a href="index.html"><img src="images/Paradise.webp" alt="Paradise Lost Logo" id="logo-img" /></a> 
     </div>
     <div class="user-icon">
-      <a href="signup.html">
+      <a href="sign.html">
         <svg xmlns="http://www.w3.org/2000/svg" height="26" fill="white" viewBox="0 0 24 24">
           <path d="M12 12c2.7 0 4.8-2.1 4.8-4.8S14.7 2.4 12 2.4 7.2 4.5 7.2 7.2 9.3 12 12 12zm0 2.4c-3.2 0-9.6 1.6-9.6 4.8v2.4h19.2v-2.4c0-3.2-6.4-4.8-9.6-4.8z"/>
         </svg>
@@ -63,7 +79,7 @@
 
   <div class="activity-card">
     <div class="activity-image">
-      <img src="images/waterf (8).jpg" alt="Caves and Waterfalls">
+      <img src="images/waterf (8).webp" alt="Caves and Waterfalls">
     </div>
     <div class="activity-details">
       <h3>Caves & Waterfalls</h3>
@@ -81,7 +97,7 @@
 
   <div class="activity-card">
   <div class="activity-image">
-    <img src="images/dartbmain.jpg" alt="Bike Riding">
+    <img src="images/dartbmain.webp" alt="Bike Riding">
   </div>
   <div class="activity-details">
     <h3>Bike Riding</h3>
@@ -100,7 +116,7 @@
 
 <div class="activity-card">
   <div class="activity-image">
-    <img src="images/food (2).jpg" alt="Cooking Grill Rental">
+    <img src="images/food (2).webp" alt="Cooking Grill Rental">
   </div>
   <div class="activity-details">
     <h3>Cooking Grill Rental</h3>
@@ -119,7 +135,7 @@
 <!-- Zip Lining -->
 <div class="activity-card">
   <div class="activity-image">
-    <img src="images/zpl (19).jpg" alt="Zip Lining">
+    <img src="images/zpl (19).webp" alt="Zip Lining">
   </div>
   <div class="activity-details">
     <h3>Zip Lining</h3>
@@ -138,7 +154,7 @@
 <!-- Bonfire Experience -->
 <div class="activity-card">
   <div class="activity-image">
-    <img src="images/bonfire main (3).jpg" alt="Bonfire Experience">
+    <img src="images/bonfire main (3).webp" alt="Bonfire Experience">
   </div>
   <div class="activity-details">
     <h3>Bonfire Experience</h3>
@@ -158,7 +174,7 @@
 <!-- Picnics -->
 <div class="activity-card">
   <div class="activity-image">
-    <img src="images/picnic.jpg" alt="Picnics">
+    <img src="images/picnic.webp" alt="Picnics">
   </div>
   <div class="activity-details">
     <h3>Picnics</h3>
@@ -177,7 +193,7 @@
 <!-- Camping -->
 <div class="activity-card">
   <div class="activity-image">
-    <img src="images/camp (2).jpg" alt="Camping">
+    <img src="images/camp (2).webp" alt="Camping">
   </div>
   <div class="activity-details">
     <h3>Camping</h3>
@@ -216,7 +232,7 @@
   <!-- Boat Riding -->
 <div class="activity-card">
   <div class="activity-image">
-    <img src="images/boatr'.jpg" alt="Boat Riding">
+    <img src="images/boatr'.webp" alt="Boat Riding">
   </div>
   <div class="activity-details">
     <h3>Boat Riding</h3>
@@ -236,7 +252,7 @@
 <!-- Archery -->
 <div class="activity-card">
   <div class="activity-image">
-    <img src="images/arch7.jpg" alt="Archery">
+    <img src="images/arch7.webp" alt="Archery">
   </div>
   <div class="activity-details">
     <h3>Archery</h3>
@@ -255,7 +271,7 @@
 <!-- Yoga -->
 <div class="activity-card">
   <div class="activity-image">
-    <img src="images/med (2).jpg" alt="Yoga">
+    <img src="images/med (2).webp" alt="Yoga">
   </div>
   <div class="activity-details">
     <h3>Yoga</h3>
@@ -295,7 +311,7 @@
 <!-- Nature Walks -->
 <div class="activity-card">
   <div class="activity-image">
-    <img src="images/waterf (21).jpg" alt="Nature Walks">
+    <img src="images/waterf (21).webp" alt="Nature Walks">
   </div>
   <div class="activity-details">
     <h3>Nature Walks</h3>
@@ -350,7 +366,7 @@
 
     <!-- Logo & Tagline -->
     <div class="pro-footer-brand" data-aos="fade-up">
-      <img src="images/Paradise.png" alt="Paradise Lost Logo" class="footer-logo" />
+      <img src="images/Paradise.webp" alt="Paradise Lost Logo" class="footer-logo" />
       <p class="tagline">Unleashing Nature’s Wonders</p>
     </div>
 

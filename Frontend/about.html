@@ -5,11 +5,24 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Paradise Lost - About Us</title>
   <link rel="stylesheet" href="about.min.css" />
-  <!-- AOS CSS -->
+<!-- ✅ AOS Animation Library -->
 <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Tan+Mon+Cheri&display=swap" rel="stylesheet">
+
+<!-- ✅ Preconnect to Google Fonts for Source Sans Pro (recommended for speed) -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<!-- ✅ Google Fonts: Source Sans Pro -->
+<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600&display=swap" rel="stylesheet">
+
+<!-- ✅ Preload Local Font: Tan Mon Cheri -->
+<link rel="preload" href="fonts/TanMonCheri.woff2" as="font" type="fonts/woff2" crossorigin="anonymous">
+
+<!-- ✅ Preload Key Images -->
+<link rel="preload" as="image" href="images/waterf%20(12).webp" type="image/webp">
+<link rel="preload" as="image" href="images/main%20(2).webp" type="image/webp">
+
+
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
@@ -18,7 +31,7 @@
 <!-- Transition overlay -->
 <div id="page-transition">
 <div class="logo-wrapper">
-    <img src="images/Paradise.png" alt="Logo">
+    <img src="images/Paradise.webp" alt="Logo">
   </div>
 </div>
 
@@ -28,7 +41,7 @@
     <div class="menu-toggle" onclick="toggleMenu()">☰</div>
 
     <div class="logo">
-      <img src="images/Paradise.png" alt="Paradise Lost Logo" />
+      <img src="images/Paradise.webp" alt="Paradise Lost Logo" />
     </div>
 
 <a href="signup.html" class="user-icon" title="Sign Up">
@@ -64,7 +77,7 @@
       </p>
     </div>
     <div class="story-image" data-aos="fade-left">
-      <img src="images/waterf (16).jpg" alt="Our Story Image" />
+      <img src="images/waterf (16).webp" alt="Our Story Image" />
     </div>
   </div>
 </section>
@@ -88,15 +101,15 @@
       <div class="mv-title">Our Mission</div>
       <div class="mv-content">
         <div class="mv-item">
-          <img src="images/arch2.jpg" alt="Mission Image 1" />
+          <img src="images/arch.webp" alt="Mission Image 1" />
           <p>Connect people with nature through immersive experiences.</p>
         </div>
         <div class="mv-item">
-          <img src="images/arch2.jpg" alt="Mission Image 2" />
+          <img src="images/arch (2).webp" alt="Mission Image 2" />
           <p>Encourage environmental conservation and learning.</p>
         </div>
         <div class="mv-item">
-          <img src="images/boatr (9).jpg" alt="Mission Image 3" />
+          <img src="images/boatr (9).webp" alt="Mission Image 3" />
           <p>Create unforgettable memories rooted in adventure.</p>
         </div>
       </div>
@@ -106,15 +119,15 @@
       <div class="mv-title">Our Vision</div>
       <div class="mv-content">
         <div class="mv-item">
-          <img src="images/zpl.jpg" alt="Vision Image 1" />
+          <img src="images/zlp.webp" alt="Vision Image 1" />
           <p>Be Africa’s most beloved nature sanctuary.</p>
         </div>
         <div class="mv-item">
-          <img src="images/WU4A2257.jpg" alt="Vision Image 2" />
+          <img src="images/waterf (12).webp" alt="Vision Image 2" />
           <p>Transform lives through nature and peace.</p>
         </div>
         <div class="mv-item">
-          <img src="images/waterf (2).jpg" alt="Vision Image 3" />
+          <img src="images/waterf (2).webp" alt="Vision Image 3" />
           <p>Shape a future where nature is valued by all.</p>
         </div>
       </div>
@@ -137,7 +150,7 @@
     <!-- Activity 1 -->
    <a href="ziplining.html" style="text-decoration: none;"> <div class="activity-item" data-aos="fade-up">
       <div class="activity-img-wrapper">
-        <img src="images/zlp.jpg" alt="Ziplining" />
+        <img src="images/zlp.webp" alt="Ziplining" />
       </div>
       <div class="activity-overlay">
         <h3>Ziplining</h3>
@@ -149,7 +162,7 @@
     <!-- Activity 2 -->
   <a href="archery.html"  style="text-decoration: none;">  <div class="activity-item" data-aos="fade-up">
       <div class="activity-img-wrapper">
-        <img src="images/arch9.jpg" alt="Archery" />
+        <img src="images/arch9.webp" alt="Archery" />
       </div>
       <div class="activity-overlay">
         <h3>Archery</h3>
@@ -161,7 +174,7 @@
     <!-- Activity 3 -->
   <a href="boat.html"  style="text-decoration: none;"> <div class="activity-item" data-aos="fade-up">
       <div class="activity-img-wrapper">
-        <img src="images/boahtr.jpg" alt="Boat Riding" />
+        <img src="images/boahtr.webp" alt="Boat Riding" />
       </div>
       <div class="activity-overlay">
         <h3>Boat Riding</h3>
@@ -173,7 +186,7 @@
     <!-- Activity 4 -->
  <a href="caves.html"  style="text-decoration: none;">  <div class="activity-item" data-aos="fade-up">
       <div class="activity-img-wrapper">
-        <img src="images/waterf (12).jpg" alt="Caves & Waterfalls" />
+        <img src="images/waterf (12).webp" alt="Caves & Waterfalls" />
       </div>
       <div class="activity-overlay">
         <h3>Caves & Waterfalls</h3>
@@ -203,7 +216,7 @@
 
     <!-- Logo & Tagline -->
     <div class="pro-footer-brand" data-aos="fade-up">
-      <img src="images/Paradise.png" alt="Paradise Lost Logo" class="footer-logo" />
+      <img src="images/Paradise.webp" alt="Paradise Lost Logo" class="footer-logo" />
       <p class="tagline">Unleashing Nature’s Wonders</p>
     </div>
 

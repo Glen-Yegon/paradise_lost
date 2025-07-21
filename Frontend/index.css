@@ -362,7 +362,7 @@ body, html {
   content: "";
   position: absolute;
   inset: 0;
-  background: url('images/WU4A1924.jpg') center/cover no-repeat;
+  background: url('images/p3.webp') center/cover no-repeat;
   transform: scale(1.2);
   z-index: -1; /* ✅ keep it behind hero content */
   transition: transform 2s ease-in-out;
@@ -634,7 +634,7 @@ body, html {
 /* MOBILE STYLES */
 @media (max-width: 768px) {
   .hero::before {
-    background: url('images/main (2).jpg') center/cover no-repeat;
+    background: url('images/main\ \(2\).webp') center/cover no-repeat;
   }
 }
 
@@ -840,7 +840,7 @@ nav.navbar.hidden {
 .about-teaser {
   background: 
     linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7)),
-    url('images/waterf\ \(4\).jpg') center/cover fixed no-repeat;
+    url('images/waterf\ \(4\).webp') center/cover fixed no-repeat;
   padding: 6rem 2rem;
   text-align: center;
   color: #f0f0f0;
@@ -855,7 +855,7 @@ nav.navbar.hidden {
   .about-teaser {
     background:
       linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7)),
-      url('images/main.jpg') center/cover fixed no-repeat;
+      url('images/main.webp') center/cover fixed no-repeat;
   }
 }
 
@@ -1019,7 +1019,7 @@ nav.navbar.hidden {
   left: 0;
   width: 100%;
   height: 100%;
-  background: url('images/grill\ \(8\).jpg') no-repeat center center/cover;
+  background: url('images/grill\ \(8\).webp') no-repeat center center/cover;
   transform: scale(1.2);
   transition: transform 1.2s ease;
   z-index: 0;
@@ -1090,7 +1090,7 @@ nav.navbar.hidden {
   /* 📱 Mobile Version: Override background image */
 @media (max-width: 767px) {
   .promo-bg {
-    background: url('images/food.jpg') no-repeat center center/cover;
+    background: url('images/food.webp') no-repeat center center/cover;
   }
 }
 
@@ -1177,7 +1177,7 @@ nav.navbar.hidden {
   position: relative;
   height: 50vh;
   width: 100%;
-  background: url('images/zlp.jpg') center/cover no-repeat;
+  background: url('images/zlp.webp') center/cover no-repeat;
   display: flex;
   flex-direction: column;
   

@@ -5,11 +5,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Caves & Waterfalls | Paradise Lost</title>
   <link rel="stylesheet" href="caves.min.css" />
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Tan+Mon+Cheri&display=swap" rel="stylesheet">
+<!-- ✅ AOS Animation Library -->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+<!-- ✅ Preconnect to Google Fonts for Source Sans Pro (recommended for speed) -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<!-- ✅ Google Fonts: Source Sans Pro -->
+<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600&display=swap" rel="stylesheet">
+<!-- ✅ Preload Local Font: Tan Mon Cheri -->
+<link rel="preload" href="fonts/TanMonCheri.woff2" as="font" type="fonts/woff2" crossorigin="anonymous">
+<!-- ✅ Preload Key Images -->
+<link rel="preload" as="image" href="images/food (5).webp" type="image/webp">
+<link rel="preload" as="image" href="images/food (2).webp" type="image/webp">
+
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-<link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Tan+Mon+Cheri&display=swap" rel="stylesheet">
 
 
 </head>
@@ -18,7 +28,7 @@
     <!-- Transition overlay -->
 <div id="page-transition">
 <div class="logo-wrapper">
-    <img src="images/Paradise.png" alt="Logo">
+    <img src="images/Paradise.webp" alt="Logo">
   </div></a>
 </div>
 
@@ -31,7 +41,7 @@
       </div>
     </div>
     <div class="navbar-center">
-    <a href="index.html"> <img src="images/Paradise.png" alt="Logo" class="navbar-logo" /></a> 
+    <a href="index.html"> <img src="images/Paradise.webp" alt="Logo" class="navbar-logo" /></a> 
     </div>
     <div class="navbar-right">
       <a href="index.html" class="home-icon" title="Back to Home">
@@ -44,7 +54,7 @@
   <!-- Fullscreen Navigation Menu -->
 <div class="fullscreen-menu" id="fullscreenMenu">
   <div class="menu-header">
-    <img src="images/Paradise.png" alt="Logo" class="menu-logo" />
+    <img src="images/Paradise.webp" alt="Logo" class="menu-logo" />
     <span class="close-btn" onclick="toggleMenu()">✕</span>
   </div>
 
@@ -146,7 +156,7 @@
 
   <div class="highlights-grid">
     <!-- Highlight 1 -->
-    <div class="highlight-card" data-aos="fade-up" style="background-image: url('images/food.jpg');">
+    <div class="highlight-card" data-aos="fade-up" style="background-image: url('images/food.webp');">
       <div class="overlay"></div>
       <div class="highlight-content">
         <h3>Open-Air Cooking</h3>
@@ -155,7 +165,7 @@
     </div>
 
     <!-- Highlight 2 -->
-    <div class="highlight-card" data-aos="fade-up" data-aos-delay="100" style="background-image: url('images/grill\ \(12\).jpg');">
+    <div class="highlight-card" data-aos="fade-up" data-aos-delay="100" style="background-image: url('images/grill\ \(12\).webp');">
       <div class="overlay"></div>
       <div class="highlight-content">
         <h3>Perfect for Groups</h3>
@@ -164,7 +174,7 @@
     </div>
 
     <!-- Highlight 3 -->
-    <div class="highlight-card" data-aos="fade-up" data-aos-delay="200" style="background-image: url('images/food\ \(4\).jpg');">
+    <div class="highlight-card" data-aos="fade-up" data-aos-delay="200" style="background-image: url('images/food\ \(4\).webp');">
       <div class="overlay"></div>
       <div class="highlight-content">
         <h3>Hassle-Free Rentals</h3>
@@ -173,7 +183,7 @@
     </div>
 
     <!-- Highlight 4 -->
-    <div class="highlight-card" data-aos="fade-up" data-aos-delay="300" style="background-image: url('images/grill\ \(4\).jpg');">
+    <div class="highlight-card" data-aos="fade-up" data-aos-delay="300" style="background-image: url('images/grill\ \(4\).webp');">
       <div class="overlay"></div>
       <div class="highlight-content">
         <h3>Delicious Moments</h3>
@@ -228,7 +238,7 @@
 
     <div class="pricing-image">
       <div class="image-overlay-container">
-        <img src="images/grill (11).jpg" alt="Grill Setup at Paradise Lost">
+        <img src="images/grill (11).webp" alt="Grill Setup at Paradise Lost">
         <div class="overlay"></div>
         <div class="cta-text">
           <h3>Sizzle and  Chill</h3>
@@ -287,12 +297,12 @@
 
   <div class="carousel-wrapper">
     <div class="carousel-track" id="carouselTrack">
-      <div class="carousel-item"><img src="images/grill (11).jpg" alt="Outdoor Grill Setup"></div>
-      <div class="carousel-item"><img src="images/grill.jpg" alt="Family Enjoying Grilled Food"></div>
-      <div class="carousel-item"><img src="images/grill (4).jpg" alt="Grilling with Nature Views"></div>
-      <div class="carousel-item"><img src="images/food (5).jpg" alt="Guests Preparing a Barbecue"></div>
-      <div class="carousel-item"><img src="images/food (3).jpg" alt="Picnic Area with Grill Rental"></div>
-      <div class="carousel-item"><img src="images/food (2).jpg" alt="Delicious Food on the Grill"></div>
+      <div class="carousel-item"><img src="images/grill (11).webp" alt="Outdoor Grill Setup"></div>
+      <div class="carousel-item"><img src="images/grill.webp" alt="Family Enjoying Grilled Food"></div>
+      <div class="carousel-item"><img src="images/grill (4).webp" alt="Grilling with Nature Views"></div>
+      <div class="carousel-item"><img src="images/food (5).webp" alt="Guests Preparing a Barbecue"></div>
+      <div class="carousel-item"><img src="images/food (3).webp" alt="Picnic Area with Grill Rental"></div>
+      <div class="carousel-item"><img src="images/food (2).webp" alt="Delicious Food on the Grill"></div>
     </div>
   </div>
 </section>
@@ -309,7 +319,7 @@
 
     <!-- Logo & Tagline -->
     <div class="pro-footer-brand" data-aos="fade-up">
-      <img src="images/Paradise.png" alt="Paradise Lost Logo" class="footer-logo" />
+      <img src="images/Paradise.webp" alt="Paradise Lost Logo" class="footer-logo" />
       <p class="tagline">Unleashing Nature’s Wonders</p>
     </div>
 

@@ -5,11 +5,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Caves & Waterfalls | Paradise Lost</title>
   <link rel="stylesheet" href="caves.min.css" />
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Tan+Mon+Cheri&display=swap" rel="stylesheet">
+<!-- ✅ AOS Animation Library -->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+<!-- ✅ Preconnect to Google Fonts for Source Sans Pro (recommended for speed) -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<!-- ✅ Google Fonts: Source Sans Pro -->
+<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600&display=swap" rel="stylesheet">
+<!-- ✅ Preload Local Font: Tan Mon Cheri -->
+<link rel="preload" href="fonts/TanMonCheri.woff2" as="font" type="fonts/woff2" crossorigin="anonymous">
+<!-- ✅ Preload Key Images -->
+<link rel="preload" as="image" href="images/naturemain.webp" type="image/webp">
+<link rel="preload" as="image" href="images/waterf (22).webp" type="image/webp">
+
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-<link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Tan+Mon+Cheri&display=swap" rel="stylesheet">
 
 
 </head>
@@ -18,7 +28,7 @@
     <!-- Transition overlay -->
 <div id="page-transition">
 <div class="logo-wrapper">
-    <img src="images/Paradise.png" alt="Logo">
+    <img src="images/Paradise.webp" alt="Logo">
   </div></a>
 </div>
 
@@ -32,7 +42,7 @@
       </div>
     </div>
     <div class="navbar-center">
-    <a href="index.html"> <img src="images/Paradise.png" alt="Logo" class="navbar-logo" /></a> 
+    <a href="index.html"> <img src="images/Paradise.webp" alt="Logo" class="navbar-logo" /></a> 
     </div>
     <div class="navbar-right">
       <a href="index.html" class="home-icon" title="Back to Home">
@@ -46,7 +56,7 @@
   <!-- Fullscreen Navigation Menu -->
 <div class="fullscreen-menu" id="fullscreenMenu">
   <div class="menu-header">
-    <img src="images/Paradise.png" alt="Logo" class="menu-logo" />
+    <img src="images/Paradise.webp" alt="Logo" class="menu-logo" />
     <span class="close-btn" onclick="toggleMenu()">✕</span>
   </div>
 
@@ -149,7 +159,7 @@
 
   <div class="highlights-grid">
     <!-- Highlight 1 -->
-    <div class="highlight-card" data-aos="fade-up" style="background-image: url('images/nw.jpg');">
+    <div class="highlight-card" data-aos="fade-up" style="background-image: url('images/nw.webp');">
       <div class="overlay"></div>
       <div class="highlight-content">
         <h3>Tranquil Trails</h3>
@@ -158,7 +168,7 @@
     </div>
 
     <!-- Highlight 2 -->
-    <div class="highlight-card" data-aos="fade-up" data-aos-delay="100" style="background-image: url('images/waterf\ \(19\).jpg');">
+    <div class="highlight-card" data-aos="fade-up" data-aos-delay="100" style="background-image: url('images/waterf\ \(19\).webp');">
       <div class="overlay"></div>
       <div class="highlight-content">
         <h3>Nature Connection</h3>
@@ -167,7 +177,7 @@
     </div>
 
     <!-- Highlight 3 -->
-    <div class="highlight-card" data-aos="fade-up" data-aos-delay="200" style="background-image: url('images/waterf\ \(7\).jpg');">
+    <div class="highlight-card" data-aos="fade-up" data-aos-delay="200" style="background-image: url('images/waterf\ \(7\).webp');">
       <div class="overlay"></div>
       <div class="highlight-content">
         <h3>Photography Moments</h3>
@@ -176,7 +186,7 @@
     </div>
 
     <!-- Highlight 4 -->
-    <div class="highlight-card" data-aos="fade-up" data-aos-delay="300" style="background-image: url('images/waterf\ \(23\).jpg');">
+    <div class="highlight-card" data-aos="fade-up" data-aos-delay="300" style="background-image: url('images/waterf\ \(23\).webp');">
       <div class="overlay"></div>
       <div class="highlight-content">
         <h3>Mindful Escape</h3>
@@ -234,7 +244,7 @@
 
     <div class="pricing-image">
       <div class="image-overlay-container">
-        <img src="images/nw.jpg" alt="Nature Walk at Paradise Lost">
+        <img src="images/nw.webp" alt="Nature Walk at Paradise Lost">
         <div class="overlay"></div>
         <div class="cta-text">
           <h3>Step into Serenity</h3>
@@ -291,12 +301,12 @@
 
   <div class="carousel-wrapper">
     <div class="carousel-track" id="carouselTrack">
-      <div class="carousel-item"><img src="images/waterf (21).jpg" alt="Trail through lush forest paths"></div>
-      <div class="carousel-item"><img src="images/waterf.jpg" alt="Visitors walking under tree canopy"></div>
-      <div class="carousel-item"><img src="images/waterf (12).jpg" alt="Quiet nature trail with morning light"></div>
-      <div class="carousel-item"><img src="images/waterf (22).jpg" alt="Guests exploring green scenic paths"></div>
-      <div class="carousel-item"><img src="images/waterf (5).jpg" alt="Footpath surrounded by thick vegetation"></div>
-      <div class="carousel-item"><img src="images/waterf (13).jpg" alt="Peaceful forest walk with sunlight filtering through trees"></div>
+      <div class="carousel-item"><img src="images/waterf (21).webp" alt="Trail through lush forest paths"></div>
+      <div class="carousel-item"><img src="images/waterf.webp" alt="Visitors walking under tree canopy"></div>
+      <div class="carousel-item"><img src="images/waterf (12).webp" alt="Quiet nature trail with morning light"></div>
+      <div class="carousel-item"><img src="images/waterf (22).webp" alt="Guests exploring green scenic paths"></div>
+      <div class="carousel-item"><img src="images/waterf (5).webp" alt="Footpath surrounded by thick vegetation"></div>
+      <div class="carousel-item"><img src="images/waterf (13).webp" alt="Peaceful forest walk with sunlight filtering through trees"></div>
     </div>
   </div>
 </section>
@@ -312,7 +322,7 @@
 
     <!-- Logo & Tagline -->
     <div class="pro-footer-brand" data-aos="fade-up">
-      <img src="images/Paradise.png" alt="Paradise Lost Logo" class="footer-logo" />
+      <img src="images/Paradise.webp" alt="Paradise Lost Logo" class="footer-logo" />
       <p class="tagline">Unleashing Nature’s Wonders</p>
     </div>
 
