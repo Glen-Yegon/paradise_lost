@@ -305,6 +305,40 @@ body {
 }
 
 /* === Hero Section === */
+.kids-section {
+  height: 100vh;
+  background: url('images/kidscorner.jpg') center/cover no-repeat;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  animation: zoomEffect 2.2s ease-out forwards;
+}
+@media (max-width: 768px) {
+  .kids-section {
+    background: url('images/kidscorner.jpg') center/cover no-repeat;
+  }
+}
+
+/* === Hero Section === */
+.horse-section {
+  height: 100vh;
+  background: url('images/kidscorner.jpg') center/cover no-repeat;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  animation: zoomEffect 2.2s ease-out forwards;
+}
+@media (max-width: 768px) {
+  .horse-section {
+    background: url('images/kidscorner.jpg') center/cover no-repeat;
+  }
+}
+
+/* === Hero Section === */
 .yoga-section {
   height: 100vh;
   background: url('images/med\ \(2\).webp') center/cover no-repeat;

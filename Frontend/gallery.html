@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Paradise Lost Gallery</title>
+
+  <!-- ✅ AOS Animation Library -->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+<!-- ✅ Preconnect to Google Fonts for Source Sans Pro (recommended for speed) -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- Google Fonts & Tan Mon Cheri -->
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.cdnfonts.com/css/tan-mon-cheri" rel="stylesheet">\
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link rel="preload" href="fonts/TanMonCheri.woff2" as="font" type="fonts/woff2" crossorigin="anonymous">
+  <!-- External CSS -->
+  <link rel="stylesheet" href="gallery.css"/>
+</head>
+<body>
+<header class="hero">
+  <!-- Background Video -->
+  <video autoplay muted loop playsinline class="hero-video">
+    <source src="videos" media="(min-width: 768px)" type="video/mp4">
+    <source src="videos/denri2.mp4" media="(max-width: 767px)" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+
+  <!-- Overlay -->
+  <div class="overlay"></div>
+
+  <!-- Navbar -->
+  <nav class="navbar" id="navbar">
+    <div class="menu-toggle" id="menuToggle">
+      &#9776;
+    </div>
+    <div class="logo">
+      <img src="images/Paradise.webp" alt="Logo" id="navLogo">
+    </div>
+    <div class="user-icon">
+      <a href="/signup">
+        <svg xmlns="http://www.w3.org/2000/svg" height="24" fill="#fff" viewBox="0 0 24 24">
+          <path d="M12 12c2.7 0 4.8-2.1 4.8-4.8S14.7 2.4 12 2.4 7.2 4.5 7.2 7.2 9.3 12 12 12zm0 2.4c-3.3 0-9.6 1.7-9.6 5.1v2.1h19.2v-2.1c0-3.4-6.3-5.1-9.6-5.1z"/>
+        </svg>
+      </a>
+    </div>
+  </nav>
+
+  <!-- Hero Title -->
+  <div class="hero-content">
+    <h1 class="hero-title">Gallery</h1>
+  </div>
+</header>
+
+
+<section class="image-gallery">
+  <div class="gallery-grid">
+
+    <div class="gallery-block">
+      <img src="images/picnic (13).webp" alt="Zip Lining" class="gallery-img" />
+      <div class="caption-row">
+      <img src="images/picnic.png" alt="Picnic Icon" class="caption-icon" />
+
+        <span>Meadow Moments</span>
+      </div>
+    </div>
+
+    <div class="gallery-block">
+      <img src="images/waterf (15).webp" alt="Waterfall" class="gallery-img" />
+      <div class="caption-row">
+        <img src="images/about.png" alt="Icon" class="caption-icon" />
+        <span>Echo Falls</span>
+      </div>
+    </div>
+
+
+    <div class="gallery-block">
+      <img src="images/waterf (16).webp" alt="Waterfall" class="gallery-img" />
+      <div class="caption-row">
+        <img src="images/about.png" alt="Icon" class="caption-icon" />
+        <span>Echo Falls</span>
+      </div>
+    </div>
+
+
+    <!-- Image 3 -->
+    <div class="gallery-block">
+      <img src="images/walpaper.webp" alt="Nature Trail" class="gallery-img" />
+      <div class="caption-row">
+    <img src="images/picnic.png" alt="Picnic Icon" class="caption-icon" />
+        <span>Nature Nibbles</span>
+      </div>
+    </div>
+
+
+
+            <!-- Image 4 -->
+    <div class="gallery-block">
+      <img src="images/grill (4).jpg" alt="Boating" class="gallery-img" />
+      <div class="caption-row">
+        <img src="images/food (21).png" alt="Icon" class="caption-icon" />
+        <span>Flame & Feast</span>
+      </div>
+    </div>
+
+        <!-- Image 4 -->
+    <div class="gallery-block">
+      <img src="images/boatr'.webp" alt="Boating" class="gallery-img" />
+      <div class="caption-row">
+        <img src="images/pirate-ship.png" alt="Icon" class="caption-icon" />
+        <span>Rippling Retreat</span>
+      </div>
+    </div>
+
+        <!-- Image 4 -->
+    <div class="gallery-block">
+      <img src="images/boahtr.webp" alt="Boating" class="gallery-img" />
+      <div class="caption-row">
+        <img src="images/pirate-ship.png" alt="Icon" class="caption-icon" />
+        <span>Rippling Retreat</span>
+      </div>
+    </div>
+
+    
+    <!-- Image 4 -->
+    <div class="gallery-block">
+      <img src="images/food (5).webp" alt="Boating" class="gallery-img" />
+      <div class="caption-row">
+        <img src="images/food (21).png" alt="Icon" class="caption-icon" />
+        <span>Flame & Feast </span>
+      </div>
+    </div>
+
+
+
+  </div>
+</section>
+
+<section class="about-teaser" id="about">
+  <div class="about-content">
+    <h2 class="section-heading" data-aos="fade-up" data-aos-delay="200">
+      BREATHTAKING BEAUTY
+    </h2>
+
+  </div>
+</section>
+
+
+
+<section class="image-gallery">
+  <div class="gallery-grid">
+    <!-- Image 1 -->
+    <div class="gallery-block">
+      <img src="images/arch9.webp" alt="Waterfall" class="gallery-img" />
+      <div class="caption-row">
+        <img src="images/target.png" alt="Icon" class="caption-icon" />
+        <span>Arrowpoint Zone</span>
+      </div>
+    </div>
+        <div class="gallery-block">
+      <img src="images/dartb (4).webp" alt="Waterfall" class="gallery-img" />
+      <div class="caption-row">
+        <img src="images/bicycle.png" alt="Icon" class="caption-icon" />
+        <span>Pedal Quest</span>
+      </div>
+    </div>
+
+
+    <!-- Image 3 -->
+    <div class="gallery-block">
+      <img src="images/bike (7).webp" alt="Nature Trail" class="gallery-img" />
+      <div class="caption-row">
+    <img src="images/bicycle.png" alt="Picnic Icon" class="caption-icon" />
+        <span>Pedal Quest</span>
+      </div>
+    </div>
+
+
+    <!-- Image 2 -->
+    <div class="gallery-block">
+      <img src="images/arch2.webp" alt="Zip Lining" class="gallery-img" />
+      <div class="caption-row">
+      <img src="images/target.png" alt="Picnic Icon" class="caption-icon" />
+
+        <span>Arrowpoint Zone</span>
+      </div>
+    </div>
+
+
+    <!-- Image 4 -->
+    <div class="gallery-block">
+      <img src="images/zpl (12).webp" alt="Boating" class="gallery-img" />
+      <div class="caption-row">
+        <img src="images/zipline.png" alt="Icon" class="caption-icon" />
+        <span>Sky Falls</span>
+      </div>
+    </div>
+
+        <!-- Image 4 -->
+    <div class="gallery-block">
+      <img src="images/bridge (2).webp" alt="Boating" class="gallery-img" />
+      <div class="caption-row">
+        <img src="images/hiking-trail.png" alt="Icon" class="caption-icon" />
+        <span>Verdant Path</span>
+      </div>
+    </div>
+
+    
+    <!-- Image 4 -->
+    <div class="gallery-block">
+      <img src="images/romance.jpg" alt="Boating" class="gallery-img" />
+      <div class="caption-row">
+        <img src="images/picnic.png" alt="Icon" class="caption-icon" />
+        <span>Nature Nibbles</span>
+      </div>
+    </div>
+
+        <!-- Image 4 -->
+    <div class="gallery-block">
+      <img src="images/grill (4).jpg" alt="Boating" class="gallery-img" />
+      <div class="caption-row">
+        <img src="images/food (21).png" alt="Icon" class="caption-icon" />
+        <span>Flame & Feast</span>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<section class="about-teaser2" id="about2">
+  <div class="about-content2">
+    <h2 class="section-heading2" data-aos="fade-up" data-aos-delay="200">
+      A LOST PARADISE
+    </h2>
+
+  </div>
+</section>
+
+
+<section class="vertical-gallery">
+  <h2 class="gallery-heading">Eden Unveiled</h2>
+  <div class="vertical-grid">
+    <div class="gallery-image">
+      <img src="images/waterf (22).webp" alt="Experience 1">
+      <div class="img-overlay"><span>Waterfall Escape</span></div>
+    </div>
+    <div class="gallery-image">
+      <img src="images/waterf (13).webp" alt="Experience 2">
+      <div class="img-overlay"><span>Hidden Caves</span></div>
+    </div>
+    <div class="gallery-image">
+      <img src="images/picnic (12).webp" alt="Experience 3">
+      <div class="img-overlay"><span>Picnic Grove</span></div>
+    </div>
+    <div class="gallery-image">
+      <img src="images/photo1.webp" alt="Experience 4">
+      <div class="img-overlay"><span>Epic Moments</span></div>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- Professional Footer -->
+<footer class="pro-footer">
+  <div class="pro-footer-inner">
+
+    <!-- Logo & Tagline -->
+    <div class="pro-footer-brand" data-aos="fade-up">
+      <img src="images/Paradise.png" alt="Paradise Lost Logo" class="footer-logo" />
+      <p class="tagline">Unleashing Nature’s Wonders</p>
+    </div>
+
+    <!-- Footer Grid -->
+    <div class="pro-footer-grid">
+
+      <!-- Contact Info -->
+      <div class="footer-box" data-aos="fade-up" data-aos-delay="100">
+        <h4>Contact Us</h4>
+        <ul>
+          <li style="color: black;"><i class="fas fa-phone-alt"></i> +254 110 055 555</li>
+          <li style="color: black;"><i class="fas fa-phone-alt"></i> +254 110 022 222</li>
+          <li style="color: black;"><i class="fas fa-envelope"></i> info@paradiselost.co.ke</li>
+          <li style="color: black;"><i class="fas fa-map-marker-alt"></i> Kiambu</li>
+        </ul>
+      </div>
+
+      <!-- Links -->
+      <div class="footer-box" data-aos="fade-up" data-aos-delay="200">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="activities.html">Activities</a></li>
+           <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Newsletter -->
+      <div class="footer-box">
+        <h4>Stay Updated</h4>
+        <form class="newsletter-form">
+          <input type="email" placeholder="Your email" required />
+          <button type="submit"><i class="fas fa-paper-plane"></i></button>
+        </form>
+      </div>
+
+      <!-- Region Select & Social -->
+      <div class="footer-box">
+<h4>Region</h4>
+<div class="region-flag">
+  <img src="images/Untitled design (88).png" alt="Kenya Flag">
+  <span>Kenya</span>
+</div>
+
+
+<div class="footer-socials">
+  <a href="https://www.instagram.com/paradiselost_ke?utm_source=ig_web_button_share_sheet&igsh=OWl5eG1ndWMzMjMw" target="_blank" aria-label="Instagram">
+    <i class="fab fa-instagram"></i>
+  </a>
+  <a href="https://web.facebook.com/paradiselostke/?_rdc=1&_rdr#" target="_blank" aria-label="Facebook">
+    <i class="fab fa-facebook-f"></i>
+  </a>
+  <a href="https://www.tiktok.com/@paradiselost_ke?is_from_webapp=1&sender_device=pc" target="_blank" aria-label="TikTok">
+    <i class="fab fa-tiktok"></i>
+  </a>
+    <a href="https://wa.me/254110055555" target="_blank" aria-label="WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+</div>
+
+      </div>
+
+    </div>
+
+    <!-- Bottom -->
+    <div class="pro-footer-bottom">
+      <p>&copy; 2025 <span>Paradise Lost</span>. All rights reserved.</p>
+    </div>
+
+  </div>
+</footer>
+
+
+
+
+
+  <!-- Optional JS -->
+  <script src="gallery.js"></script>
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init({
+    once: false, // 👈 allow repeat on scroll
+    duration: 1200,
+    easing: 'ease-in-out'
+  });
+</script>
+
+<!--Circle Mouse-->>
+<div class="cursor-circle"></div>
+
+<!-- Include Lenis (CDN or npm) -->
+<script src="https://unpkg.com/@studio-freight/lenis@1.0.35/dist/lenis.min.js"></script>
+ <script>
+const isTouch = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
+
+const lenis = new Lenis({
+  duration: isTouch ? 2.8 : 1.6, // smoother on phones, faster on desktop
+  easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+  smooth: true,
+  smoothTouch: true
+});
+
+
+    function raf(time) {
+      lenis.raf(time);
+      requestAnimationFrame(raf);
+    }
+
+    requestAnimationFrame(raf);
+  </script>
+
+  <script>
+  const cursor = document.querySelector(".cursor-circle");
+
+  document.addEventListener("mousemove", (e) => {
+    cursor.style.top = `${e.clientY}px`;
+    cursor.style.left = `${e.clientX}px`;
+  });
+</script>
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const links = document.querySelectorAll("a");
+    const transition = document.getElementById("page-transition");
+
+    // Function to disable transition when user uses back/forward
+    window.addEventListener("pageshow", (event) => {
+      const comingFromHistory =
+        event.persisted ||
+        window.performance.getEntriesByType("navigation")[0]?.type === "back_forward";
+
+      if (comingFromHistory) {
+        transition.classList.remove("active"); // No transition on back/forward
+        sessionStorage.removeItem("transitioning");
+      } else {
+        // Normal link-based navigation
+        if (sessionStorage.getItem("transitioning") === "true") {
+          sessionStorage.setItem("transitioning", "false");
+          transition.classList.remove("active"); // Fade in after animation
+        } else {
+          transition.classList.remove("active"); // Initial page load
+        }
+      }
+    });
+
+    links.forEach(link => {
+      const href = link.getAttribute("href");
+      if (href && !href.startsWith("#") && !href.startsWith("http")) {
+        link.addEventListener("click", e => {
+          e.preventDefault();
+          sessionStorage.setItem("transitioning", "true");
+          transition.classList.add("active");
+
+          setTimeout(() => {
+            window.location.href = href;
+          }, 1500); // Match your CSS animation duration
+        });
+      }
+    });
+  });
+</script>
+
+</body>
+</html>

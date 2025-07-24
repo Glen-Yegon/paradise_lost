@@ -1,1 +1,0 @@
-function restoreImport(r,t){return("@import "+r+" "+t).trim()}module.exports=restoreImport;

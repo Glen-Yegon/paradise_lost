@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Signup | Paradise Lost</title>
+  <link rel="stylesheet" href="sign.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <div class="background"></div>
+
+  <a href="index.html" class="back-button">← Back</a>
+
+  <div class="form-container" id="formContainer">
+    <h2 id="formTitle">Step Into Paradise</h2>
+    <form id="signupForm">
+      <input type="text" id="name" placeholder="Full Name" required />
+      <input type="email" id="email" placeholder="Email Address" required />
+      <input type="password" id="password" placeholder="Password" required />
+      <button type="submit" class="submit-btn">Create Account</button>
+    </form>
+
+    <form id="confirmForm" style="display: none;">
+      <input type="email" id="confirmEmail" placeholder="Email Address" required />
+      <input type="password" id="confirmPassword" placeholder="Password" required />
+      <button type="submit" class="submit-btn">Confirm Account</button>
+    </form>
+
+    <button class="toggle-btn" id="toggleMode">Already have an account? <strong style="color: blue;">Confirm</strong> </button>
+  </div>
+
+  <script type="module" src="sign.min.js"></script>
+
+</body>
+</html>

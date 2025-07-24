@@ -6,37 +6,43 @@ const terser = require("terser");
 
 const directory = "./";
 
-// 🔥 STEP 1: Delete existing .min.css and .min.js files
+// 🔥 STEP 1: Delete all existing .min.css and .min.js files
 async function cleanMinifiedFiles() {
-  const minFiles = await glob(`${directory}/**/*.min.{css,js}`);
-  minFiles.forEach((file) => {
+  const minFiles = await glob(`${directory}/**/*.{min.css,min.js}`, {
+    ignore: ["node_modules/**"],
+  });
+
+  for (const file of minFiles) {
     fs.removeSync(file);
     console.log(`🧹 Deleted: ${file}`);
-  });
+  }
 }
 
-// 🧼 STEP 2: Minify CSS
+// 🧼 STEP 2: Minify CSS files
 async function minifyCSSFiles() {
-  const files = await glob(`${directory}/**/*.css`);
-  files.forEach((file) => {
-    if (file.endsWith(".min.css")) return; // Skip already minified
+  const files = await glob(`${directory}/**/*.css`, {
+    ignore: ["**/*.min.css", "node_modules/**"],
+  });
 
+  for (const file of files) {
     const original = fs.readFileSync(file, "utf8");
     const minified = new CleanCSS().minify(original).styles;
     const minFile = file.replace(/\.css$/, ".min.css");
 
     fs.writeFileSync(minFile, minified, "utf8");
     console.log(`✅ Minified CSS: ${file} → ${minFile}`);
-  });
+  }
 }
 
-// ⚙️ STEP 3: Minify JS
+// ⚙️ STEP 3: Minify JS files
 async function minifyJSFiles() {
-  const files = await glob(`${directory}/**/*.js`);
-  for (const file of files) {
-    if (file.endsWith(".min.js") || file.includes("minify-all.js")) continue;
+  const files = await glob(`${directory}/**/*.js`, {
+    ignore: ["**/*.min.js", "**/minify-all.js", "node_modules/**"],
+  });
 
+  for (const file of files) {
     const original = fs.readFileSync(file, "utf8");
+
     try {
       const result = await terser.minify(original);
       const minFile = file.replace(/\.js$/, ".min.js");
@@ -49,7 +55,7 @@ async function minifyJSFiles() {
   }
 }
 
-// 🚀 RUN SCRIPT
+// 🚀 Run all tasks
 (async () => {
   console.log("🔁 Cleaning up existing .min files...");
   await cleanMinifiedFiles();
