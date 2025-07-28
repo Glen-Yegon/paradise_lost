@@ -3,7 +3,14 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="apple-mobile-web-app-title" content="Paradise Lost" />
   <title>Paradise Lost Resort</title>
+
+  <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
+<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+<link rel="shortcut icon" href="/favicon.ico" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+<link rel="manifest" href="/site.webmanifest" />
   
 <!-- ✅ AOS Animation Library -->
 <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
@@ -13,7 +20,7 @@
 <!-- ✅ Google Fonts: Source Sans Pro -->
 <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600&display=swap" rel="stylesheet">
 <!-- ✅ Preload Local Font: Tan Mon Cheri -->
-<link rel="preload" href="fonts/TanMonCheri.woff2" as="font" type="fonts/woff2" crossorigin="anonymous">
+<link rel="preload" href="fonts/tan-mon-cheri.woff2" as="font" type="fonts/woff2" crossorigin="anonymous">
 <!-- ✅ Preload Key Images -->
 <link rel="preload" as="image" href="images/p3.webp" type="image/webp">
 <link rel="preload" as="image" href="images/main (2).jpg" type="image/webp">
@@ -59,20 +66,20 @@
   
   <!-- Image 1 -->
   <picture>
-    <source srcset="images/main (3).webp" media="(max-width: 768px)">
-    <img src="images/waterf (12).webp" class="parallax-img" alt="Waterfall">
+    <source srcset="img/main (3).avif" media="(max-width: 768px)">
+    <img src="img/waterf (12).avif" class="parallax-img" alt="Waterfall">
   </picture>
 
   <!-- Image 2 -->
   <picture>
-    <source srcset="images/waterf (3).webp" media="(max-width: 768px)">
-    <img src="images/DSC_8057.jpg" class="parallax-img" alt="Nature Path">
+    <source srcset="img/waterf (3).avif" media="(max-width: 768px)">
+    <img src="img/DSC_8057.avif" class="parallax-img" alt="Nature Path">
   </picture>
 
   <!-- Image 3 -->
   <picture>
-    <source srcset="images/waterf (11).webp" media="(max-width: 768px)">
-    <img src="images/hp1.webp" class="parallax-img" alt="Adventure Highlight">
+    <source srcset="img/waterf (11).avif" media="(max-width: 768px)">
+    <img src="img/hp1.avif" class="parallax-img" alt="Adventure Highlight">
   </picture>
 
   <!-- Image 4 -->
@@ -208,12 +215,12 @@
 
 
 
-  <!-- ✅ OVERLAY for dim effect -->
+  <!-- OVERLAY for dim effect -->
   <div class="overlay"></div>
 
 
 
-  <!-- ✅ HERO CONTENT -->
+  <!-- HERO CONTENT -->
   <div class="hero-content">
     <h1>Paradise Lost</h1>
     <p>Welcome To a Lost Paradise</p>
@@ -224,7 +231,7 @@
 
 
 
-<!-- ✅ EXPLORE OVERLAY SECTION -->
+<!-- EXPLORE OVERLAY SECTION -->
 <section class="explore-overlay" id="exploreOverlay" >
   <h2 class="overlay-title" data-aos="fade-down" data-aos-delay="200">Paradise Lost</h2>
   <button class="close-btn" onclick="closeOverlay()">X</button>
@@ -272,7 +279,7 @@
   </div>
 
 
-  <!-- ✅ CTA Button -->
+  <!-- CTA Button -->
   <div class="explore-cta" data-aos="fade-up" data-aos-delay="1000">
     <a href="activities.html" class="cta-button">See All Activities</a>
   </div>
