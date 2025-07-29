@@ -1,10 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<!-- Basic Meta Tags -->
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="apple-mobile-web-app-title" content="Paradise Lost" />
+  <meta name="title" content="Kids Corner at Paradise Lost - Safe, Fun & Educational" />
+  <meta name="description" content="Let your children explore and enjoy fun, safe, and educational activities in the dedicated Kids Corner at Paradise Lost." />
+  <meta name="keywords" content="Kids Activities Kenya, Paradise Lost Kids Corner, Family Fun, Children Outdoor Games, Safe Playgrounds Nairobi" />
+  <meta name="author" content="Paradise Lost Team" />
+  <meta name="theme-color" content="#163838" />
+  <meta name="robots" content="index, follow" />
+
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://www.paradiselost.co.ke/kids-corner.html" />
+
+  <!-- Language -->
+  <meta http-equiv="Content-Language" content="en" />
+
+  <!-- Page Title -->
   <title>Kids Corner | Paradise Lost</title>
+
+   <!-- Apple Touch -->
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="apple-mobile-web-app-title" content="Paradise Lost" />
+  <link rel="apple-touch-icon" href="images/kidscorner.jpg" />
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.paradiselost.co.ke/kids-corner.html" />
+  <meta property="og:title" content="Kids Corner at Paradise Lost - Safe, Fun & Educational" />
+  <meta property="og:description" content="A perfect playground paradise for kids — full of laughter, learning, and exciting activities in nature." />
+  <meta property="og:image" content="https://www.paradiselost.co.ke/images/kidscorner.jpg" />
+  <meta property="og:site_name" content="Paradise Lost Resort" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:url" content="https://www.paradiselost.co.ke/kids-corner.html" />
+  <meta name="twitter:title" content="Kids Corner at Paradise Lost - Safe, Fun & Educational" />
+  <meta name="twitter:description" content="A perfect playground paradise for kids — full of laughter, learning, and exciting activities in nature." />
+  <meta name="twitter:image" content="https://www.paradiselost.co.ke/images/kidscorner.jpg" />
+
+
   <link rel="stylesheet" href="caves.css" />
 
   <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
@@ -12,6 +49,8 @@
 <link rel="shortcut icon" href="/favicon.ico" />
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
 <link rel="manifest" href="/site.webmanifest" />
+
+<link rel="preload" as="image" href="img/kidscorner.avif" type="image/avif">
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600&display=swap" rel="stylesheet">
@@ -342,14 +381,14 @@
         </ul>
       </div>
 
-      <!-- Newsletter -->
-      <div class="footer-box">
-        <h4>Stay Updated</h4>
-        <form class="newsletter-form">
-          <input type="email" placeholder="Your email" required />
-          <button type="submit"><i class="fas fa-paper-plane"></i></button>
-        </form>
-      </div>
+<!-- Newsletter -->
+<div class="footer-box">
+  <h4>Stay Updated</h4>
+  <form id="newsletterForm" class="newsletter-form">
+    <input type="email" id="newsletterEmail" placeholder="Your email" required />
+    <button type="submit"><i class="fas fa-paper-plane"></i></button>
+  </form>
+</div>
 
       <!-- Region Select & Social -->
       <div class="footer-box">
@@ -396,6 +435,7 @@
 <div class="cursor-circle"></div>
 
   <script src="caves.min.js"></script>
+  <script src="firebase.js" type="module"></script>
 <!-- Include Lenis (CDN or npm) -->
 <script src="https://unpkg.com/@studio-freight/lenis@1.0.35/dist/lenis.min.js"></script>
  <script>

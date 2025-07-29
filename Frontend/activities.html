@@ -1,10 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
+ <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <meta name="apple-mobile-web-app-title" content="Paradise Lost" />
+  <meta name="title" content="Activities at Paradise Lost - Adventure Awaits in Kenya" />
+  <meta name="description" content="Explore exciting activities at Paradise Lost, from ziplining and archery to boat rides, camping, and waterfall exploration." />
+  <meta name="keywords" content="Paradise Lost, Activities, Ziplining, Archery, Boat Rides, Camping, Kenya Tourism" />
+  <meta name="author" content="Paradise Lost Team" />
+  <meta name="theme-color" content="#163838" />
+  <meta name="robots" content="index, follow" />
+
+    <!-- Canonical URL -->
+  <link rel="canonical" href="https://www.paradiselost.co.ke/activities.html" />
+
+  <!-- Language -->
+  <meta http-equiv="Content-Language" content="en" />
+
+  <!-- Title -->
   <title>Activities | Paradise Lost</title>
+   <!-- Apple Touch -->
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="apple-mobile-web-app-title" content="Paradise Lost" />
+  <link rel="apple-touch-icon" href="images/waterf (14).jpg" />
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.paradiselost.co.ke/activities.html" />
+  <meta property="og:title" content="Adventure & Activities at Paradise Lost" />
+  <meta property="og:description" content="From thrilling ziplining to peaceful nature walks, discover all the fun things you can do at Paradise Lost." />
+  <meta property="og:image" content="https://www.paradiselost.co.ke/images/waterf (14).jpg" />
+  <meta property="og:site_name" content="Paradise Lost Resort" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:url" content="https://www.paradiselost.co.ke/activities.html" />
+  <meta name="twitter:title" content="Adventure & Activities at Paradise Lost" />
+  <meta name="twitter:description" content="From thrilling ziplining to peaceful nature walks, discover all the fun things you can do at Paradise Lost." />
+  <meta name="twitter:image" content="https://www.paradiselost.co.ke/images/waterf (14).jpg" />
+
+
+
+
   <link rel="stylesheet" href="activities.min.css" />
 
   <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
@@ -26,9 +63,9 @@
 <link rel="preload" href="fonts/tan-mon-cheri.woff2" as="font" type="fonts/woff2" crossorigin="anonymous">
 
 <!-- ✅ Preload Key Images -->
-<link rel="preload" as="image" href="images/waterf (15).webp" type="image/webp">
-<link rel="preload" as="image" href="images/waterf (14).webp" type="image/webp">
-<link rel="preload" as="image" href="images/waterf (12).webp" type="image/webp">
+<link rel="preload" as="image" href="img/waterf (15).avif" type="image/avif">
+<link rel="preload" as="image" href="img/waterf (14).avif" type="image/avif">
+<link rel="preload" as="image" href="img/waterf (12).avif" type="image/avif">
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600&display=swap" rel="stylesheet">
@@ -403,14 +440,14 @@
         </ul>
       </div>
 
-      <!-- Newsletter -->
-      <div class="footer-box">
-        <h4>Stay Updated</h4>
-        <form class="newsletter-form">
-          <input type="email" placeholder="Your email" required />
-          <button type="submit"><i class="fas fa-paper-plane"></i></button>
-        </form>
-      </div>
+<!-- Newsletter -->
+<div class="footer-box">
+  <h4>Stay Updated</h4>
+  <form id="newsletterForm" class="newsletter-form">
+    <input type="email" id="newsletterEmail" placeholder="Your email" required />
+    <button type="submit"><i class="fas fa-paper-plane"></i></button>
+  </form>
+</div>
 
       <!-- Region Select & Social -->
       <div class="footer-box">
@@ -575,6 +612,8 @@
     });
   });
 </script>
+
+<script src="firebase.js" type="module"></script>
 
 <script>
   const cursor = document.querySelector(".cursor-circle");

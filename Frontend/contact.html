@@ -1,10 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+ <!-- Basic Meta Tags -->
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="apple-mobile-web-app-title" content="Paradise Lost" />
+  <meta name="title" content="Contact Paradise Lost - Get in Touch Today" />
+  <meta name="description" content="Have questions or want to plan your visit? Contact Paradise Lost via phone, email, or our online form. We're here to help!" />
+  <meta name="keywords" content="Contact Paradise Lost, Paradise Lost Kenya, Location, Phone, Email, Directions, Support" />
+  <meta name="author" content="Paradise Lost Team" />
+  <meta name="theme-color" content="#163838" />
+  <meta name="robots" content="index, follow" />
+
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://www.paradiselost.co.ke/contact.html" />
+
+  <!-- Language -->
+  <meta http-equiv="Content-Language" content="en" />
+
+  <!-- Page Title -->
   <title>Contact | Paradise Lost</title>
+
+   <!-- Apple Touch -->
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="apple-mobile-web-app-title" content="Paradise Lost" />
+  <link rel="apple-touch-icon" href="images/picnic (11).jpg" />
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.paradiselost.co.ke/contact.html" />
+  <meta property="og:title" content="Contact Paradise Lost - Get in Touch Today" />
+  <meta property="og:description" content="Reach out to Paradise Lost for bookings, inquiries, or support. We're ready to help make your visit amazing." />
+  <meta property="og:image" content="https://www.paradiselost.co.ke/images/picnic (11).jpg" />
+  <meta property="og:site_name" content="Paradise Lost Resort" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:url" content="https://www.paradiselost.co.ke/contact.html" />
+  <meta name="twitter:title" content="Contact Paradise Lost - Get in Touch Today" />
+  <meta name="twitter:description" content="Reach out to Paradise Lost for bookings, inquiries, or support. We're ready to help make your visit amazing." />
+  <meta name="twitter:image" content="https://www.paradiselost.co.ke/images/picnic (11).jpg" />
+
 
   <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
 <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
@@ -26,8 +62,8 @@
 <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600&display=swap" rel="stylesheet">
 <link rel="preload" href="fonts/tan-mon-cheri.woff2" as="font" type="fonts/woff2" crossorigin="anonymous">
 <!-- ✅ Preload Key Images -->
-<link rel="preload" as="image" href="images/waterf (9).webp" type="image/webp">
-<link rel="preload" as="image" href="images/contact.webp" type="image/webp">
+<link rel="preload" as="image" href="img/waterf (9).avif" type="image/avif">
+<link rel="preload" as="image" href="img/contact.avif" type="image/avif">
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Tan+Mon+Cheri&display=swap" rel="stylesheet">
@@ -139,6 +175,33 @@
     </div>
   </div>
 </section>
+
+
+<section class="review-section">
+<button id="toggleReviewBtn" class="review-button">
+  <span>Write a review?</span>
+</button>
+
+
+  <div class="review-form" id="reviewForm">
+    <button class="close-btn" id="closeReviewForm">&times;</button>
+    <h3>Share your experience</h3>
+
+    <div class="stars" id="starContainer">
+      <span class="star" data-rating="1">&#9733;</span>
+      <span class="star" data-rating="2">&#9733;</span>
+      <span class="star" data-rating="3">&#9733;</span>
+      <span class="star" data-rating="4">&#9733;</span>
+      <span class="star" data-rating="5">&#9733;</span>
+    </div>
+
+    <input type="text" placeholder="Your name (optional)">
+    <textarea rows="4" placeholder="Write your review..."></textarea>
+    <button type="submit"><span>Submit Review</span></button>
+
+  </div>
+</section>
+
 
 
 
@@ -255,14 +318,14 @@
         </ul>
       </div>
 
-      <!-- Newsletter -->
-      <div class="footer-box">
-        <h4>Stay Updated</h4>
-        <form class="newsletter-form">
-          <input type="email" placeholder="Your email" required />
-          <button type="submit"><i class="fas fa-paper-plane"></i></button>
-        </form>
-      </div>
+<!-- Newsletter -->
+<div class="footer-box">
+  <h4>Stay Updated</h4>
+  <form id="newsletterForm" class="newsletter-form">
+    <input type="email" id="newsletterEmail" placeholder="Your email" required />
+    <button type="submit"><i class="fas fa-paper-plane"></i></button>
+  </form>
+</div>
 
       <!-- Region Select & Social -->
       <div class="footer-box">
@@ -443,7 +506,33 @@ const lenis = new Lenis({
   });
 </script>
 
+<script>
+  const toggleBtn = document.getElementById('toggleReviewBtn');
+const reviewForm = document.getElementById('reviewForm');
+const closeBtn = document.getElementById('closeReviewForm');
+const stars = document.querySelectorAll('.star');
 
+toggleBtn.addEventListener('click', () => {
+  reviewForm.style.display = 'block';
+  reviewForm.scrollIntoView({ behavior: 'smooth' });
+});
+
+closeBtn.addEventListener('click', () => {
+  reviewForm.style.display = 'none';
+});
+
+stars.forEach(star => {
+  star.addEventListener('click', () => {
+    const rating = parseInt(star.dataset.rating);
+    stars.forEach((s, i) => {
+      s.classList.toggle('filled', i < rating);
+    });
+  });
+});
+
+</script>
+
+<script src="firebase.js" type="module"></script>
 
 </body>
 </html>

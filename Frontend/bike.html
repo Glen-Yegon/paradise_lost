@@ -1,10 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<!-- Basic Meta Tags -->
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="apple-mobile-web-app-title" content="Paradise Lost" />
+  <meta name="title" content="Bike Riding at Paradise Lost - Adventure on Two Wheels" />
+  <meta name="description" content="Ride through scenic trails at Paradise Lost. Enjoy an adventurous, eco-friendly biking experience for all ages." />
+  <meta name="keywords" content="Paradise Lost, Bike Riding, Cycling, Nature Trails, Kenya Resort, Outdoor Adventure" />
+  <meta name="author" content="Paradise Lost Team" />
+  <meta name="theme-color" content="#163838" />
+  <meta name="robots" content="index, follow" />
+
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://www.paradiselost.co.ke/bike-riding.html" />
+
+  <!-- Language -->
+  <meta http-equiv="Content-Language" content="en" />
+
+  <!-- Page Title -->
   <title>Bike Riding | Paradise Lost</title>
+
+   <!-- Apple Touch -->
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="apple-mobile-web-app-title" content="Paradise Lost" />
+  <link rel="apple-touch-icon" href="images/bike (15).jpg" />
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.paradiselost.co.ke/bike-riding.html" />
+  <meta property="og:title" content="Bike Riding at Paradise Lost - Ride Nature's Trails" />
+  <meta property="og:description" content="Cycle your way through nature trails at Paradise Lost. A refreshing, fun activity for groups and families." />
+  <meta property="og:image" content="https://www.paradiselost.co.ke/images/bike (15).jpg" />
+  <meta property="og:site_name" content="Paradise Lost Resort" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:url" content="https://www.paradiselost.co.ke/bike-riding.html" />
+  <meta name="twitter:title" content="Bike Riding at Paradise Lost - Ride Nature's Trails" />
+  <meta name="twitter:description" content="Cycle your way through nature trails at Paradise Lost. A refreshing, fun activity for groups and families." />
+  <meta name="twitter:image" content="https://www.paradiselost.co.ke/images/bike (15).jpg" />
+
+
+
   <link rel="stylesheet" href="caves.min.css" />
 
   <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
@@ -23,8 +61,8 @@
 <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600&display=swap" rel="stylesheet">
 <link rel="preload" href="fonts/tan-mon-cheri.woff2" as="font" type="fonts/woff2" crossorigin="anonymous">
 <!-- ✅ Preload Key Images -->
-<link rel="preload" as="image" href="images/bike (16).webp" type="image/webp">
-<link rel="preload" as="image" href="images/dartbmain.webp" type="image/webp">
+<link rel="preload" as="image" href="img/bike (16).avif" type="image/avif">
+<link rel="preload" as="image" href="img/dartbmain.avif" type="image/avif">
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Tan+Mon+Cheri&display=swap" rel="stylesheet">
@@ -370,14 +408,14 @@
         </ul>
       </div>
 
-      <!-- Newsletter -->
-      <div class="footer-box">
-        <h4>Stay Updated</h4>
-        <form class="newsletter-form">
-          <input type="email" placeholder="Your email" required />
-          <button type="submit"><i class="fas fa-paper-plane"></i></button>
-        </form>
-      </div>
+<!-- Newsletter -->
+<div class="footer-box">
+  <h4>Stay Updated</h4>
+  <form id="newsletterForm" class="newsletter-form">
+    <input type="email" id="newsletterEmail" placeholder="Your email" required />
+    <button type="submit"><i class="fas fa-paper-plane"></i></button>
+  </form>
+</div>
 
       <!-- Region Select & Social -->
       <div class="footer-box">
@@ -423,6 +461,7 @@
 <div class="cursor-circle"></div>
 
   <script src="caves.min.js"></script>
+  <script src="firebase.js" type="module"></script>
 <!-- Include Lenis (CDN or npm) -->
 <script src="https://unpkg.com/@studio-freight/lenis@1.0.35/dist/lenis.min.js"></script>
  <script>

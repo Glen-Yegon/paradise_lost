@@ -1,10 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
+ <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="title" content="About Paradise Lost - Kenya’s Nature & Adventure Destination" />
+  <meta name="description" content="Learn the story behind Paradise Lost, our mission, values, and what makes us one of Kenya’s most unique nature resorts." />
+  <meta name="keywords" content="Paradise Lost, About Us, Kenya Resort, Nature History, Eco Tourism" />
+  <meta name="author" content="Paradise Lost Team" />
+  <meta name="theme-color" content="#163838" />
+  <meta name="robots" content="index, follow" />
+
+    <!-- Canonical URL -->
+  <link rel="canonical" href="https://www.paradiselost.co.ke/about.html" />
+
+  <!-- Language -->
+  <meta http-equiv="Content-Language" content="en" />
+
+  <!-- Apple Touch -->
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
   <meta name="apple-mobile-web-app-title" content="Paradise Lost" />
-  <title>Paradise Lost - About Us</title>
+  <link rel="apple-touch-icon" href="images/main (2).jpg" />
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.paradiselost.co.ke/about.html" />
+  <meta property="og:title" content="About Paradise Lost - Nature, History & More" />
+  <meta property="og:description" content="Discover the story, mission, and values behind Paradise Lost—Kenya’s leading nature and adventure destination." />
+  <meta property="og:image" content="https://www.paradiselost.co.ke/images/main (2).jpg" />
+  <meta property="og:site_name" content="Paradise Lost Resort" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:url" content="https://www.paradiselost.co.ke/about.html" />
+  <meta name="twitter:title" content="About Paradise Lost - Nature, History & More" />
+  <meta name="twitter:description" content="Discover the story, mission, and values behind Paradise Lost—Kenya’s leading nature and adventure destination." />
+  <meta name="twitter:image" content="https://www.paradiselost.co.ke/images/main (2).jpg" />
+
+
+
+  <!-- Title -->
+  <title>About Paradise Lost</title>
+
+
+
   <link rel="stylesheet" href="about.min.css" />
 
   <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
@@ -25,8 +64,8 @@
 <link rel="preload" href="fonts/tan-mon-cheri.woff2" as="font" type="fonts/woff2" crossorigin="anonymous">
 
 <!-- ✅ Preload Key Images -->
-<link rel="preload" as="image" href="images/waterf%20(12).webp" type="image/webp">
-<link rel="preload" as="image" href="images/main%20(2).webp" type="image/webp">
+<link rel="preload" as="image" href="img/waterf (12).avif" type="image/avif">
+<link rel="preload" as="image" href="img/waterf (23).avif" type="image/avif">
 
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
@@ -252,14 +291,14 @@
         </ul>
       </div>
 
-      <!-- Newsletter -->
-      <div class="footer-box">
-        <h4>Stay Updated</h4>
-        <form class="newsletter-form">
-          <input type="email" placeholder="Your email" required />
-          <button type="submit"><i class="fas fa-paper-plane"></i></button>
-        </form>
-      </div>
+<!-- Newsletter -->
+<div class="footer-box">
+  <h4>Stay Updated</h4>
+  <form id="newsletterForm" class="newsletter-form">
+    <input type="email" id="newsletterEmail" placeholder="Your email" required />
+    <button type="submit"><i class="fas fa-paper-plane"></i></button>
+  </form>
+</div>
 
       <!-- Region Select & Social -->
       <div class="footer-box">
@@ -586,6 +625,8 @@ const lenis = new Lenis({
   showSlide(current);
   startAutoSlide();
 </script>
+
+<script src="firebase.js" type="module"></script>
 
 </body>
 </html>

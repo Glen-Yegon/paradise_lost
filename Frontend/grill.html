@@ -1,10 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<!-- Basic Meta Tags -->
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="apple-mobile-web-app-title" content="Paradise Lost" />
+  <meta name="title" content="Grill Rental at Paradise Lost - Outdoor BBQ Experience" />
+  <meta name="description" content="Enjoy a perfect outdoor BBQ with our grill rental service at Paradise Lost. Ideal for families, friends, and group events." />
+  <meta name="keywords" content="Grill Rental Kenya, BBQ Paradise Lost, Outdoor Cooking, Family Events, Group Picnics" />
+  <meta name="author" content="Paradise Lost Team" />
+  <meta name="theme-color" content="#163838" />
+  <meta name="robots" content="index, follow" />
+
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://www.paradiselost.co.ke/grill-rental.html" />
+
+  <!-- Language -->
+  <meta http-equiv="Content-Language" content="en" />
+
+  <!-- Page Title -->
   <title>Grill Rental | Paradise Lost</title>
+
+   <!-- Apple Touch -->
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="apple-mobile-web-app-title" content="Paradise Lost" />
+  <link rel="apple-touch-icon" href="images/food (4).jpg" />
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.paradiselost.co.ke/grill-rental.html" />
+  <meta property="og:title" content="Grill Rental at Paradise Lost - Outdoor BBQ Experience" />
+  <meta property="og:description" content="Make your day even better with grill rental at Paradise Lost. Cook, relax, and enjoy great food in nature." />
+  <meta property="og:image" content="https://www.paradiselost.co.ke/images/food (4).jpg" />
+  <meta property="og:site_name" content="Paradise Lost Resort" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:url" content="https://www.paradiselost.co.ke/grill-rental.html" />
+  <meta name="twitter:title" content="Grill Rental at Paradise Lost - Outdoor BBQ Experience" />
+  <meta name="twitter:description" content="Make your day even better with grill rental at Paradise Lost. Cook, relax, and enjoy great food in nature." />
+  <meta name="twitter:image" content="https://www.paradiselost.co.ke/images/food (4).jpg" />
+
+
+
   <link rel="stylesheet" href="caves.min.css" />
 
   <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
@@ -23,8 +61,8 @@
 <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600&display=swap" rel="stylesheet">
 <link rel="preload" href="fonts/tan-mon-cheri.woff2" as="font" type="fonts/woff2" crossorigin="anonymous">
 <!-- ✅ Preload Key Images -->
-<link rel="preload" as="image" href="images/food (5).webp" type="image/webp">
-<link rel="preload" as="image" href="images/food (2).webp" type="image/webp">
+<link rel="preload" as="image" href="img/food (5).avif" type="image/avif">
+<link rel="preload" as="image" href="img/food (2).avif" type="image/avif">
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Tan+Mon+Cheri&display=swap" rel="stylesheet">
@@ -357,14 +395,14 @@
         </ul>
       </div>
 
-      <!-- Newsletter -->
-      <div class="footer-box">
-        <h4>Stay Updated</h4>
-        <form class="newsletter-form">
-          <input type="email" placeholder="Your email" required />
-          <button type="submit"><i class="fas fa-paper-plane"></i></button>
-        </form>
-      </div>
+<!-- Newsletter -->
+<div class="footer-box">
+  <h4>Stay Updated</h4>
+  <form id="newsletterForm" class="newsletter-form">
+    <input type="email" id="newsletterEmail" placeholder="Your email" required />
+    <button type="submit"><i class="fas fa-paper-plane"></i></button>
+  </form>
+</div>
 
       <!-- Region Select & Social -->
       <div class="footer-box">
@@ -447,6 +485,8 @@ const lenis = new Lenis({
     cursor.style.left = `${e.clientX}px`;
   });
 </script>
+
+<script src="firebase.js" type="module"></script>
 
 <script>
   document.addEventListener("DOMContentLoaded", () => {

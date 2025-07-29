@@ -84,7 +84,7 @@ body, html {
 }
 
 #loading-screen {
-  z-index: 999999;
+  z-index: 999999 !important;
   position: fixed;
   inset: 0;
   background-color: #367588;
@@ -149,7 +149,7 @@ body, html {
   align-items: center;
   justify-content: space-between;
   background: transparent;
-  z-index: 10000 !important; /* High enough to always stay on top */
+  z-index: 9999 !important; /* High enough to always stay on top */
   isolation: isolate;
   transition: background 0.4s ease, box-shadow 0.4s ease;
 }
@@ -157,26 +157,20 @@ body, html {
 
 /* === GLASS EFFECT ON SCROLL === */
 .hero-navbar.scrolled {
-  background: rgba(89, 89, 89, 0.6); /* Translucent */
-  -webkit-backdrop-filter: blur(12px);
-    backdrop-filter: blur(12px);
+  background-color: rgba(0, 0, 0, 0.4);      
+  -webkit-backdrop-filter: blur(10px);    
+    backdrop-filter: blur(10px);  
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
-  z-index: 9999999 !important;
+  z-index: 9999 !important;
    height: 70px;
    color: #000;
 }
 
-.hide-navbar {
-  opacity: 0;
-  pointer-events: none;
-  transform: translateY(-100%);
-  transition: all 0.5s ease-in-out;
-}
 
 
 /* === DARK TEXT WHEN SCROLLED === */
 .hero-navbar.scrolled .navbar-center li a {
-  color: #000;
+  color: #ffffff;
 }
 
 .hero-navbar.scrolled .navbar-center li a:hover {
@@ -197,11 +191,11 @@ body, html {
 }
 
 .hero-navbar.scrolled .user-icon svg {
-  stroke: #000;
+  stroke: #ffffff;
 }
 
 .hero-navbar.scrolled .menu-toggle div {
-  background-color: #000;
+  background-color: #ffffff;
 }
 /* === TRANSITIONS FOR NAVBAR === */
 .hero-navbar,
@@ -227,7 +221,7 @@ body, html {
 /* Shrink and color change on scroll */
 .hero-navbar.scrolled .logo-left {
   transform: scale(2);
-  filter: brightness(0) invert(0); /* Black */
+  filter: brightness(0) invert(1); /* Black */
 }
 
 
@@ -350,7 +344,7 @@ body, html {
   justify-content: center;
   align-items: center;
   transition: opacity 1.2s ease;
-  z-index: 1;
+  z-index: 0;
 }
 
 .hero.fade-out {
@@ -362,9 +356,9 @@ body, html {
   content: "";
   position: absolute;
   inset: 0;
-  background: url('images/walpaper.webp') center/cover no-repeat;
+  background: url('img/walpaper.avif') center/cover no-repeat;
   transform: scale(1.2);
-  z-index: -1; /* ✅ keep it behind hero content */
+  z-index: 0; /* ✅ keep it behind hero content */
   transition: transform 2s ease-in-out;
   will-change: transform;
 }
@@ -388,7 +382,7 @@ body, html {
   align-items: center;
   justify-content: center;
   padding: 2rem;
-  z-index: 9999;
+  z-index: 1;
   color: white;
   text-align: center;
   backdrop-filter: blur(6px);
@@ -634,7 +628,7 @@ body, html {
 /* MOBILE STYLES */
 @media (max-width: 768px) {
   .hero::before {
-    background: url('images/main\ \(2\).webp') center/cover no-repeat;
+    background: url('img/main\ \(2\).avif') center/cover no-repeat;
   }
 }
 
@@ -846,7 +840,7 @@ nav.navbar.hidden {
   color: #f0f0f0;
   overflow-x: hidden;
   position: relative;
-  z-index: 9999;
+  z-index: 1 !important;
 }
 
 
@@ -1073,6 +1067,7 @@ nav.navbar.hidden {
   font-weight: bold;
   text-decoration: none;
   border-radius: 6px;
+  font-weight: 100;
   transition:
     background-color 0.3s ease,
     transform 0.3s ease,
@@ -1083,14 +1078,14 @@ nav.navbar.hidden {
 .shop-btn:hover {
   background-color: rgba(255, 255, 255, 0.15);
   color: black;
-  transform: scale(1.05);
+  transform: scale(1.15);
   box-shadow: 0 8px 20px rgba(255, 255, 255, 0.2);
 }
 
   /* 📱 Mobile Version: Override background image */
 @media (max-width: 767px) {
   .promo-bg {
-    background: url('images/food.webp') no-repeat center center/cover;
+    background: url('img/waterf\ \(6\).avif') no-repeat center center/cover;
   }
 }
 
@@ -1177,26 +1172,32 @@ nav.navbar.hidden {
   position: relative;
   height: 50vh;
   width: 100%;
-  background: url('images/zlp.webp') center/cover no-repeat;
+  background: url('img/zlp.avif') center/cover no-repeat;
   display: flex;
   flex-direction: column;
   
   justify-content: center;
   align-items: center;
   text-align: center;
-  z-index: 1;
+  z-index: 1 !important;
   background-color: #367588;
   color: #fff;
   margin-bottom: 0px;
   font-family: 'Source Sans Pro', sans-serif;
 }
 
+.fullscreen-cta > * {
+  position: relative;
+  z-index: 2;
+}
+
+
 .fullscreen-cta::before {
   content: "";
   position: absolute;
   inset: 0;
   background-color: rgba(0, 0, 0, 0.65); /* Dim effect */
-  z-index: 1;
+  z-index: 1 !important;
 }
 
 .cta-content {
@@ -1545,7 +1546,7 @@ nav.navbar.hidden {
   bottom: 0;
   left: 0;
   right: 0;
-  background: linear-gradient(to top, #163838e8, transparent);
+  background: linear-gradient(to top, #163838, transparent);
   padding: 1.5rem;
   color: #fff;
   text-align: left;

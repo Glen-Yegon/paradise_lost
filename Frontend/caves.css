@@ -239,7 +239,7 @@ body {
 /* === Hero Section === */
 .hero-section {
   height: 100vh;
-  background: url('images/waterf\ \(14\).webp') center/cover no-repeat;
+  background: url('img/waterf\ \(14\).avif') center/cover no-repeat;
   position: relative;
   display: flex;
   align-items: center;
@@ -249,14 +249,14 @@ body {
 }
 @media (max-width: 768px) {
   .hero-section {
-    background: url('images/waterf\ \(4\).webp') center/cover no-repeat;
+    background: url('img/waterf\ \(4\).avif') center/cover no-repeat;
   }
 }
 
 /* === Hero Section === */
 .zip-section {
   height: 100vh;
-  background: url('images/zpl\ \(5\).webp') center/cover no-repeat;
+  background: url('img/zpl\ \(5\).avif') center/cover no-repeat;
   position: relative;
   display: flex;
   align-items: center;
@@ -266,14 +266,14 @@ body {
 }
 @media (max-width: 768px) {
   .zip-section {
-    background: url('images/zpl\ \(9\).webp') center/cover no-repeat;
+    background: url('img/zpl\ \(9\).avif') center/cover no-repeat;
   }
 }
 
 /* === Hero Section === */
 .arch-section {
   height: 100vh;
-  background: url('images/arch2.webp') center/cover no-repeat;
+  background: url('img/arch2.avif') center/cover no-repeat;
   position: relative;
   display: flex;
   align-items: center;
@@ -283,14 +283,14 @@ body {
 }
 @media (max-width: 768px) {
   .arch-section {
-    background: url('images/arch9.webp') center/cover no-repeat;
+    background: url('img/arch9.avif') center/cover no-repeat;
   }
 }
 
 /* === Hero Section === */
 .bone-section {
   height: 100vh;
-  background: url('images/bonfire\ main\ \(1\).webp') center/cover no-repeat;
+  background: url('img/bonfire\ main\ \(1\).avif') center/cover no-repeat;
   position: relative;
   display: flex;
   align-items: center;
@@ -300,14 +300,14 @@ body {
 }
 @media (max-width: 768px) {
   .bone-section {
-    background: url('images/bonfire\ main\ \(2\).webp') center/cover no-repeat;
+    background: url('img/bonfire\ main\ \(2\).avif') center/cover no-repeat;
   }
 }
 
 /* === Hero Section === */
 .kids-section {
   height: 100vh;
-  background: url('images/kidscorner.jpg') center/cover no-repeat;
+  background: url('img/kidscorner.avif') center/cover no-repeat;
   position: relative;
   display: flex;
   align-items: center;
@@ -317,7 +317,7 @@ body {
 }
 @media (max-width: 768px) {
   .kids-section {
-    background: url('images/kidscorner.jpg') center/cover no-repeat;
+    background: url('img/kidscorner.avif') center/cover no-repeat;
   }
 }
 
@@ -341,7 +341,7 @@ body {
 /* === Hero Section === */
 .yoga-section {
   height: 100vh;
-  background: url('images/med\ \(2\).webp') center/cover no-repeat;
+  background: url('img/med\ \(2\).avif') center/cover no-repeat;
   position: relative;
   display: flex;
   align-items: center;
@@ -351,14 +351,14 @@ body {
 }
 @media (max-width: 768px) {
   .yoga-section {
-    background: url('images/medd.webp') center/cover no-repeat;
+    background: url('img/medd.avif') center/cover no-repeat;
   }
 }
 
 /* === Hero Section === */
 .grill-section {
   height: 100vh;
-  background: url('images/food\ \(5\).webp') center/cover no-repeat;
+  background: url('img/food\ \(5\).avif') center/cover no-repeat;
   position: relative;
   display: flex;
   align-items: center;
@@ -368,13 +368,13 @@ body {
 }
 @media (max-width: 768px) {
   .grill-section {
-    background: url('images/food\ \(2\).webp') center/cover no-repeat;
+    background: url('img/food\ \(2\).avif') center/cover no-repeat;
   }
 }
 /* === Hero Section === */
 .boat-section {
   height: 100vh;
-  background: url('images/boatr\'.webp') center/cover no-repeat;
+  background: url('img/boatr\'.avif') center/cover no-repeat;
   position: relative;
   display: flex;
   align-items: center;
@@ -384,13 +384,13 @@ body {
 }
 @media (max-width: 768px) {
   .boat-section {
-    background: url('images/boatr\'.webp') center/cover no-repeat;
+    background: url('img/boatr\'.avif') center/cover no-repeat;
   }
 }
 /* === Hero Section === */
 .camp-section {
   height: 100vh;
-  background: url('images/camp\ \(7\).webp') center/cover no-repeat;
+  background: url('img/camp\ \(7\).avif') center/cover no-repeat;
   position: relative;
   display: flex;
   align-items: center;
@@ -400,14 +400,14 @@ body {
 }
 @media (max-width: 768px) {
   .camp-section {
-    background: url('images/camp\ \(5\).webp') center/cover no-repeat;
+    background: url('img/camp\ \(5\).avif') center/cover no-repeat;
   }
 }
 
 /* === Hero Section === */
 .pic-section {
   height: 100vh;
-  background: url('images/picnic\ \(11\).webp') center/cover no-repeat;
+  background: url('img/picnic\ \(11\).avif') center/cover no-repeat;
   position: relative;
   display: flex;
   align-items: center;
@@ -420,7 +420,7 @@ body {
 /* === Hero Section === */
 .nat-section {
   height: 100vh;
-  background: url('images/naturemain.webp') center/cover no-repeat;
+  background: url('img/naturemain.avif') center/cover no-repeat;
   position: relative;
   display: flex;
   align-items: center;
@@ -430,17 +430,17 @@ body {
 }
 @media (max-width: 768px) {
   .nat-section {
-    background: url('images//waterf\ \(22\).webp') center/cover no-repeat;
+    background: url('img/waterf\ \(22\).avif') center/cover no-repeat;
   }
 }
 @media (max-width: 768px) {
   .pic-section {
-    background: url('images/picnic\ \(6\).webp') center/cover no-repeat;
+    background: url('img/picnic\ \(6\).avif') center/cover no-repeat;
   }
 }
 .bike-section {
   height: 100vh;
-  background: url('images/bike\ \(16\).webp') center/cover no-repeat;
+  background: url('img/bike\ \(16\).avif') center/cover no-repeat;
   position: relative;
   display: flex;
   align-items: center;
@@ -450,7 +450,7 @@ body {
 }
 @media (max-width: 768px) {
   .bike-section {
-    background: url('images/dartbmain.webp') center/cover no-repeat;
+    background: url('img/dartbmain.avif') center/cover no-repeat;
   }
 }
 

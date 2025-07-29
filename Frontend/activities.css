@@ -314,7 +314,7 @@ body {
 /* Hero */
 .hero {
   height: 60vh;
-  background-image: url('images/waterf\ \(14\).webp'); /* Desktop image */
+  background-image: url('img/waterf\ \(14\).avif'); /* Desktop image */
   background-size: cover;
   background-position: center;
   display: flex;
@@ -357,7 +357,7 @@ body {
 }
 @media (max-width: 768px) {
   .hero {
-    background-image: url('images/waterf\ \(12\).webp'); /* Mobile version */
+    background-image: url('img/waterf\ \(12\).avif'); /* Mobile version */
   }
 }
 @keyframes fadeText {

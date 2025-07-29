@@ -1,10 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="apple-mobile-web-app-title" content="Paradise Lost" />
+<!-- Essential Meta Tags -->
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="title" content="Paradise Lost Resort - Nature, Adventure & Relaxation in Kenya" />
+<meta name="description" content="Explore Paradise Lost – a hidden gem in Kenya. Enjoy camping, archery, ziplining, waterfalls, and unforgettable nature experiences." />
+<meta name="keywords" content="Paradise Lost, Resort, Kenya, Camping, Ziplining, Waterfalls, Nature, Tourism" />
+<meta name="author" content="Paradise Lost Team" />
+<meta name="theme-color" content="#163838" />
+
+  <!-- Title -->
   <title>Paradise Lost Resort</title>
+
+    <!-- Apple Touch -->
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="apple-mobile-web-app-title" content="Paradise Lost" />
+  <link rel="apple-touch-icon" href="images/chill (7).webp" />
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.paradiselost.co.ke/" />
+  <meta property="og:title" content="Paradise Lost Resort - Adventure & Nature" />
+  <meta property="og:description" content="Discover Kenya's hidden paradise. Enjoy camping, ziplining, waterfalls, and much more." />
+  <meta property="og:image" content="https://www.paradiselost.co.ke/images/chill (7).webp" />
+  <meta property="og:site_name" content="Paradise Lost Resort" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:url" content="https://www.paradiselost.co.ke/" />
+  <meta name="twitter:title" content="Paradise Lost Resort - Adventure & Nature" />
+  <meta name="twitter:description" content="Discover Kenya's hidden paradise. Enjoy camping, ziplining, waterfalls, and much more." />
+  <meta name="twitter:image" content="https://www.paradiselost.co.ke/images/chill (7).webp" />
+
 
   <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
 <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
@@ -21,26 +50,27 @@
 <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600&display=swap" rel="stylesheet">
 <!-- ✅ Preload Local Font: Tan Mon Cheri -->
 <link rel="preload" href="fonts/tan-mon-cheri.woff2" as="font" type="fonts/woff2" crossorigin="anonymous">
-<!-- ✅ Preload Key Images -->
-<link rel="preload" as="image" href="images/p3.webp" type="image/webp">
-<link rel="preload" as="image" href="images/main (2).jpg" type="image/webp">
-<link rel="preload" as="image" href="images/main (3).webp" type="image/webp">
-<link rel="preload" as="image" href="images/waterf (12).webp" type="image/webp">
-<link rel="preload" as="image" href="images/waterf (3).webp" type="image/webp">
-<link rel="preload" as="image" href="images/hp1.webp" type="image/webp">
-<link rel="preload" as="image" href="images/waterf (11).webp" type="image/webp">
-<link rel="preload" as="image" href="images/waterf (22).webp" type="image/webp">
-<link rel="preload" as="image" href="images/waterf (21).webp" type="image/webp">
-<link rel="preload" as="image" href="images/boatr'.webp" type="image/webp">
-<link rel="preload" as="image" href="images/waterf (7).webp" type="image/webp">
-<link rel="preload" as="image" href="images/waterf (15).webp" type="image/webp">
+
+<link rel="preload" as="image" href="img/main (3).avif" type="image/avif">
+<link rel="preload" as="image" href="img/main (2).avif" type="image/avif">
+<link rel="preload" as="image" href="img/walpaper.avif" type="image/avif">
+<link rel="preload" as="image" href="img/hp1.avif" type="image/avif">
+<link rel="preload" as="image" href="img/waterf (11).avif" type="image/avif">
+<link rel="preload" as="image" href="img/waterf (23).avif" type="image/avif">
+<link rel="preload" as="image" href="img/waterf (3).avif" type="image/avif">
+<link rel="preload" as="image" href="img/DSC_8057.avif" type="image/avif">
+<link rel="preload" as="image" href="img/waterf (12).avif" type="image/avif">
+<link rel="preload" as="image" href="img/boatr'.avif" type="image/avif">
+<link rel="preload" as="image" href="img/waterf (7).avif" type="image/avif">
+<link rel="preload" as="image" href="img/waterf (15).avif" type="image/avif">
+
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Tan+Mon+Cheri&display=swap" rel="stylesheet">
 
 
   <!-- External CSS -->
-  <link rel="stylesheet" href="index.css" />
+  <link rel="stylesheet" href="index.min.css" />
 
   <script>
   // ✅ Hide loader instantly before page renders
@@ -179,9 +209,7 @@
 </div>
 
 
-<header class="hero" id="hero">
-
-  <!-- ✅ NAVBAR -->
+ <!-- ✅ NAVBAR -->
 <nav class="hero-navbar">
   <!-- Left: Logo -->
   <div class="navbar-left">
@@ -212,6 +240,10 @@
     </a>
   </div>
 </nav>
+
+<header class="hero" id="hero">
+
+ 
 
 
 
@@ -304,7 +336,7 @@
     <h2 class="section-heading" data-aos="fade-up" data-aos-delay="200">
       Discover Paradise Lost
     </h2>
-    <p class="about-text" data-aos="fade-up" data-aos-delay="500">
+    <p class="about-text" data-aos="zoom-in" data-aos-delay="500">
       Nestled deep within lush forests and hidden waterfalls lies a forgotten escape — a sanctuary of thrill, peace, and natural beauty.
       From horse riding to zip-lining, caves to serene picnics — Paradise Lost is where adventure meets tranquility.
     </p>
@@ -326,18 +358,19 @@
 
     <!-- Card 1 -->
    <a href="camp.html"> <div class="adventure-card" data-aos="zoom-in">
-      <img src="images/camp (7).webp" alt="Camping">
+      <img src="images/archery.jpg" alt="Camping">
       <div class="card-overlay">
-        <h3>Camping</h3>
-        <p>Sleep under the stars and embrace the wild outdoors.</p>
+ <h3>Archery</h3>
+<p>Channel your inner warrior and test your precision with a bow and arrow.</p>
+
       </div>
     </div> </a>
 
     <!-- Card 2 -->
   <a href="bike.html"> <div class="adventure-card" data-aos="zoom-in">
-      <img src="images/bike (6).webp" alt="Bicycle Riding">
+      <img src="img/bike (6).avif" alt="Bicycle Riding">
       <div class="card-overlay">
-        <h3>Bicycle Riding</h3>
+        <h3>Bike Riding</h3>
         <p>Ride through scenic trails and natural landscapes.</p>
       </div>
     </div>
@@ -345,7 +378,7 @@
 
     <!-- Card 3 -->
     <a href="grill.html"><div class="adventure-card" data-aos="zoom-in">
-      <img src="images/food (2).webp" alt="Grill Rental">
+      <img src="img/food (2).avif" alt="Grill Rental">
       <div class="card-overlay">
         <h3>Grill Rental</h3>
         <p>Grill up a feast with friends and family outdoors.</p>
@@ -355,7 +388,7 @@
 
     <!-- Card 4 -->
     <a href="bone.html"><div class="adventure-card" data-aos="zoom-in">
-      <img src="images/bonfire main (3).webp" alt="Bonfires">
+      <img src="img/bonfire main (3).avif" alt="Bonfires">
       <div class="card-overlay">
         <h3>Bonfires</h3>
         <p>Gather around the flames and enjoy warm moments.</p>
@@ -388,11 +421,11 @@
   <div class="promo-bg"></div>
   <div class="promo-overlay"></div>
   <div class="promo-content">
-    <h1 data-aos="fade-down" data-aos-delay="800">Explore Timeless Moments</h1>
-    <p data-aos="fade-down" data-aos-delay="600">
+    <h1 data-aos="fade-down" data-aos-delay="900">Explore Timeless Moments</h1>
+    <p>
       Step into a visual journey of nature, adventure, and serenity — beautifully captured at Paradise Lost.
     </p>
-    <a href="gallery.html" class="shop-btn" data-aos="fade-down" data-aos-delay="400">View the Gallery →</a>
+    <a href="gallery.html" class="shop-btn" data-aos="fade-down" data-aos-delay="900">View the Gallery →</a>
   </div>
 </section>
 
@@ -461,14 +494,14 @@
         </ul>
       </div>
 
-      <!-- Newsletter -->
-      <div class="footer-box">
-        <h4>Stay Updated</h4>
-        <form class="newsletter-form">
-          <input type="email" placeholder="Your email" required />
-          <button type="submit"><i class="fas fa-paper-plane"></i></button>
-        </form>
-      </div>
+<!-- Newsletter -->
+<div class="footer-box">
+  <h4>Stay Updated</h4>
+  <form id="newsletterForm" class="newsletter-form">
+    <input type="email" id="newsletterEmail" placeholder="Your email" required />
+    <button type="submit"><i class="fas fa-paper-plane"></i></button>
+  </form>
+</div>
 
       <!-- Region Select & Social -->
       <div class="footer-box">
@@ -517,7 +550,7 @@
 </main>
 
 
-
+<script src="firebase.min.js" type="module"></script>
   <!-- External JS -->
   <script src="index.min.js"></script>
 
@@ -728,26 +761,6 @@ document.documentElement.classList.add('visited');
 </script>
 
 
-<script>
-
-window.addEventListener("scroll", () => {
-  const navbar = document.querySelector(".hero-navbar");
-  const aboutTeaser = document.querySelector(".about-teaser");
-
-  const teaserTop = aboutTeaser.getBoundingClientRect().top;
-
-  if (window.scrollY > 50 && teaserTop > 100) {
-    navbar.classList.add("scrolled");
-    navbar.classList.remove("hide-navbar");
-  } else if (teaserTop <= 100) {
-    navbar.classList.remove("scrolled");
-    navbar.classList.add("hide-navbar");
-  } else {
-    navbar.classList.remove("hide-navbar");
-  }
-});
-
-</script>
 
 
 <script>
@@ -801,7 +814,13 @@ window.addEventListener("scroll", () => {
   }
 </script>
 
-
+<script>
+  
+  function toggleMenu() {
+    const menu = document.getElementById("fullscreenMenu");
+    menu.classList.toggle("active");
+  }
+</script>
 
 
 </body>

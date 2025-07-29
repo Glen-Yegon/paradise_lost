@@ -330,7 +330,7 @@ body, html {
   top: 0; left: 0;
   width: 100%;
   height: 100%;
-  background: url('images/contact.jpg') center center / cover no-repeat;
+  background: url('img/contact.avif') center center / cover no-repeat;
   filter: brightness(0.5);
   z-index: -1;
   transform: scale(1.15);
@@ -338,7 +338,7 @@ body, html {
 }
 @media (max-width: 768px) {
   .hero-section::before {
-    background-image: url('images/waterf\ \(9\).jpg'); /* mobile image */
+    background-image: url('img/waterf\ \(9\).avif'); /* mobile image */
     filter: brightness(0.4);
   }
 }
@@ -841,4 +841,158 @@ background: linear-gradient(rgba(54, 120, 120, 0.5), rgba(22, 56, 56, 0.9)),
   .cta-button {
     width: 100%;
   }
+}
+
+
+.review-section {
+  font-family: 'Source Sans Pro', sans-serif;
+  text-align: center;
+  padding: 2rem;
+}
+
+.review-button {
+  background-color: transparent;
+  color: #163838;
+  padding: 0.8rem 2rem;
+  font-size: 1.5rem;
+  border: none;
+  border-radius: 10px;
+  border-bottom: 2px solid #163838;
+  cursor: pointer;
+  font-weight: 400;
+  position: relative;
+  overflow: hidden;
+    font-family: 'Tan Mon Cheri', cursive;
+  transition: color 0.3s ease;
+}
+
+.review-button::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 0%;
+  background-color: #387676;
+  z-index: 0;
+  transition: height 0.3s ease;
+  border-radius: 0 0 10px 10px;
+}
+
+.review-button:hover::before {
+  height: 100%;
+}
+
+.review-button:hover {
+  color: #ffffff;
+}
+
+.review-button span {
+  position: relative;
+  z-index: 1;
+}
+
+.review-form {
+  max-width: 600px;
+  margin: 2rem auto 0;
+  background: #fff;
+  border-radius: 15px;
+  padding: 2rem;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  display: none;
+  position: relative;
+  text-align: center;
+}
+
+.review-form h3 {
+  font-family: 'Tan Mon Cheri', serif;
+  font-weight: 100;
+  color: #163838;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.stars {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+.star {
+  font-size: 2rem;
+  color: #ccc;
+  cursor: pointer;
+  transition: color 0.3s ease;
+  margin: 0 5px;
+}
+.star.filled {
+  color: #367588;
+}
+
+.review-form textarea,
+.review-form input {
+  width: 100%;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+.review-form button[type="submit"] {
+  position: relative;
+  background-color: transparent;
+  color: #163838;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  font-family: 'Tan Mon Cheri', serif;
+  font-weight: 100;
+
+  border: none;
+  border-radius: 8px;
+  border-bottom: 2px solid #163838;
+  cursor: pointer;
+  overflow: hidden;
+  transition: color 0.3s ease;
+}
+
+.review-form button[type="submit"]::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 0%;
+  background-color: #387676;
+  z-index: 0;
+  transition: height 0.3s ease;
+  border-radius: 0 0 8px 8px;
+}
+
+.review-form button[type="submit"]:hover::before {
+  height: 100%;
+}
+
+.review-form button[type="submit"]:hover {
+  color: #ffffff;
+}
+
+.review-form button[type="submit"] span {
+  position: relative;
+  z-index: 1;
+}
+
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  color: #999;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+.close-btn:hover {
+  color: #387676;
 }
