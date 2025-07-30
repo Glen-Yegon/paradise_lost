@@ -708,7 +708,7 @@ document.documentElement.classList.add('visited');
 
 
 
-<script src="https://unpkg.com/aos@2.3.4/dist/aos.js" defer></script>
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
 <script>
   AOS.init({
     once: false, // 👈 allow repeat on scroll
@@ -727,7 +727,7 @@ document.documentElement.classList.add('visited');
   });
 </script>
 
-<script defer>
+<script>
   document.addEventListener("DOMContentLoaded", () => {
     const links = document.querySelectorAll("a");
     const transition = document.getElementById("page-transition");
@@ -788,7 +788,7 @@ document.documentElement.classList.add('visited');
   document.querySelectorAll('.section-heading').forEach(h => observers.observe(h));
 </script>
 
-<script defer>
+<script>
   function setupObserver(sectionId, bgClass) {
     const bgElement = document.querySelector(bgClass);
     const section = document.querySelector(sectionId);
