@@ -64,7 +64,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"  media="print" onload="this.media='all'">
 
   <!-- External CSS -->
-  <link rel="stylesheet" href="index.css" />
+  <link rel="stylesheet" href="index.min.css" />
 
   <script>
   // ✅ Hide loader instantly before page renders
@@ -126,6 +126,7 @@
   transform-origin: right;
   transform: scaleX(0);
   opacity: 0;
+  object-position: center;
   z-index: 0;
   filter: brightness(0.6); /* Slightly darken */
 }
@@ -145,6 +146,8 @@ html.visited .loading-screen {
 
 body {
   overflow-x: hidden;
+    scroll-behavior: auto !important; /* Disable native smooth scroll */
+  overflow-y: scroll;
 }
 
 
@@ -152,6 +155,10 @@ body, html {
   height: 100%;
   font-family: 'Source Sans Pro', sans-serif;
 }
+
+
+
+
 </style>
 
 
@@ -167,10 +174,10 @@ body, html {
 <div class="parallax-container">
   
 <!-- Image 1 -->
-<img src="img/waterf (12).avif" class="parallax-img" alt="Waterfall" loading="eager" fetchpriority="high">
+<img src="img/waterf (23).avif" class="parallax-img" alt="Waterfall" loading="eager" fetchpriority="high">
 
 <!-- Image 2 -->
-<img src="img/DSC_8057.avif" class="parallax-img" alt="Nature Path" loading="eager" fetchpriority="high">
+<img src="img/picnic (6).avif" class="parallax-img" alt="Nature Path" loading="eager" fetchpriority="high">
 
 <!-- Image 3 -->
 <img src="img/hp1.avif" class="parallax-img" alt="Adventure Highlight" loading="eager" fetchpriority="high">
