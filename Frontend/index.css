@@ -13,11 +13,17 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 html.visited .loading-screen {
   display: none !important;
   visibility: hidden !important;
   opacity: 0 !important;
 }
+
+body {
+  overflow-x: hidden;
+}
+
 
 body, html {
   height: 100%;

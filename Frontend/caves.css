@@ -1619,7 +1619,7 @@ background: linear-gradient(135deg, #f9fbfb, #dff1f3);
 
 .pricing-image img {
   width: 100%;
-  max-height: 520px;
+  max-height: 600px;
   object-fit: cover;
   border-radius: 5px;
   box-shadow: 0 8px 20px rgba(0,0,0,0.08);
