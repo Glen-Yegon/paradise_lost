@@ -648,13 +648,14 @@ window.onload = () => {
     loadingScreen.style.display = 'none';
     heroSection.classList.add('visible', 'zoom-out');
 
-    const lastImg = parallaxImgs[parallaxImgs.length - 1];
-    lastImg.style.transform = 'scaleX(1)';
-    lastImg.style.opacity = 1;
-    lastImg.style.zIndex = 200;
-    return;
-  }
+const lastImg = parallaxImgs[parallaxImgs.length - 1];
 
+requestAnimationFrame(() => {
+  lastImg.style.transform = 'scaleX(1)';
+  lastImg.style.opacity = '1';
+  lastImg.style.zIndex = '200';
+});
+  }
   // ✅ Loader animation
   let count = 0;
   const interval = setInterval(() => {
@@ -671,15 +672,19 @@ window.onload = () => {
     counterText.style.transform = 'translateX(-150vw)';
 
     setTimeout(() => {
-      parallaxImgs.forEach((img, index) => {
-        setTimeout(() => {
-          img.style.zIndex = 100 + index;
-          img.style.opacity = 1;
-          img.style.transition = 'transform 0.5s ease, opacity 0.3s ease';
-          img.style.transformOrigin = 'right';
-          img.style.transform = 'scaleX(1)';
-        }, index * 350);
-      });
+      
+parallaxImgs.forEach((img, index) => {
+  setTimeout(() => {
+    requestAnimationFrame(() => {
+      img.style.zIndex = 100 + index;
+      img.style.opacity = 1;
+      img.style.transition = 'transform 0.5s ease, opacity 0.3s ease';
+      img.style.transformOrigin = 'right';
+      img.style.transform = 'scaleX(1)';
+    });
+  }, index * 350);
+});
+
 
       const totalDelay = parallaxImgs.length * 350 + 600;
 
