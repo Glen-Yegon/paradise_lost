@@ -37,7 +37,8 @@
           "iframe[loading]",
           "iframe[referrerpolicy=no-referrer-when-downgrade]",
           "video[playsinline]",
-          "meta[name=theme-color]"
+          "meta[name=theme-color]",
+          "img[fetchpriority]"
         ]
       }
     ],

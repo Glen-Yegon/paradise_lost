@@ -51,18 +51,14 @@
 <!-- ✅ Preload Local Font: Tan Mon Cheri -->
 <link rel="preload" href="fonts/tan-mon-cheri.woff2" as="font" type="fonts/woff2" crossorigin="anonymous">
 
-<link rel="preload" as="image" href="img/main (3).avif" type="image/avif">
-<link rel="preload" as="image" href="img/main (2).avif" type="image/avif">
+<link rel="preload" as="image" href="img/waterf (14).avif" type="image/avif">
+<link rel="preload" as="image" href="img/boatr'.avif" type="image/avif">
 <link rel="preload" as="image" href="img/walpaper.avif" type="image/avif">
 <link rel="preload" as="image" href="img/hp1.avif" type="image/avif">
-<link rel="preload" as="image" href="img/waterf (11).avif" type="image/avif">
-<link rel="preload" as="image" href="img/waterf (23).avif" type="image/avif">
-<link rel="preload" as="image" href="img/waterf (3).avif" type="image/avif">
 <link rel="preload" as="image" href="img/DSC_8057.avif" type="image/avif">
 <link rel="preload" as="image" href="img/waterf (12).avif" type="image/avif">
-<link rel="preload" as="image" href="img/boatr'.avif" type="image/avif">
-<link rel="preload" as="image" href="img/waterf (7).avif" type="image/avif">
-<link rel="preload" as="image" href="img/waterf (15).avif" type="image/avif">
+<link rel="preload" as="image" href="img/main (2).avif" type="image/avif">
+
 
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
@@ -70,7 +66,7 @@
 
 
   <!-- External CSS -->
-  <link rel="stylesheet" href="index.min.css" />
+  <link rel="stylesheet" href="index.css" />
 
   <script>
   // ✅ Hide loader instantly before page renders
@@ -94,35 +90,21 @@
 
 <div class="parallax-container">
   
-  <!-- Image 1 -->
-  <picture>
-    <source srcset="img/main (3).avif" media="(max-width: 768px)">
-    <img src="img/waterf (12).avif" class="parallax-img" alt="Waterfall">
-  </picture>
+<!-- Image 1 -->
+<img src="img/waterf (12).avif" class="parallax-img" alt="Waterfall" loading="eager" fetchpriority="high">
 
-  <!-- Image 2 -->
-  <picture>
-    <source srcset="img/waterf (3).avif" media="(max-width: 768px)">
-    <img src="img/DSC_8057.avif" class="parallax-img" alt="Nature Path">
-  </picture>
+<!-- Image 2 -->
+<img src="img/DSC_8057.avif" class="parallax-img" alt="Nature Path" loading="eager" fetchpriority="high">
 
-  <!-- Image 3 -->
-  <picture>
-    <source srcset="img/waterf (11).avif" media="(max-width: 768px)">
-    <img src="img/hp1.avif" class="parallax-img" alt="Adventure Highlight">
-  </picture>
+<!-- Image 3 -->
+<img src="img/hp1.avif" class="parallax-img" alt="Adventure Highlight" loading="eager" fetchpriority="high">
 
-  <!-- Image 4 -->
-  <picture>
-    <source srcset="images/waterf (23).webp" media="(max-width: 768px)">
-    <img src="images/boatr'.webp" class="parallax-img" alt="Natural Scenery">
-  </picture>
+<!-- Image 4 -->
+<img src="img/boatr'.avif" class="parallax-img" alt="Natural Scenery" loading="eager" fetchpriority="high">
 
-  <!-- Image 5 -->
-  <picture>
-    <source srcset="images/waterf (7).webp" media="(max-width: 768px)">
-    <img src="images/waterf (15).webp" class="parallax-img" alt="Picnic Spot">
-  </picture>
+<!-- Image 5 -->
+<img src="img/waterf (14).avif" class="parallax-img" alt="Picnic Spot" loading="eager" fetchpriority="high">
+
 
 </div>
 
@@ -336,11 +318,11 @@
     <h2 class="section-heading" data-aos="fade-up" data-aos-delay="200">
       Discover Paradise Lost
     </h2>
-    <p class="about-text" data-aos="zoom-in" data-aos-delay="500">
+    <p class="about-text">
       Nestled deep within lush forests and hidden waterfalls lies a forgotten escape — a sanctuary of thrill, peace, and natural beauty.
       From horse riding to zip-lining, caves to serene picnics — Paradise Lost is where adventure meets tranquility.
     </p>
-<a href="about.html" class="cta-about">
+<a href="about.html" class="cta-about" data-aos="fade-up" data-aos-delay="200">
   Learn More <i class="fas fa-arrow-right"></i>
 </a>
 
@@ -357,7 +339,7 @@
   <div class="adventure-grid">
 
     <!-- Card 1 -->
-   <a href="camp.html"> <div class="adventure-card" data-aos="zoom-in">
+   <a href="camp.html"> <div class="adventure-card" >
       <img src="images/archery.jpg" alt="Camping">
       <div class="card-overlay">
  <h3>Archery</h3>
@@ -367,7 +349,7 @@
     </div> </a>
 
     <!-- Card 2 -->
-  <a href="bike.html"> <div class="adventure-card" data-aos="zoom-in">
+  <a href="bike.html"> <div class="adventure-card" >
       <img src="img/bike (6).avif" alt="Bicycle Riding">
       <div class="card-overlay">
         <h3>Bike Riding</h3>
@@ -377,7 +359,7 @@
     </a> 
 
     <!-- Card 3 -->
-    <a href="grill.html"><div class="adventure-card" data-aos="zoom-in">
+    <a href="grill.html"><div class="adventure-card">
       <img src="img/food (2).avif" alt="Grill Rental">
       <div class="card-overlay">
         <h3>Grill Rental</h3>
@@ -387,7 +369,7 @@
     </a>
 
     <!-- Card 4 -->
-    <a href="bone.html"><div class="adventure-card" data-aos="zoom-in">
+    <a href="bone.html"><div class="adventure-card">
       <img src="img/bonfire main (3).avif" alt="Bonfires">
       <div class="card-overlay">
         <h3>Bonfires</h3>
@@ -400,7 +382,7 @@
 
   <!-- ✅ CTA Button -->
   <div class="adventure-cta" style="text-align: center; margin-top: 2.5rem;">
-    <a href="activities.html" class="activities-btn">See All Activities →</a>
+    <a href="activities.html" class="adventure-btn">See All Activities →</a>
   </div>
 </section>
 

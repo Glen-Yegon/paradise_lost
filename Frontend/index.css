@@ -1083,7 +1083,7 @@ nav.navbar.hidden {
 
 .shop-btn:hover {
   background-color: rgba(255, 255, 255, 0.15);
-  color: black;
+  color: rgb(255, 255, 255);
   transform: scale(1.15);
   box-shadow: 0 8px 20px rgba(255, 255, 255, 0.2);
 }
@@ -1517,7 +1517,7 @@ nav.navbar.hidden {
 .adventure-header p {
   font-size: 1.1rem;
   color: #000000;
-  margin-bottom: 2.5rem;
+  margin-bottom: 1rem;
 }
 
 .adventure-grid {
@@ -1552,7 +1552,7 @@ nav.navbar.hidden {
   bottom: 0;
   left: 0;
   right: 0;
-  background: linear-gradient(to top, #163838, transparent);
+  background: linear-gradient(to top, #000000, transparent);
   padding: 1.5rem;
   color: #fff;
   text-align: left;
@@ -1572,7 +1572,7 @@ nav.navbar.hidden {
   font-size: 1.4rem;
   font-weight: bold;
   font-weight: 100;
-  margin: 0 0 0.3rem;
+  margin: 0 0 0.1rem;
     font-family: 'Tan Mon Cheri', serif;
 }
 
@@ -1608,39 +1608,23 @@ nav.navbar.hidden {
 
 .adventure-btn {
   padding: 14px 40px;
-  background: linear-gradient(135deg, #163838, #2a685f);
-  color: white;
+  background: transparent;
+  color: rgb(0, 0, 0);
+  border-bottom: 3px solid black;
   font-size: 1.15rem;
   font-family: 'Source Sans Pro', sans-serif;
-  font-weight: 600;
-  border: none;
+  font-weight: 100;
   border-radius: 50px;
   text-decoration: none;
   display: inline-block;
   position: relative;
   overflow: hidden;
   transition: all 0.4s ease;
-  box-shadow: 0 10px 30px rgba(22, 56, 56, 0.25);
 }
 
-.adventure-btn::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: -100%;
-  width: 100%;
-  height: 100%;
-  background: rgba(255, 255, 255, 0.2);
-  transition: all 0.5s ease;
-  transform: skewX(-20deg);
-}
-
-.adventure-btn:hover::before {
-  left: 100%;
-}
 
 .adventure-btn:hover {
-  transform: translateY(-4px) scale(1.02);
+  transform: translateY(-4px) scale(1.12);
   box-shadow: 0 12px 30px rgba(22, 56, 56, 0.35);
 }
 
@@ -1657,7 +1641,7 @@ nav.navbar.hidden {
   transform: scale(0);
   transform-origin: top left;
   transition: transform 0.5s ease;
-  z-index: 9999;
+  z-index: 999999;
   display: flex;
   flex-direction: column;
    overflow-y: auto; 

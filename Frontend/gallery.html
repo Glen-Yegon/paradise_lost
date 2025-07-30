@@ -59,20 +59,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 <link rel="preload" href="fonts/tan-mon-cheri.woff2" as="font" type="fonts/woff2" crossorigin="anonymous">
   <!-- External CSS -->
-  <link rel="stylesheet" href="gallery.css"/>
+  <link rel="stylesheet" href="gallery.min.css"/>
 </head>
 <body>
-<header class="hero">
-  <!-- Background Video -->
-  <video autoplay muted loop playsinline class="hero-video">
-    <source src="videos" media="(min-width: 768px)" type="video/mp4">
-    <source src="videos/denri2.mp4" media="(max-width: 767px)" type="video/mp4">
-    Your browser does not support the video tag.
-  </video>
-
-  <!-- Overlay -->
-  <div class="overlay"></div>
-
   <!-- Navbar -->
   <nav class="navbar" id="navbar">
     <div class="menu-toggle" id="menuToggle">
@@ -90,10 +79,18 @@
     </div>
   </nav>
 
-  <!-- Hero Title -->
-  <div class="hero-content">
-    <h1 class="hero-title">Gallery</h1>
-  </div>
+
+<header class="hero">
+  <!-- Background Video -->
+  <video autoplay muted loop playsinline class="hero-video">
+    <source src="videos" media="(min-width: 768px)" type="video/mp4">
+    <source src="videos/denri2.mp4" media="(max-width: 767px)" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+
+  <!-- Overlay -->
+  <div class="overlay"></div>
+
 </header>
 
 
@@ -101,27 +98,27 @@
   <div class="gallery-grid">
 
     <div class="gallery-block">
-      <img src="images/picnic (13).webp" alt="Zip Lining" class="gallery-img" />
+      <img src="images/picnic (13).webp" alt="Zip Lining" class="gallery-img"    loading="lazy"/>
       <div class="caption-row">
-      <img src="images/picnic.png" alt="Picnic Icon" class="caption-icon" />
+      <img src="images/picnic.png" alt="Picnic Icon" class="caption-icon"    loading="lazy" />
 
         <span>Meadow Moments</span>
       </div>
     </div>
 
     <div class="gallery-block">
-      <img src="images/waterf (15).webp" alt="Waterfall" class="gallery-img" />
+      <img src="images/waterf (15).webp" alt="Waterfall" class="gallery-img"    loading="lazy" />
       <div class="caption-row">
-        <img src="images/about.png" alt="Icon" class="caption-icon" />
+        <img src="images/about.png" alt="Icon" class="caption-icon"    loading="lazy" />
         <span>Echo Falls</span>
       </div>
     </div>
 
 
     <div class="gallery-block">
-      <img src="images/waterf (16).webp" alt="Waterfall" class="gallery-img" />
+      <img src="images/waterf (16).webp" alt="Waterfall" class="gallery-img"    loading="lazy"/>
       <div class="caption-row">
-        <img src="images/about.png" alt="Icon" class="caption-icon" />
+        <img src="images/about.png" alt="Icon" class="caption-icon"   loading="lazy" />
         <span>Echo Falls</span>
       </div>
     </div>
@@ -129,9 +126,9 @@
 
     <!-- Image 3 -->
     <div class="gallery-block">
-      <img src="images/walpaper.webp" alt="Nature Trail" class="gallery-img" />
+      <img src="images/walpaper.webp" alt="Nature Trail" class="gallery-img"   loading="lazy" />
       <div class="caption-row">
-    <img src="images/picnic.png" alt="Picnic Icon" class="caption-icon" />
+    <img src="images/picnic.png" alt="Picnic Icon" class="caption-icon"    loading="lazy" />
         <span>Nature Nibbles</span>
       </div>
     </div>
@@ -140,27 +137,27 @@
 
             <!-- Image 4 -->
     <div class="gallery-block">
-      <img src="images/grill (4).jpg" alt="Boating" class="gallery-img" />
+      <img src="images/grill (4).jpg" alt="Boating" class="gallery-img"   loading="lazy" />
       <div class="caption-row">
-        <img src="images/food (21).png" alt="Icon" class="caption-icon" />
+        <img src="images/food (21).png" alt="Icon" class="caption-icon"   loading="lazy" />
         <span>Flame & Feast</span>
       </div>
     </div>
 
         <!-- Image 4 -->
     <div class="gallery-block">
-      <img src="images/boatr'.webp" alt="Boating" class="gallery-img" />
+      <img src="images/boatr'.webp" alt="Boating" class="gallery-img"   loading="lazy" />
       <div class="caption-row">
-        <img src="images/pirate-ship.png" alt="Icon" class="caption-icon" />
+        <img src="images/pirate-ship.png" alt="Icon" class="caption-icon"    loading="lazy"/>
         <span>Rippling Retreat</span>
       </div>
     </div>
 
         <!-- Image 4 -->
     <div class="gallery-block">
-      <img src="images/boahtr.webp" alt="Boating" class="gallery-img" />
+      <img src="images/boahtr.webp" alt="Boating" class="gallery-img"   loading="lazy" />
       <div class="caption-row">
-        <img src="images/pirate-ship.png" alt="Icon" class="caption-icon" />
+        <img src="images/pirate-ship.png" alt="Icon" class="caption-icon"   loading="lazy" />
         <span>Rippling Retreat</span>
       </div>
     </div>
@@ -168,9 +165,9 @@
     
     <!-- Image 4 -->
     <div class="gallery-block">
-      <img src="images/food (5).webp" alt="Boating" class="gallery-img" />
+      <img src="images/food (5).webp" alt="Boating" class="gallery-img"   loading="lazy" />
       <div class="caption-row">
-        <img src="images/food (21).png" alt="Icon" class="caption-icon" />
+        <img src="images/food (21).png" alt="Icon" class="caption-icon"   loading="lazy" />
         <span>Flame & Feast </span>
       </div>
     </div>
@@ -195,16 +192,16 @@
   <div class="gallery-grid">
     <!-- Image 1 -->
     <div class="gallery-block">
-      <img src="images/arch9.webp" alt="Waterfall" class="gallery-img" />
+      <img src="images/arch9.webp" alt="Waterfall" class="gallery-img"   loading="lazy" />
       <div class="caption-row">
-        <img src="images/target.png" alt="Icon" class="caption-icon" />
+        <img src="images/target.png" alt="Icon" class="caption-icon"   loading="lazy" />
         <span>Arrowpoint Zone</span>
       </div>
     </div>
         <div class="gallery-block">
-      <img src="images/dartb (4).webp" alt="Waterfall" class="gallery-img" />
+      <img src="images/dartb (4).webp" alt="Waterfall" class="gallery-img"   loading="lazy" />
       <div class="caption-row">
-        <img src="images/bicycle.png" alt="Icon" class="caption-icon" />
+        <img src="images/bicycle.png" alt="Icon" class="caption-icon"   loading="lazy" />
         <span>Pedal Quest</span>
       </div>
     </div>
@@ -212,9 +209,9 @@
 
     <!-- Image 3 -->
     <div class="gallery-block">
-      <img src="images/bike (7).webp" alt="Nature Trail" class="gallery-img" />
+      <img src="images/bike (7).webp" alt="Nature Trail" class="gallery-img"   loading="lazy" />
       <div class="caption-row">
-    <img src="images/bicycle.png" alt="Picnic Icon" class="caption-icon" />
+    <img src="images/bicycle.png" alt="Picnic Icon" class="caption-icon"   loading="lazy" />
         <span>Pedal Quest</span>
       </div>
     </div>
@@ -222,9 +219,9 @@
 
     <!-- Image 2 -->
     <div class="gallery-block">
-      <img src="images/arch2.webp" alt="Zip Lining" class="gallery-img" />
+      <img src="images/arch2.webp" alt="Zip Lining" class="gallery-img"   loading="lazy" />
       <div class="caption-row">
-      <img src="images/target.png" alt="Picnic Icon" class="caption-icon" />
+      <img src="images/target.png" alt="Picnic Icon" class="caption-icon"   loading="lazy" />
 
         <span>Arrowpoint Zone</span>
       </div>
@@ -233,18 +230,18 @@
 
     <!-- Image 4 -->
     <div class="gallery-block">
-      <img src="images/zpl (12).webp" alt="Boating" class="gallery-img" />
+      <img src="images/zpl (12).webp" alt="Boating" class="gallery-img"   loading="lazy" />
       <div class="caption-row">
-        <img src="images/zipline.png" alt="Icon" class="caption-icon" />
+        <img src="images/zipline.png" alt="Icon" class="caption-icon"   loading="lazy" />
         <span>Sky Falls</span>
       </div>
     </div>
 
         <!-- Image 4 -->
     <div class="gallery-block">
-      <img src="images/bridge (2).webp" alt="Boating" class="gallery-img" />
+      <img src="images/bridge (2).webp" alt="Boating" class="gallery-img"   loading="lazy" />
       <div class="caption-row">
-        <img src="images/hiking-trail.png" alt="Icon" class="caption-icon" />
+        <img src="images/hiking-trail.png" alt="Icon" class="caption-icon"   loading="lazy" />
         <span>Verdant Path</span>
       </div>
     </div>
@@ -252,18 +249,18 @@
     
     <!-- Image 4 -->
     <div class="gallery-block">
-      <img src="images/romance.jpg" alt="Boating" class="gallery-img" />
+      <img src="images/romance.jpg" alt="Boating" class="gallery-img"   loading="lazy" />
       <div class="caption-row">
-        <img src="images/picnic.png" alt="Icon" class="caption-icon" />
+        <img src="images/picnic.png" alt="Icon" class="caption-icon"   loading="lazy" />
         <span>Nature Nibbles</span>
       </div>
     </div>
 
         <!-- Image 4 -->
     <div class="gallery-block">
-      <img src="images/grill (4).jpg" alt="Boating" class="gallery-img" />
+      <img src="images/grill (4).jpg" alt="Boating" class="gallery-img"   loading="lazy" />
       <div class="caption-row">
-        <img src="images/food (21).png" alt="Icon" class="caption-icon" />
+        <img src="images/food (21).png" alt="Icon" class="caption-icon"   loading="lazy" />
         <span>Flame & Feast</span>
       </div>
     </div>
@@ -286,19 +283,19 @@
   <h2 class="gallery-heading">Eden Unveiled</h2>
   <div class="vertical-grid">
     <div class="gallery-image">
-      <img src="images/waterf (22).webp" alt="Experience 1">
+      <img src="images/waterf (22).webp" alt="Experience 1"    loading="lazy">
       <div class="img-overlay"><span>Waterfall Escape</span></div>
     </div>
     <div class="gallery-image">
-      <img src="images/waterf (13).webp" alt="Experience 2">
+      <img src="images/waterf (13).webp" alt="Experience 2"    loading="lazy">
       <div class="img-overlay"><span>Hidden Caves</span></div>
     </div>
     <div class="gallery-image">
-      <img src="images/picnic (12).webp" alt="Experience 3">
+      <img src="images/picnic (12).webp" alt="Experience 3"    loading="lazy">
       <div class="img-overlay"><span>Picnic Grove</span></div>
     </div>
     <div class="gallery-image">
-      <img src="images/photo1.webp" alt="Experience 4">
+      <img src="images/photo1.webp" alt="Experience 4"    loading="lazy">
       <div class="img-overlay"><span>Epic Moments</span></div>
     </div>
   </div>
@@ -388,11 +385,12 @@
 </footer>
 
 
-
+<!--Circle Mouse-->
+<div class="cursor-circle"></div>
 
 
   <!-- Optional JS -->
-  <script src="gallery.js"></script>
+  <script src="gallery.min.js"></script>
   <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
 <script>
   AOS.init({
@@ -401,9 +399,6 @@
     easing: 'ease-in-out'
   });
 </script>
-
-<!--Circle Mouse-->
-<div class="cursor-circle"></div>
 
 <!-- Include Lenis (CDN or npm) -->
 <script src="https://unpkg.com/@studio-freight/lenis@1.0.35/dist/lenis.min.js"></script>
