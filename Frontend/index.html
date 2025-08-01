@@ -516,7 +516,7 @@ body, html {
   <div class="experience-grid">
 
     <div class="experience-step">
-      <img src="images/paralax.jpg" alt="Arrive and Check-in" />
+      <img src="images/paralax.avif" alt="Arrive and Check-in" />
       <h3>Arrive & Check-In</h3>
       <p>Begin your day by receiving your pass and soaking in the welcoming nature vibes.</p>
     </div>
@@ -668,26 +668,25 @@ body, html {
 
   <!-- Other HTML elements -->
 
-<!-- Include Lenis (CDN or npm) -->
 <script src="https://unpkg.com/@studio-freight/lenis@1.0.35/dist/lenis.min.js"></script>
- <script>
-const isTouch = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
+<script>
+  const isTouchDevice = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
 
-const lenis = new Lenis({
-  duration: isTouch ? 2.8 : 1.6, // smoother on phones, faster on desktop
-  easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
-  smooth: true,
-  smoothTouch: true
-});
+  const lenis = new Lenis({
+    smooth: true,
+    smoothTouch: false, // Let native scroll on mobile for better performance
+    duration: isTouchDevice ? 1.4 : 1.2, // Slightly less on mobile to avoid drag
+    easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+  });
 
-
-    function raf(time) {
-      lenis.raf(time);
-      requestAnimationFrame(raf);
-    }
-
+  function raf(time) {
+    lenis.raf(time);
     requestAnimationFrame(raf);
-  </script>
+  }
+
+  requestAnimationFrame(raf);
+</script>
+
 
   
 <script>
