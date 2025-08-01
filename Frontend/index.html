@@ -64,7 +64,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"  media="print" onload="this.media='all'">
 
   <!-- External CSS -->
-  <link rel="stylesheet" href="index.min.css" />
+  <link rel="stylesheet" href="index.css" />
 
   <script>
   // ✅ Hide loader instantly before page renders
@@ -215,8 +215,8 @@ body, html {
       <div class="menu-section">
         <h4>Main Pages</h4>
         <ul>
-          <li><a href="index.html">Home</a></li>
           <li><a href="about.html">About</a></li>
+          <li><a href="activities.html">Activities</a></li>
           <li><a href="contact.html">Contact</a></li>
         <li><a href="gallery.html">Gallery</a></li>
         </ul>
@@ -246,7 +246,7 @@ body, html {
         <h4>Get in Touch</h4>
         <p>📞 +254 110 055 555</p>
         <p>📞 +254 110 022 222</p>
-        <p>✉️ info@paradiselost.co.ke</p>
+        <p>✉️ info@paradiselostke.com</p>
 <div class="social-icons">
   <a href="https://wa.me/254110055555" target="_blank" aria-label="WhatsApp">
     <i class="fab fa-whatsapp"></i>
@@ -385,13 +385,12 @@ body, html {
 
 
 
-<section class="infinite-scroll-section">
-  <div class="infinite-scroll-track">
-    <span>
-      Bike Rides · Cozy Bonfires · Zip Lining · Camping Under the Stars · Dirt Bike Adventures · Peaceful Boat Rides · Horse Riding · Camel Rides · Forest Picnics · Rent a Grill · Hidden Waterfalls · Delicious Restaurant Meals ·
-    </span>
-  </div>
+<section class="paradise-highlight">
+  <h1 class="paradise-headline">
+    Wilderness Reimagined
+  </h1>
 </section>
+
 
 
 
@@ -473,14 +472,6 @@ body, html {
 
 
 
-
-
-
-
-
-
-
-
 <!-- Gallery Promo Section -->
 <section id="neat-promo">
   <div class="promo-bg"></div>
@@ -495,17 +486,53 @@ body, html {
 </section>
 
 
+<section class="experience-section" id="plan-experience">
+  <h2 class="experience-title" data-aos="fade-up">Plan Your Paradise Experience</h2>
+  <p class="experience-subtitle" data-aos="fade-up" data-aos-delay="100">
+    A journey designed for awe, discovery, and unforgettable moments.
+  </p>
+
+  <div class="experience-grid">
+
+    <div class="experience-step">
+      <img src="images/paralax.jpg" alt="Arrive and Check-in" />
+      <h3>Arrive & Check-In</h3>
+      <p>Begin your day by receiving your pass and soaking in the welcoming nature vibes.</p>
+    </div>
+
+    <div class="experience-step">
+      <img src="img/horse1 (1).avif" alt="Choose Activities" />
+      <h3>Choose Your Adventure</h3>
+      <p>Whether it’s ziplining, horse rides or exploring caves, choose your thrill level.</p>
+    </div>
+
+    <div class="experience-step">
+      <img src="img/picnic (6).avif" alt="Picnic and Meals" />
+      <h3>Relax, Dine, or Picnic</h3>
+      <p>Recharge by the forest or enjoy a riverside meal surrounded by serenity.</p>
+    </div>
+
+    <div class="experience-step">
+      <img src="img/waterf (3).avif" alt="Capture the Moments" />
+      <h3>Capture the Moments</h3>
+      <p>Document your experience with stunning views, friends, and nature all around.</p>
+    </div>
+
+  </div>
+</section>
+
+
+
 
 <section class="infinite-scroll-section">
   <div class="infinite-scroll-track">
     <span>
-      Horseback Escapades · Serene Waterfalls · Zip-line Thrills · Hidden Caves · Forest Picnics · Nature’s Embrace · Fireside Evenings · Breathtaking Trails · Adventure Awaits · Wilderness Unplugged ·
-    </span>
-    <span>
-      Horseback Escapades · Serene Waterfalls · Zip-line Thrills · Hidden Caves · Forest Picnics · Nature’s Embrace · Fireside Evenings · Breathtaking Trails · Adventure Awaits · Wilderness Unplugged ·
+      Bike Rides · Cozy Bonfires · Zip Lining · Camping Under the Stars · Dirt Bike Adventures · Peaceful Boat Rides · Horse Riding · Camel Rides · Forest Picnics · Rent a Grill · Hidden Waterfalls · Delicious Restaurant Meals ·
     </span>
   </div>
 </section>
+
+
 
 
 
@@ -542,7 +569,7 @@ body, html {
         <ul>
           <li style="color: black;"><i class="fas fa-phone-alt"></i> +254 110 055 555</li>
           <li style="color: black;"><i class="fas fa-phone-alt"></i> +254 110 022 222</li>
-          <li style="color: black;"><i class="fas fa-envelope"></i> info@paradiselost.co.ke</li>
+          <li style="color: black;"><i class="fas fa-envelope"></i> info@paradiselostke.com</li>
           <li style="color: black;"><i class="fas fa-map-marker-alt"></i> Kiambu</li>
         </ul>
       </div>
@@ -551,7 +578,6 @@ body, html {
       <div class="footer-box" data-aos="fade-up" data-aos-delay="200">
         <h4>Quick Links</h4>
         <ul>
-          <li><a href="index.html">Home</a></li>
           <li><a href="about.html">About</a></li>
           <li><a href="activities.html">Activities</a></li>
            <li><a href="gallery.html">Gallery</a></li>
@@ -891,6 +917,7 @@ document.documentElement.classList.add('visited');
     menu.classList.toggle("active");
   }
 </script>
+
 
 
 </body>

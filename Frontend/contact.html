@@ -60,7 +60,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <!-- ✅ Google Fonts: Source Sans Pro -->
 <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600&display=swap" rel="stylesheet">
-<link rel="preload" href="fonts/tan-mon-cheri.woff2" as="font" type="fonts/woff2" crossorigin="anonymous">
+<link rel="preload" href="fonts/tan-mon-cheri.woff2" as="font" type="font/woff2" crossorigin="anonymous">
 <!-- ✅ Preload Key Images -->
 <link rel="preload" as="image" href="img/waterf (9).avif" type="image/avif">
 <link rel="preload" as="image" href="img/contact.avif" type="image/avif">
@@ -115,11 +115,11 @@
 <!-- Mobile Slide-In Menu -->
 <div class="mobile-menu" id="mobileMenu">
   <button class="menu-close" onclick="closeMenu()" aria-label="Close Menu">×</button>
-  <a href="home.html">Home</a>
+  <a href="index.html">Home</a>
   <a href="about.html">About</a>
   <a href="activities.html">Adventures</a>
   <a href="gallery.html">Gallery</a>
-  <a href="sign.html"><i class="fas fa-user"></i> </a>
+ <a href="Sign.html">Sign Up</a>
 </div>
 
 </header>
@@ -139,7 +139,7 @@
       <h2>Get in Touch</h2>
       <p><strong>Location:</strong><br> Paradise Lost, Kiambu Road, Nairobi, Kenya</p>
       <p><strong>Phone:</strong><br> +254 110 055 555 <br> +254 110 022 222</p>
-      <p><strong>Email:</strong><br> info@paradiselost.co.ke</p>
+      <p><strong>Email:</strong><br> info@paradiselostke.com</p>
       <p><strong>Hours:</strong><br> 24/7</p>
     </div>
 
@@ -165,13 +165,13 @@
     <!-- Right: Contact Form -->
     <div class="contact-form" data-aos="fade-left">
       <h2 style="margin-left: 40px;">Send a Message</h2>
-      <form>
-        <input type="text" name="name" placeholder="Your Name" required />
-        <input type="email" name="email" placeholder="Your Email" required />
-        <textarea name="message" rows="5" placeholder="Your Message..." required></textarea>
-        <button type="submit">Send Message</button>
-        <p class="response-note">We usually respond within 24 hours.</p>
-      </form>
+<form id="contactForm">
+  <input type="text" name="name" placeholder="Your Name" required />
+  <input type="email" name="email" placeholder="Your Email" required />
+  <textarea name="message" rows="5" placeholder="Your Message..." required></textarea>
+  <button type="submit">Send Message</button>
+  <p class="response-note" id="responseNote">We usually respond within 24 hours.</p>
+</form>
     </div>
   </div>
 </section>
@@ -183,23 +183,27 @@
 </button>
 
 
-  <div class="review-form" id="reviewForm">
-    <button class="close-btn" id="closeReviewForm">&times;</button>
-    <h3>Share your experience</h3>
+<form class="review-form" id="reviewForm">
+  <button class="close-btn" id="closeReviewForm">&times;</button>
+  <h3>Share your experience</h3>
 
-    <div class="stars" id="starContainer">
-      <span class="star" data-rating="1">&#9733;</span>
-      <span class="star" data-rating="2">&#9733;</span>
-      <span class="star" data-rating="3">&#9733;</span>
-      <span class="star" data-rating="4">&#9733;</span>
-      <span class="star" data-rating="5">&#9733;</span>
-    </div>
-
-    <input type="text" placeholder="Your name (optional)">
-    <textarea rows="4" placeholder="Write your review..."></textarea>
-    <button type="submit"><span>Submit Review</span></button>
-
+  <div class="stars" id="starContainer">
+    <span class="star" data-rating="1">&#9733;</span>
+    <span class="star" data-rating="2">&#9733;</span>
+    <span class="star" data-rating="3">&#9733;</span>
+    <span class="star" data-rating="4">&#9733;</span>
+    <span class="star" data-rating="5">&#9733;</span>
   </div>
+
+  <input type="text" name="name" id="reviewName" placeholder="Your name (optional)">
+  <textarea name="review" id="reviewText" rows="4" placeholder="Write your review..."></textarea>
+
+  <!-- Optional: Email input to send autoresponse -->
+  <input type="email" name="email" id="reviewEmail" placeholder="Your email (optional)">
+
+  <button type="submit"><span>Submit Review</span></button>
+</form>
+
 </section>
 
 
@@ -313,7 +317,7 @@
         <ul>
           <li style="color: black;"><i class="fas fa-phone-alt"></i> +254 110 055 555</li>
           <li style="color: black;"><i class="fas fa-phone-alt"></i> +254 110 022 222</li>
-          <li style="color: black;"><i class="fas fa-envelope"></i> info@paradiselost.co.ke</li>
+          <li style="color: black;"><i class="fas fa-envelope"></i> info@paradiselostke.com</li>
           <li style="color: black;"><i class="fas fa-map-marker-alt"></i> Kiambu</li>
         </ul>
       </div>
@@ -544,7 +548,72 @@ stars.forEach(star => {
 
 </script>
 
-<script src="firebase.js" type="module"></script>
+
+<script>
+  const form = document.getElementById("contactForm");
+  const note = document.getElementById("responseNote");
+
+  form.addEventListener("submit", async (e) => {
+    e.preventDefault();
+
+    const formData = new FormData(form);
+    const data = {
+      name: formData.get("name"),
+      email: formData.get("email"),
+      message: formData.get("message"),
+    };
+
+    try {
+      const response = await fetch("http://localhost:5000/contact", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(data),
+      });
+
+      const result = await response.json();
+      note.innerText = "✅ Message sent! Check your email for confirmation.";
+      form.reset();
+    } catch (error) {
+      console.error("Submission error:", error);
+      note.innerText = "❌ Message failed. Try again later.";
+    }
+  });
+</script>
+
+
+<script>
+  // Highlight stars on click
+  document.querySelectorAll(".star").forEach(star => {
+    star.addEventListener("click", function () {
+      document.querySelectorAll(".star").forEach(s => s.classList.remove("active"));
+      this.classList.add("active");
+    });
+  });
+
+  // Handle review form submission
+  document.getElementById("reviewForm").addEventListener("submit", async function (e) {
+    e.preventDefault();
+
+    const name = document.getElementById("reviewName").value;
+    const review = document.getElementById("reviewText").value;
+    const email = document.getElementById("reviewEmail")?.value || "";
+    const rating = document.querySelector(".star.active")?.dataset.rating || 0;
+
+    const response = await fetch("http://localhost:5000/submit-review", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ name, review, email, rating }),
+    });
+
+    const result = await response.json();
+    alert(result.message);
+  });
+</script>
+
+
+<script src="firebase.min.js" type="module"></script>
 
 </body>
 </html>

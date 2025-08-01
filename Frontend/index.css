@@ -292,7 +292,7 @@
   content: "";
   position: absolute;
   inset: 0;
-  background: url('img/walpaper.avif') center/cover no-repeat;
+  background: url('img/DSC_8057.avif') center/cover no-repeat;
   transform: scale(1.2);
   z-index: 0; /* ✅ keep it behind hero content */
   transition: transform 2s ease-in-out;
@@ -774,7 +774,6 @@ nav.navbar.hidden {
   padding: 6rem 2rem;
   text-align: center;
   color: #f0f0f0;
-  overflow-x: hidden;
   position: relative;
   z-index: 1 !important;
 }
@@ -1021,7 +1020,7 @@ nav.navbar.hidden {
   /* 📱 Mobile Version: Override background image */
 @media (max-width: 767px) {
   .promo-bg {
-    background: url('img/waterf\ \(6\).avif') no-repeat center center/cover;
+    background: url('img/waterf\ \(22\).avif') no-repeat center center/cover;
   }
 }
 
@@ -1111,11 +1110,10 @@ nav.navbar.hidden {
   background: url('img/zlp.avif') center/cover no-repeat;
   display: flex;
   flex-direction: column;
-  
   justify-content: center;
   align-items: center;
   text-align: center;
-  z-index: 1 !important;
+  z-index: 1;
   background-color: #367588;
   color: #fff;
   margin-bottom: 0px;
@@ -1127,13 +1125,18 @@ nav.navbar.hidden {
   z-index: 2;
 }
 
+.cta-content,
+.main-cta-btn {
+  position: relative;
+  z-index: 2;
+}
 
 .fullscreen-cta::before {
   content: "";
   position: absolute;
   inset: 0;
   background-color: rgba(0, 0, 0, 0.65); /* Dim effect */
-  z-index: 1 !important;
+  z-index: 0;
 }
 
 .cta-content {
@@ -1161,19 +1164,73 @@ nav.navbar.hidden {
 
 .main-cta-btn {
   padding: 12px 30px;
-  background-color: transparent; /* Mughal Green */
+  background-color: transparent;
   color: #fff;
+  border-bottom: 3px solid white;
   font-size: 1rem;
-  border-radius: 6px;
-  border-bottom: 2px solid white;
+  font-weight: 500;
   text-decoration: none;
-  transition: background 0.3s ease, transform 0.3s ease;
-  font-weight: 100;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.main-cta-btn::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(255, 255, 255, 0.1);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 0;
+}
+
+.main-cta-btn:hover::after {
+  opacity: 1;
 }
 
 .main-cta-btn:hover {
-  transform: scale(1.5);
+  transform: translateY(-3px);
+  box-shadow: 0 6px 18px rgba(255, 255, 255, 0.2);
 }
+
+
+.paradise-highlight {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+background: linear-gradient(to top, rgba(0, 0, 0, 0.55), rgba(255, 255, 255, 0.25), rgba(0, 0, 0, 0.55));
+  text-align: center;
+  padding: 30px 20px;
+}
+
+
+
+.paradise-headline {
+  font-family: 'Tan Mon Cheri', serif;
+  font-size: 4.5rem;
+  color: #000000;
+  font-weight: 100;
+  text-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
+  margin: 0;
+}
+
+
+
+@media (max-width: 768px) {
+  .paradise-headline {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .paradise-headline {
+    font-size: 2.2rem;
+  }
+}
+
 
 /* FAQ Button at Bottom */
 .faq-cta {
@@ -1198,7 +1255,6 @@ nav.navbar.hidden {
   font-weight: 100;
   font-size: 1rem;
   text-decoration: none;
-  border-top: 2px solid #ddd;
   transition: background 0.3s ease, color 0.3s ease;
 }
 
@@ -1518,15 +1574,24 @@ nav.navbar.hidden {
     padding: 0.5 0.5rem;
   }
   .adventure-card img {
-    height: 400px;
+    height: 330px;
   }
 
   .card-overlay h3 {
     font-size: 1rem;
+    margin: 0;
+    text-align: left;
   }
 
   .card-overlay p {
     font-size: 0.85rem;
+  }
+  .card-overlay {
+    justify-content: left;
+    text-align: left;
+    padding: 10px;
+    padding-bottom: 0px;
+    align-items: left;
   }
 }
 
@@ -1780,4 +1845,112 @@ nav.navbar.hidden {
 .activities-btn:hover {
   transform: translateY(-4px);
   box-shadow: 0 12px 30px rgba(54, 117, 136, 0.4);
+}
+
+
+
+.experience-section {
+  padding: 2rem 2rem;
+  background: white;
+  color: #fff;
+  text-align: center;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.experience-title {
+  font-size: 3rem;
+  font-family: 'Tan Mon Cheri', serif;
+  color: #000000;
+  margin-bottom: 1rem;
+  font-weight: 100;
+}
+
+.experience-subtitle {
+  font-size: 1.2rem;
+  color: #000000;
+  font-weight: 100;
+  margin-bottom: 4rem;
+}
+
+.experience-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  max-width: 2000px;
+  margin: auto;
+  text-align: left;
+}
+
+
+.experience-step {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  text-align: left;
+}
+
+.experience-step img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.experience-step img:hover {
+  transform: scale(1.03);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+.experience-step h3 {
+  font-family: 'Tan Mon Cheri', serif;
+  font-size: 1rem;
+  margin: 1.2rem 0 0.5rem;
+  color: #000000;
+}
+
+.experience-step p {
+  font-size: 1rem;
+  font-weight: 100;
+  color: #000000;
+}
+
+
+/* ✅ Force 2 items per row on phones */
+@media (max-width: 768px) {
+  .experience-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* ✅ Make sure even on very small devices we keep 2 per row */
+@media (max-width: 480px) {
+  .experience-title {
+    font-size: 1.7rem;
+  }
+  .experience-subtitle {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+  }
+  .experience-section {
+    padding: 1rem 1rem;
+  }
+  .experience-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+
+  .experience-step img {
+    height: 240px;
+  }
+
+  .experience-step h3 {
+    font-size: 0.75rem;
+
+    margin-bottom: 2px;
+  }
+
+  .experience-step p {
+    font-size: 0.85rem;
+  }
 }

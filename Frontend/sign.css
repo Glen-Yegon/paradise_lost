@@ -51,7 +51,7 @@ background: linear-gradient(to right, #163838, white, #163838);
   width: 90%;
   margin: 200px auto;
   padding: 30px;
-  background: linear-gradient(to top, #163838, white, #163838);
+  background: linear-gradient(to left, #163838, white);
   border-radius: 16px;
   backdrop-filter: blur(10px);
   box-shadow: 0 0 15px rgba(0,0,0,0.4);

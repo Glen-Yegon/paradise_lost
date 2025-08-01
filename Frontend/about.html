@@ -44,7 +44,7 @@
 
 
 
-  <link rel="stylesheet" href="about.min.css" />
+  <link rel="stylesheet" href="about.css" />
 
   <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
 <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
@@ -61,7 +61,7 @@
 <!-- ✅ Google Fonts: Source Sans Pro -->
 <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600&display=swap" rel="stylesheet">
 
-<link rel="preload" href="fonts/tan-mon-cheri.woff2" as="font" type="fonts/woff2" crossorigin="anonymous">
+<link rel="preload" href="fonts/tan-mon-cheri.woff2" as="font" type="font/woff2" crossorigin="anonymous">
 
 <!-- ✅ Preload Key Images -->
 <link rel="preload" as="image" href="img/waterf (12).avif" type="image/avif">
@@ -69,6 +69,8 @@
 
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+
 </head>
 <body>
 
@@ -109,6 +111,8 @@
     </div>
   </section>
 
+
+
 <!-- Our Story Section -->
 <section class="our-story" id="our-story">
   <div class="story-wrapper">
@@ -122,7 +126,11 @@
       </p>
     </div>
     <div class="story-image" data-aos="fade-left">
-      <img src="images/waterf (16).webp" alt="Our Story Image" />
+<img src="img/waterf (12).avif" alt="Our Story Image" style="width: 600px; height: 400px;" />
+
+
+
+
     </div>
   </div>
 </section>
@@ -193,7 +201,7 @@
   <div class="activities-grid">
 
     <!-- Activity 1 -->
-   <a href="ziplining.html" style="text-decoration: none;"> <div class="activity-item" data-aos="fade-up">
+   <a href="ziplining.html" style="text-decoration: none;"> <div class="activity-item">
       <div class="activity-img-wrapper">
         <img src="images/zlp.webp" alt="Ziplining" />
       </div>
@@ -205,7 +213,7 @@
     </a>
 
     <!-- Activity 2 -->
-  <a href="archery.html"  style="text-decoration: none;">  <div class="activity-item" data-aos="fade-up">
+  <a href="archery.html"  style="text-decoration: none;">  <div class="activity-item">
       <div class="activity-img-wrapper">
         <img src="images/arch9.webp" alt="Archery" />
       </div>
@@ -217,7 +225,7 @@
     </a>
 
     <!-- Activity 3 -->
-  <a href="boat.html"  style="text-decoration: none;"> <div class="activity-item" data-aos="fade-up">
+  <a href="boat.html"  style="text-decoration: none;"> <div class="activity-item">
       <div class="activity-img-wrapper">
         <img src="images/boahtr.webp" alt="Boat Riding" />
       </div>
@@ -229,7 +237,7 @@
     </a> 
 
     <!-- Activity 4 -->
- <a href="caves.html"  style="text-decoration: none;">  <div class="activity-item" data-aos="fade-up">
+ <a href="caves.html"  style="text-decoration: none;">  <div class="activity-item">
       <div class="activity-img-wrapper">
         <img src="images/waterf (12).webp" alt="Caves & Waterfalls" />
       </div>
@@ -274,7 +282,7 @@
         <ul>
           <li style="color: black;"><i class="fas fa-phone-alt"></i> +254 110 055 555</li>
           <li style="color: black;"><i class="fas fa-phone-alt"></i> +254 110 022 222</li>
-          <li style="color: black;"><i class="fas fa-envelope"></i> info@paradiselost.co.ke</li>
+          <li style="color: black;"><i class="fas fa-envelope"></i> info@paradiselostke.com</li>
           <li style="color: black;"><i class="fas fa-map-marker-alt"></i> Kiambu</li>
         </ul>
       </div>
@@ -284,7 +292,6 @@
         <h4>Quick Links</h4>
         <ul>
           <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
           <li><a href="activities.html">Activities</a></li>
            <li><a href="gallery.html">Gallery</a></li>
           <li><a href="contact.html">Contact</a></li>
@@ -353,17 +360,17 @@
         <h4>Main Pages</h4>
         <ul>
           <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
+          <li><a href="activities.html">Activities</a></li>
           <li><a href="contact.html">Contact</a></li>
         <li><a href="gallery.html">Gallery</a></li>
         </ul>
       </div>
 
 <div class="menu-section">
-  <h4>Activities</h4>
+  <h4>Some Activities</h4>
   <div class="activities-grids">
     <ul>
-      <li><a href="horse.html">Horse & Camel Riding</a></li>
+      <li><a href="horse.html">Horse Riding</a></li>
       <li><a href="ziplining.html">Ziplining</a></li>
       <li><a href="camping.html">Camping</a></li>
       <li><a href="boat.html">Boat Riding</a></li>
@@ -424,7 +431,10 @@ window.addEventListener("scroll", () => {
   const navbar = document.querySelector(".navbar");
   navbar.classList.toggle("scrolled", window.scrollY > 10);
 });
+</script>
 
+
+<script>
 // Word animation
 window.addEventListener("DOMContentLoaded", () => {
   const word1 = document.getElementById("word1");
@@ -626,7 +636,7 @@ const lenis = new Lenis({
   startAutoSlide();
 </script>
 
-<script src="firebase.js" type="module"></script>
+<script src="firebase.min.js" type="module"></script>
 
 </body>
 </html>
