@@ -557,8 +557,9 @@ body{
   height: 100%;
   background-color: rgba(0, 0, 0, 0.4);
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: left;
+  text-align: left;
+  align-items: left;
   color: #fff;
   font-family: 'Tan Mon Cheri', cursive;
   font-size: 1.2rem;
@@ -581,6 +582,7 @@ body{
   font-family: 'Tan Mon Cheri', cursive;
   font-size: 1.5rem;
   color: #367588;
+  text-align: left;
   margin-top: 1rem;
   margin-bottom: 0.3rem;
 }
@@ -588,13 +590,14 @@ body{
 .activity-item p {
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 1rem;
+  text-align: left;
   color: #555;
   max-width: 90%;
 }
 
 /* CTA at the bottom */
 .activities-cta {
-  margin-top: 3rem;
+  margin-top: 1rem;
   text-align: center;
 }
 
@@ -625,7 +628,7 @@ body{
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 1rem;
   color: #666;
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
   max-width: 600px;
   margin-left: auto;
   margin-right: auto;
@@ -652,7 +655,7 @@ body{
   }
 
   .activity-item h3 {
-    font-size: 1.3rem;
+    font-size: 1rem;
   }
 
   .activity-item p {
@@ -660,7 +663,7 @@ body{
   }
 
   .activities-btn {
-    font-size: 1rem;
+    font-size: 1.1rem;
     padding: 12px 28px;
   }
 
@@ -680,20 +683,24 @@ body{
   }
 
   .activity-item h3 {
-    font-size: 1.1rem;
+    font-size: 0.95rem;
   }
 
   .activity-item p {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
   }
 
   .activities-btn {
     font-size: 0.95rem;
-    padding: 10px 24px;
+    padding: 10px 34px;
   }
 
   .overlay-text {
     font-size: 0.9rem;
+  }
+
+  .activities-cta {
+    margin-top: 0.5px;
   }
 }
 
