@@ -1539,12 +1539,13 @@ background: linear-gradient(to top, rgba(0, 0, 0, 0.55), rgba(255, 255, 255, 0.2
   left: 0;
   right: 0;
   background: linear-gradient(to top, #000000, transparent);
-  padding: 1.5rem;
+  padding: 1rem;
   color: #fff;
   text-align: left;
   transform: translateY(0);
   min-height: 100px;
   display: flex;
+  padding-bottom: 0;
   flex-direction: column;
   justify-content: flex-end;
 }
@@ -1559,20 +1560,34 @@ background: linear-gradient(to top, rgba(0, 0, 0, 0.55), rgba(255, 255, 255, 0.2
   font-weight: bold;
   font-weight: 100;
   margin: 0 0 0.1rem;
-    font-family: 'Tan Mon Cheri', serif;
+  font-family: 'Tan Mon Cheri', serif;
 }
 
 .card-overlay p {
   font-size: 0.95rem;
   line-height: 1.5;
+  margin-bottom: 0;
 }
 
 
 @media (max-width: 768px) {
+  .adventure-section{
+    margin-top: 20px;
+  }
+
   .adventure-grid {
     grid-template-columns: repeat(2, 1fr);
     padding: 0.5 0.5rem;
   }
+  
+  .adventure-header h2 {
+    font-size: 1.5rem;
+  }
+
+  .adventure-header p{
+    font-size: 0.9rem;
+  }
+
   .adventure-card img {
     height: 330px;
   }
@@ -1586,6 +1601,7 @@ background: linear-gradient(to top, rgba(0, 0, 0, 0.55), rgba(255, 255, 255, 0.2
   .card-overlay p {
     font-size: 0.85rem;
   }
+
   .card-overlay {
     justify-content: left;
     text-align: left;
