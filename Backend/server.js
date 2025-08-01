@@ -184,6 +184,11 @@ html: `
 });
 
 
+app.get("/", (req, res) => {
+  res.send("✅ Server is alive and working!");
+});
+
+
 app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
 });
