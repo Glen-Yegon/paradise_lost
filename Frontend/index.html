@@ -185,13 +185,79 @@ body, html {
 
 </head>
 <body>
-  <div data-lenis-scroll class="lenis-wrapper">
-    <main class="lenis-content">
+  
+
+
+
+<!-- EXPLORE OVERLAY SECTION -->
+<section class="explore-overlay" id="exploreOverlay" >
+  <h2 class="overlay-title" data-aos="fade-down" data-aos-delay="200">Paradise Lost</h2>
+  <button class="close-btn" onclick="closeOverlay()">X</button>
+
+ <div class="explore-images">
+  <div class="image-box center" >
+         <a href="grill.html"><img src="images/food (5).webp" alt="Center Activity">
+      <p>Grill Rental</p> </a>
+    </div>
+   
+
+   <div class="image-box top-left">
+      <a href="archery.html"> <img src="images/arch (2).webp" alt="Activity 1">
+      <p>Archery</p>   </a>
+    </div>
+ 
+
+   <div class="image-box top-right">
+          <a href="ziplining.html"> <img src="images/zpl (23).webp" alt="Activity 2">
+      <p>Zip Lining</p>     </a>
+
+    </div>
+
+  <div class="image-box bottom-left">
+    <a href="camp.html"> <img src="images/camp (3).webp" alt="Activity 3">
+      <p>Camping</p>    </a>
+    </div>
+
+
+  <div class="image-box bottom-right">
+         <a href="caves.html"><img src="images/waterf (12).webp" alt="Activity 4">
+      <p>Caves & waterfalls</p></a> 
+    </div>
+
+  <div class="image-box left">
+        <a href="bike.html">  <img src="images/bike (15).webp" alt="Activity 5">
+      <p>Bike Riding</p>
+    </div>    </a>
+
+
+   <div class="image-box right">
+       <a href="bone.html">  <img src="images/bonfire main (1).webp" alt="Activity 6">
+      <p>Bonefires</p></a>
+    </div>
+  </div>
+
+
+  <!-- CTA Button -->
+  <div class="explore-cta" data-aos="fade-up" data-aos-delay="1000">
+    <a href="activities.html" class="cta-button">See All Activities</a>
+  </div>
+</section>
+
+
+    <!-- Transition overlay -->
+<div id="page-transition">
+<div class="logo-wrapper">
+ <img src="images/Paradise.webp" alt="Logo">
+  </div>
+</div>
+
+
 
 <!-- Loading Screen -->
 <div id="loading-screen">
   <div id="loading-counter">Loading 0%</div>
   <div id="loading-line"></div>
+
 
 
 <div class="parallax-container">
@@ -216,14 +282,7 @@ body, html {
 
 </div>
 
-<!-- Transition overlay -->
-<div id="page-transition">
-<div class="logo-wrapper">
-    <img src="images/Paradise.webp" alt="Logo" fetchpriority="high" >
-  </div></a>
-</div>
 
-<main>
 
   <!-- Fullscreen Navigation Menu -->
 <div class="fullscreen-menu" id="fullscreenMenu">
@@ -351,59 +410,6 @@ body, html {
 
 
 
-<!-- EXPLORE OVERLAY SECTION -->
-<section class="explore-overlay" id="exploreOverlay" >
-  <h2 class="overlay-title" data-aos="fade-down" data-aos-delay="200">Paradise Lost</h2>
-  <button class="close-btn" onclick="closeOverlay()">X</button>
-
- <div class="explore-images">
-  <div class="image-box center" >
-         <a href="grill.html"><img src="images/food (5).webp" alt="Center Activity">
-      <p>Grill Rental</p> </a>
-    </div>
-   
-
-   <div class="image-box top-left">
-      <a href="archery.html"> <img src="images/arch (2).webp" alt="Activity 1">
-      <p>Archery</p>   </a>
-    </div>
- 
-
-   <div class="image-box top-right">
-          <a href="ziplining.html"> <img src="images/zpl (23).webp" alt="Activity 2">
-      <p>Zip Lining</p>     </a>
-
-    </div>
-
-  <div class="image-box bottom-left">
-    <a href="camp.html"> <img src="images/camp (3).webp" alt="Activity 3">
-      <p>Camping</p>    </a>
-    </div>
-
-
-  <div class="image-box bottom-right">
-         <a href="caves.html"><img src="images/waterf (12).webp" alt="Activity 4">
-      <p>Caves & waterfalls</p></a> 
-    </div>
-
-  <div class="image-box left">
-        <a href="bike.html">  <img src="images/bike (15).webp" alt="Activity 5">
-      <p>Bike Riding</p>
-    </div>    </a>
-
-
-   <div class="image-box right">
-       <a href="bone.html">  <img src="images/bonfire main (1).webp" alt="Activity 6">
-      <p>Bonefires</p></a>
-    </div>
-  </div>
-
-
-  <!-- CTA Button -->
-  <div class="explore-cta" data-aos="fade-up" data-aos-delay="1000">
-    <a href="activities.html" class="cta-button">See All Activities</a>
-  </div>
-</section>
 
 
 
@@ -653,15 +659,15 @@ body, html {
   </div>
 </footer>
 
-    </main>
-</div>
+
 
 
 
 <!--Circle Mouse-->
 <div class="cursor-circle"></div>
 
-</main>
+
+
 
 
 <script src="firebase.min.js" type="module" defer></script>
@@ -728,20 +734,23 @@ requestAnimationFrame(() => {
 
     setTimeout(() => {
       
+// Slower delay between each image (from 350ms to 600ms)
 parallaxImgs.forEach((img, index) => {
   setTimeout(() => {
     requestAnimationFrame(() => {
       img.style.zIndex = 100 + index;
       img.style.opacity = 1;
-      img.style.transition = 'transform 0.5s ease, opacity 0.3s ease';
+
+      // Slower transition duration (from 0.5s/0.3s to 1s/0.8s)
+      img.style.transition = 'transform 1s ease, opacity 0.8s ease';
       img.style.transformOrigin = 'right';
       img.style.transform = 'scaleX(1)';
     });
-  }, index * 350);
+  }, index * 600); // increased delay
 });
 
+const totalDelay = parallaxImgs.length * 600 + 800; // adjust total delay to match
 
-      const totalDelay = parallaxImgs.length * 350 + 600;
 
       setTimeout(() => {
         // ✅ Step 1: Show hero

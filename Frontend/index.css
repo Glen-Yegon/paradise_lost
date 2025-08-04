@@ -19,18 +19,15 @@ html, body {
   margin: 0;
   padding: 0;
   scroll-behavior: auto !important;
-  overflow: hidden; 
   height: auto;     /* avoid 100vh unless necessary */
 }
 
 html {
   scroll-behavior: auto !important; /* disable native smooth scroll */
-  will-change: transform;           /* allow GPU-accelerated transforms */
 }
 
 .lenis-wrapper {
   height: 100%;
-  overflow: hidden;
   position: relative;
 }
 
@@ -792,14 +789,13 @@ nav.navbar.hidden {
 .about-teaser {
   background: 
     linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7)),
-    url('images/waterf\ \(4\).webp') center/cover fixed no-repeat;
+    url('img/waterf\ \(4\).avif') center/cover fixed no-repeat;
   padding: 6rem 2rem;
   text-align: center;
   color: #f0f0f0;
-  will-change: transform;
-transform: translateZ(0);
+  overflow-x: hidden;
   position: relative;
-  z-index: 1 !important;
+  z-index: 9999;
 }
 
 
