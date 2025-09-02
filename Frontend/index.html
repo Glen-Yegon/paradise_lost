@@ -64,7 +64,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"  media="print" onload="this.media='all'">
 
   <!-- External CSS -->
-  <link rel="stylesheet" href="index.min.css" />
+  <link rel="stylesheet" href="index.css" />
 
   <script>
   // ✅ Hide loader instantly before page renders
@@ -98,35 +98,68 @@
 
 
 <style>
-  #loading-screen {
-  display: none; /* Hide by default */
-}
-
 #loading-screen {
   z-index: 999999 !important;
   position: fixed;
   inset: 0;
   background-color: #367588;
   display: flex;
-  justify-content: flex-end;
-  align-items: flex-end;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   overflow: hidden;
   transition: opacity 1s ease;
 }
 
+#loading-screen.loading-hidden {
+  opacity: 0;
+  pointer-events: none; /* don't block interactions */
+}
+
+/* Center Logo */
+#loading-logo {
+  position: relative;
+  z-index: 10001;
+}
+
+#loading-logo img {
+  width: 120px;
+  height: auto;
+  transform: scale(2);
+  filter: drop-shadow(0 0 10px rgba(0,0,0,0.5));
+}
+
+/* Counter */
 #loading-counter {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  font-size: 5vw;
-  font-weight: 100;
+  font-size: 2rem;
+  font-weight: 500;
   font-family: 'Tan Mon Cheri', cursive;
-  color: #000;
-  padding: 1rem 2rem;
-  z-index: 10000;
+  color: #000000;
+  margin-top: 1rem;
+  z-index: 10001;
   transition: transform 1.5s ease-in-out;
 }
 
+/* Progress Line */
+#loading-line {
+  position: relative;
+  width: 60%;
+  height: 6px;
+  background: rgba(255,255,255,0.2);
+  border-radius: 3px;
+  margin-top: 1.5rem;
+  overflow: hidden;
+}
+#loading-line span {
+  display: block;
+  height: 100%;
+  width: 0;
+  background: #000000;
+  border-radius: 3px;
+  transition: width 0.3s ease;
+}
+
+/* Parallax Images */
 .parallax-container {
   position: absolute;
   top: 0;
@@ -136,7 +169,6 @@
   z-index: 9998;
   pointer-events: none;
 }
-
 .parallax-img {
   position: absolute;
   top: 0;
@@ -149,7 +181,7 @@
   opacity: 0;
   object-position: center;
   z-index: 0;
-  filter: brightness(0.6); /* Slightly darken */
+  filter: brightness(0.6);
 }
 
 
@@ -185,8 +217,6 @@ body, html {
 
 </head>
 <body>
-  
-
 
 
 <!-- EXPLORE OVERLAY SECTION -->
@@ -248,39 +278,37 @@ body, html {
 <div id="page-transition">
 <div class="logo-wrapper">
  <img src="images/Paradise.webp" alt="Logo">
-  </div>
+</div>
 </div>
 
 
 
 <!-- Loading Screen -->
+<!-- Loading Screen -->
 <div id="loading-screen">
+  <!-- Center Logo -->
+  <div id="loading-logo">
+    <img src="images/Paradise.webp" alt="Company Logo">
+  </div>
+
+  <!-- Counter -->
   <div id="loading-counter">Loading 0%</div>
-  <div id="loading-line"></div>
 
+  <!-- Progress Line -->
+  <div id="loading-line">
+    <span></span>
+  </div>
 
-
-<div class="parallax-container">
-  
-<!-- Image 1 -->
-<img src="img/waterf (23).avif" class="parallax-img" alt="Waterfall" loading="eager" fetchpriority="high">
-
-<!-- Image 2 -->
-<img src="img/picnic (6).avif" class="parallax-img" alt="Nature Path" loading="eager" fetchpriority="high">
-
-<!-- Image 3 -->
-<img src="img/dartb (5).avif" class="parallax-img" alt="Adventure Highlight" loading="eager" fetchpriority="high">
-
-<!-- Image 4 -->
-<img src="img/main (3).avif" class="parallax-img" alt="Natural Scenery" loading="eager" fetchpriority="high">
-
-<!-- Image 5 -->
-<img src="img/waterf (5).avif" class="parallax-img" alt="Picnic Spot" loading="eager" fetchpriority="high">
-
-
+  <!-- Parallax Images -->
+  <div class="parallax-container">
+    <img src="img/waterf (23).avif" class="parallax-img" alt="Waterfall" loading="eager" fetchpriority="high">
+    <img src="img/picnic (6).avif" class="parallax-img" alt="Nature Path" loading="eager" fetchpriority="high">
+    <img src="img/dartb (5).avif" class="parallax-img" alt="Adventure Highlight" loading="eager" fetchpriority="high">
+    <img src="img/main (3).avif" class="parallax-img" alt="Natural Scenery" loading="eager" fetchpriority="high">
+    <img src="img/waterf (5).avif" class="parallax-img" alt="Picnic Spot" loading="eager" fetchpriority="high">
+  </div>
 </div>
 
-</div>
 
 
 
@@ -356,6 +384,7 @@ body, html {
 </div>
 
 
+
  <!-- ✅ NAVBAR -->
 <nav class="hero-navbar">
   <!-- Left: Logo -->
@@ -397,6 +426,7 @@ body, html {
   <!-- OVERLAY for dim effect -->
   <div class="overlay"></div>
 
+  
 
 
   <!-- HERO CONTENT -->
@@ -426,14 +456,14 @@ body, html {
 
 <section class="about-teaser" id="about">
   <div class="about-content">
-    <h2 class="section-heading" data-aos="fade-up" data-aos-delay="200">
+    <h2 class="section-heading">
       Discover Paradise Lost
     </h2>
     <p class="about-text">
       Nestled deep within lush forests and hidden waterfalls lies a forgotten escape — a sanctuary of thrill, peace, and natural beauty.
       From horse riding to zip-lining, caves to serene picnics — Paradise Lost is where adventure meets tranquility.
     </p>
-<a href="about.html" class="cta-about" data-aos="fade-up" data-aos-delay="200">
+<a href="about.html" class="cta-about">
   Learn More <i class="fas fa-arrow-right"></i>
 </a>
 
@@ -506,18 +536,18 @@ body, html {
   <div class="promo-bg"></div>
   <div class="promo-overlay"></div>
   <div class="promo-content">
-    <h1 data-aos="fade-down" data-aos-delay="900">Explore Timeless Moments</h1>
+    <h1 data-aos="fade-down" data-aos-delay="300">Explore Timeless Moments</h1>
     <p>
       Step into a visual journey of nature, adventure, and serenity — beautifully captured at Paradise Lost.
     </p>
-    <a href="gallery.html" class="shop-btn" data-aos="fade-down" data-aos-delay="900">View the Gallery →</a>
+    <a href="gallery.html" class="shop-btn">View the Gallery →</a>
   </div>
 </section>
 
 
 <section class="experience-section" id="plan-experience">
-  <h2 class="experience-title" >Plan Your Paradise Experience</h2>
-  <p class="experience-subtitle" data-aos="fade-up" data-aos-delay="100">
+  <h2 class="experience-title" data-aos="zoom-in" data-aos-delay="400">Plan Your Paradise Experience</h2>
+  <p class="experience-subtitle">
     A journey designed for awe, discovery, and unforgettable moments.
   </p>
 
@@ -669,59 +699,58 @@ body, html {
 
 
 
-
 <script src="firebase.min.js" type="module" defer></script>
   <!-- External JS -->
-  <script src="index.min.js"></script>
+  <script src="index.js"></script>
 
   <!-- Other HTML elements -->
 
-<script src="https://unpkg.com/@studio-freight/lenis@1.0.35/dist/lenis.min.js"></script>
-<script>
-  const isTouchDevice = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
+  <script src="https://unpkg.com/@studio-freight/lenis@1.0.35/dist/lenis.min.js"></script>
+  <script>
+    const lenis = new Lenis({
+      smooth: true,
+      duration: 1.2,
+      easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+    });
 
-  const lenis = new Lenis({
-    smooth: true,
-    smoothTouch: false, // Let native scroll on mobile for better performance
-    duration: isTouchDevice ? 1.4 : 1.2, // Slightly less on mobile to avoid drag
-    easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
-  });
+    function raf(time) {
+      lenis.raf(time);
+      requestAnimationFrame(raf);
+    }
 
-  function raf(time) {
-    lenis.raf(time);
     requestAnimationFrame(raf);
-  }
-
-  requestAnimationFrame(raf);
-</script>
+  </script>
 
 
-  
 <script>
 window.onload = () => {
   const counterText = document.getElementById('loading-counter');
   const loadingScreen = document.getElementById('loading-screen');
   const heroSection = document.querySelector('.hero');
   const parallaxImgs = document.querySelectorAll('.parallax-img');
+  const progressLine = document.querySelector('#loading-line span');
+  const logo = document.getElementById('loading-logo'); // ✅ middle logo element
 
   // ✅ Skip loader if already visited this session
   if (sessionStorage.getItem('visited')) {
     loadingScreen.style.display = 'none';
     heroSection.classList.add('visible', 'zoom-out');
 
-const lastImg = parallaxImgs[parallaxImgs.length - 1];
-
-requestAnimationFrame(() => {
-  lastImg.style.transform = 'scaleX(1)';
-  lastImg.style.opacity = '1';
-  lastImg.style.zIndex = '200';
-});
+    const lastImg = parallaxImgs[parallaxImgs.length - 1];
+    requestAnimationFrame(() => {
+      lastImg.style.transform = 'scaleX(1)';
+      lastImg.style.opacity = '1';
+      lastImg.style.zIndex = '200';
+    });
+    return;
   }
+
   // ✅ Loader animation
   let count = 0;
   const interval = setInterval(() => {
     count++;
     counterText.textContent = `Loading ${count}%`;
+    progressLine.style.width = count + "%";
 
     if (count >= 100) {
       clearInterval(interval);
@@ -730,48 +759,42 @@ requestAnimationFrame(() => {
   }, 25);
 
   function startParallaxSequence() {
-    counterText.style.transform = 'translateX(-150vw)';
+    // Fade out logo + counter first
+    logo.style.transition = 'opacity 0.6s ease';
+    counterText.style.transition = 'opacity 0.6s ease';
+    logo.style.opacity = '0';
+    counterText.style.opacity = '0';
 
     setTimeout(() => {
-      
-// Slower delay between each image (from 350ms to 600ms)
-parallaxImgs.forEach((img, index) => {
-  setTimeout(() => {
-    requestAnimationFrame(() => {
-      img.style.zIndex = 100 + index;
-      img.style.opacity = 1;
+      parallaxImgs.forEach((img, index) => {
+        setTimeout(() => {
+          requestAnimationFrame(() => {
+            img.style.zIndex = 100 + index;
+            img.style.opacity = 1;
+            img.style.transition = 'transform 1s ease, opacity 0.8s ease';
+            img.style.transformOrigin = 'right';
+            img.style.transform = 'scaleX(1)';
+          });
+        }, index * 300);
+      });
 
-      // Slower transition duration (from 0.5s/0.3s to 1s/0.8s)
-      img.style.transition = 'transform 1s ease, opacity 0.8s ease';
-      img.style.transformOrigin = 'right';
-      img.style.transform = 'scaleX(1)';
-    });
-  }, index * 600); // increased delay
-});
-
-const totalDelay = parallaxImgs.length * 600 + 800; // adjust total delay to match
-
+      const totalDelay = parallaxImgs.length * 300 + 800;
 
       setTimeout(() => {
-        // ✅ Step 1: Show hero
         heroSection.classList.add('visible');
-
-        // ✅ Step 2: Zoom out the background after 500ms
         setTimeout(() => {
           heroSection.classList.add('zoom-out');
         }, 500);
-
-        // ✅ Step 3: Hide loader after 1s
         setTimeout(() => {
-          loadingScreen.classList.add('loading-hidden');
+          loadingScreen.classList.add('loading-hidden'); // ✅ fade out entire loader
           sessionStorage.setItem('visited', 'true');
         }, 1000);
       }, totalDelay);
     }, 600);
   }
 };
-document.documentElement.classList.add('visited');
 
+document.documentElement.classList.add('visited');
 </script>
 
 
