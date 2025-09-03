@@ -96,6 +96,19 @@
 }
 </script>
 
+<style>
+  /* Hide scrollbar for Chrome, Safari, and Opera */
+::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge, and Firefox */
+html, body {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;     /* Firefox */
+}
+
+</style>
 
 <style>
 #loading-screen {
@@ -701,7 +714,7 @@ body, html {
 
 <script src="firebase.min.js" type="module" defer></script>
   <!-- External JS -->
-  <script src="index.min.js"></script>
+  <script src="index.min.js" defer></script>
 
   <!-- Other HTML elements -->
 
@@ -819,7 +832,7 @@ document.documentElement.classList.add('visited');
   });
 </script>
 
-<script>
+<script defer>
   document.addEventListener("DOMContentLoaded", () => {
     const links = document.querySelectorAll("a");
     const transition = document.getElementById("page-transition");
@@ -864,7 +877,7 @@ document.documentElement.classList.add('visited');
 
 
 
-<script>
+<script defer>
   const observers = new IntersectionObserver(entries => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
@@ -880,7 +893,7 @@ document.documentElement.classList.add('visited');
   document.querySelectorAll('.section-heading').forEach(h => observers.observe(h));
 </script>
 
-<script>
+<script defer>
   function setupObserver(sectionId, bgClass) {
     const bgElement = document.querySelector(bgClass);
     const section = document.querySelector(sectionId);
@@ -913,7 +926,7 @@ document.documentElement.classList.add('visited');
 
 
 
-<script>
+<script defer>
   function toggleMenu() {
     // your existing mobile toggle logic
   }
@@ -964,7 +977,7 @@ document.documentElement.classList.add('visited');
   }
 </script>
 
-<script>
+<script defer>
   
   function toggleMenu() {
     const menu = document.getElementById("fullscreenMenu");
