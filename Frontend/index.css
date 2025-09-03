@@ -293,7 +293,7 @@ html, body { margin: 0; padding: 0; scroll-behavior: auto !important; height: au
   content: "";
   position: absolute;
   inset: 0;
-  background: url('img/DSC_8057.avif') center/cover no-repeat;
+  background: url('img/waterf\ \(14\).avif') center/cover no-repeat;
   transform: scale(1.2);
   z-index: 0; /* ✅ keep it behind hero content */
   transition: transform 2s ease-in-out;
@@ -771,7 +771,7 @@ nav.navbar.hidden {
 .about-teaser {
   background: 
     linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7)),
-    url('img/waterf\ \(15\).avif') center/cover no-repeat;
+    url('img/waterf\ \(12\).avif') center/cover fixed no-repeat;
   padding: 6rem 2rem;
   text-align: center;
   color: #f0f0f0;
@@ -786,7 +786,7 @@ nav.navbar.hidden {
   .about-teaser {
     background:
       linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7)),
-      url('img/waterf\ \(22\).avif') center/cover no-repeat;
+      url('img/waterf\ \(22\).avif') center/cover fixed no-repeat;
   }
 }
 
