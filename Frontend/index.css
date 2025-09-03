@@ -814,7 +814,7 @@ nav.navbar.hidden {
   .about-teaser {
     background:
       linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7)),
-      url('img/waterf\ \(22\).avif') center/cover fixed no-repeat;
+      url('img/waterf\ \(22\).avif') center/cover no-repeat;
   }
 }
 
