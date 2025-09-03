@@ -966,8 +966,6 @@ nav.navbar.hidden {
   display: flex;
   align-items: center;
   padding: 60px 10%;
-transform: translateZ(0);
-
   z-index: 1;
   color: black;
   overflow: hidden;
@@ -979,7 +977,6 @@ transform: translateZ(0);
   top: 0;
   left: 0;
   width: 100%;
-  will-change: transform;
   height: 100%;
   background: url('images/grill\ \(8\).webp') no-repeat center center/cover;
   transform: scale(1.2);

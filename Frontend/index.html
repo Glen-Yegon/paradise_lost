@@ -548,8 +548,8 @@ body, html {
 <section id="neat-promo">
   <div class="promo-bg"></div>
   <div class="promo-overlay"></div>
-  <div class="promo-content">
-    <h1 data-aos="fade-down" data-aos-delay="300">Explore Timeless Moments</h1>
+  <div class="promo-content" data-aos="fade-down" data-aos-delay="300">
+    <h1>Explore Timeless Moments</h1>
     <p>
       Step into a visual journey of nature, adventure, and serenity — beautifully captured at Paradise Lost.
     </p>
@@ -985,6 +985,21 @@ document.documentElement.classList.add('visited');
   }
 </script>
 
+<script>
+  const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      // Load or render content here
+      observer.unobserve(entry.target);
+    }
+  });
+}, { rootMargin: '200px' });
+
+document.querySelectorAll('.lazy-section').forEach(el => {
+  observer.observe(el);
+});
+
+</script>
 
 
 </body>
