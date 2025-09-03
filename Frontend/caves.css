@@ -20,6 +20,35 @@
   box-sizing: border-box;
 }
 
+/* Firefox */
+html {
+  z-index: 99 !important;
+  scrollbar-color: #367588 black; /* thumb | track */
+  scrollbar-width: thin;                 /* auto | thin | none */
+}
+
+/* Chrome, Edge, Safari (WebKit) */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #367588;
+  border-radius: 999px;
+  border: 2px solid transparent; /* creates a gap around thumb */
+  background-clip: content-box;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #2e6574; /* slightly darker on hover */
+}
+
+
 
 body {
   font-family: 'Source Sans Pro', sans-serif;

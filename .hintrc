@@ -10,7 +10,9 @@
           "backdrop-filter",
           "overscroll-behavior",
           "overscroll-behavior: none",
-          "user-select"
+          "user-select",
+          "scrollbar-color",
+          "scrollbar-width"
         ]
       }
     ],

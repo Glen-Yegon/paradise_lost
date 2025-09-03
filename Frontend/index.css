@@ -19,7 +19,8 @@ html, body { margin: 0; padding: 0; scroll-behavior: auto !important; height: au
 
 /* Firefox */
 html {
-  scrollbar-color: #367588 transparent; /* thumb | track */
+  z-index: 99 !important;
+  scrollbar-color: #367588 black; /* thumb | track */
   scrollbar-width: thin;                 /* auto | thin | none */
 }
 
